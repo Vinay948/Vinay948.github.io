@@ -1,0 +1,2461 @@
+{
+ "client_work": null,
+ "freelance": {
+  "available": true,
+  "badge": "Available for freelance & prototype work",
+  "headline": "Turning ideas into",
+  "headline_accent": "working prototypes.",
+  "subhead": "PCB design, embedded firmware and CAD for prototypes and small-batch products. I design and validate boards for a remote laboratory at IISc, and take on freelance work from a single board to a complete prototype.",
+  "copy": {
+   "services_title": "What I can build for you",
+   "services_sub": "From a single board to a complete prototype, with the circuit, firmware and enclosure designed to work together. I flag scope and risks before we start.",
+   "cta_title": "Not sure which you need?",
+   "cta_text": "Describe the problem and I'll suggest an approach, the main parts and a rough plan.",
+   "process_sub": "A clear process with review points along the way.",
+   "contact_title": "Have something to build?",
+   "contact_text": "Boards, firmware, enclosures or the whole prototype. Tell me what you have in mind and I'll get back to you with questions or a plan."
+  },
+  "_hero_images_help": "Up to 3 CAD renders for the hero collage, as project-id/image-name (see site/assets/cad/).",
+  "hero_images": [
+   "fish-vending/chamber-assembly",
+   "solidworks-sculpting/head",
+   "fish-vending/assem1"
+  ],
+  "services": [
+   {
+    "icon": "board",
+    "title": "PCB design & layout",
+    "text": "Schematics, PCB layouts and fab-ready outputs in KiCad or Altium, including custom symbols and footprints, checked against your fab house's rules.",
+    "deliverables": [
+     "Schematic & BOM",
+     "PCB layout with DRC against fab rules",
+     "Gerber, drill & pick-and-place files",
+     "Custom component libraries"
+    ],
+    "tools": [
+     "KiCad",
+     "Altium"
+    ]
+   },
+   {
+    "icon": "chip",
+    "title": "Embedded firmware & IoT",
+    "text": "Firmware for ESP32 and AVR, from timers, PWM and peripheral drivers to connected devices over Wi-Fi, BLE or MQTT.",
+    "deliverables": [
+     "Structured firmware source",
+     "Sensor, motor & display drivers",
+     "Wi-Fi / BLE / MQTT connectivity",
+     "Board bring-up & bench testing"
+    ],
+    "tools": [
+     "PlatformIO",
+     "Arduino",
+     "C/C++"
+    ]
+   },
+   {
+    "icon": "cube",
+    "title": "CAD, enclosures & mechanisms",
+    "text": "Enclosures and mechanisms in SolidWorks and Fusion 360, ready for laser cutting or 3D printing, plus organic shapes with freeform modelling.",
+    "deliverables": [
+     "3D models & assemblies",
+     "Drawings",
+     "DXF for laser cutting, STL for printing",
+     "BOM & assembly guide"
+    ],
+    "tools": [
+     "SolidWorks",
+     "Fusion 360"
+    ]
+   },
+   {
+    "icon": "bolt",
+    "title": "Power electronics & motor control",
+    "text": "Low-voltage DC power and motor-control circuits: buck converters, motor drivers and battery charging, with PWM control firmware and bench testing.",
+    "deliverables": [
+     "Topology & component selection",
+     "Gate drive & PWM control firmware",
+     "Bench testing"
+    ],
+    "tools": [
+     "ESP32 MCPWM",
+     "AVR",
+     "KiCad"
+    ]
+   },
+   {
+    "icon": "rocket",
+    "title": "Complete prototypes",
+    "text": "Circuit, PCB, firmware and enclosure designed together, for student projects, startups and small-batch products.",
+    "deliverables": [
+     "Working prototype",
+     "Design files",
+     "Documentation & handover"
+    ],
+    "tools": [
+     "End to end"
+    ]
+   }
+  ],
+  "process": [
+   {
+    "title": "Share your idea",
+    "text": "Tell me what it should do, where it will be used and any constraints. A sketch or a reference product is enough to start."
+   },
+   {
+    "title": "Plan & scope",
+    "text": "I suggest an approach, the main parts and a timeline, and flag anything risky or outside my experience before we agree on scope."
+   },
+   {
+    "title": "Design & build",
+    "text": "Schematic, PCB, firmware and CAD, with review points along the way so there are no surprises."
+   },
+   {
+    "title": "Test & hand over",
+    "text": "Bench testing against the agreed requirements, then the agreed deliverables and documentation are handed over."
+   }
+  ],
+  "faq": [
+   {
+    "q": "What's your experience?",
+    "a": "I graduated in 2025 (B.E., ECE) and have about three years of hands-on product work: R&D on a smart walking stick at Yosi Innovation, and PCB design for a remote laboratory at IISc. I'm strongest in PCB design, ESP32/AVR firmware and SolidWorks, and I'm deepening my multi-layer layout and power electronics. If a project needs specialist depth, such as high-speed, RF or high-voltage design, I'll say so upfront."
+   },
+   {
+    "q": "What kind of projects suit you best?",
+    "a": "Prototypes and small-batch products: custom boards, firmware for sensors, motors and connected devices, enclosures and mechanisms, or the whole prototype."
+   },
+   {
+    "q": "Can you keep my design confidential?",
+    "a": "Yes. Most of my professional work is confidential, so keeping client designs private is normal for me. We can put an NDA in place before you share details."
+   },
+   {
+    "q": "What do I get at the end?",
+    "a": "The deliverables we agree on at the start: for example a working prototype, design files and documentation. Terms are settled before any work begins."
+   },
+   {
+    "q": "Where are you based?",
+    "a": "Bengaluru, India. Working remotely is fine, and in-person meetings are possible around Bengaluru."
+   }
+  ],
+  "project_types": [
+   "PCB design",
+   "Embedded firmware / IoT",
+   "CAD / enclosure",
+   "Power electronics",
+   "Complete prototype",
+   "Something else"
+  ],
+  "sizes": [
+   "Small (a few days)",
+   "Medium (a few weeks)",
+   "Large (a few months)",
+   "Not sure yet"
+  ],
+  "timelines": [
+   "As soon as possible",
+   "Within a month",
+   "Flexible"
+  ]
+ },
+ "site_url": "https://vinay948.github.io/",
+ "og_image": "og-image.png",
+ "now": [
+  {
+   "id": "jwala",
+   "title": "Jwala",
+   "org": null
+  },
+  {
+   "id": "sana",
+   "title": "SANA",
+   "org": null
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
+  }
+ ],
+ "profile": {
+  "name": "Vinay Raghava",
+  "title": "PCB Design & Embedded Systems Engineer",
+  "current_role": "Project Associate-I (PCB Design Engineer) at DESE, Indian Institute of Science",
+  "location": "Bengaluru, India",
+  "summary": "Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.",
+  "focus": [
+   "PCB design",
+   "Power electronics",
+   "Embedded firmware",
+   "CAD & enclosures",
+   "IoT"
+  ],
+  "email": "vinayraghava80@gmail.com",
+  "github": "",
+  "linkedin": "https://www.linkedin.com/in/vinay-raghava",
+  "languages": [
+   "English",
+   "Kannada",
+   "Telugu",
+   "Hindi"
+  ]
+ },
+ "experience": [
+  {
+   "org": "dese",
+   "organisation": "DESE, Indian Institute of Science",
+   "location": "Bengaluru",
+   "roles": [
+    {
+     "title": "Project Associate-I: PCB Design Engineer",
+     "period": "Dec 2025 – Present",
+     "project": "Remote Laboratory Setup (ongoing)",
+     "points": [
+      "Work across the remote lab build: circuit design and development, PCB design, embedded systems, programming and CAD.",
+      "Design and validate PCB layouts for remote hardware experimentation.",
+      "Integrate embedded-systems workflows that give students real-time remote access to lab hardware.",
+      "Support scalable R&D validation by reducing dependence on physical lab time."
+     ]
+    },
+    {
+     "title": "Workshop Coordinator",
+     "period": "Dec 2025 – Present",
+     "project": "EPD student workshops",
+     "points": [
+      "Run the department's student workshops, covering logistics and technical sessions.",
+      "Coordinate participant engagement so training sessions run smoothly."
+     ]
+    }
+   ]
+  },
+  {
+   "org": "yosi",
+   "organisation": "Yosi Innovation Pvt. Ltd.",
+   "location": "Bengaluru",
+   "roles": [
+    {
+     "title": "Embedded Systems Engineer (R&D)",
+     "period": "Dec 2023 – Sep 2025",
+     "project": "Smart Walking Stick",
+     "points": [
+      "Developed a smart walking stick that improves safety and independence for elderly users.",
+      "Integrated SpO2 health monitoring, accelerometer fall detection, pit detection, and emergency torch, call and SMS features.",
+      "Designed the structural model in SolidWorks and Fusion 360, and the electronics and PCB in Altium Designer.",
+      "Designed and bench-tested the battery management (BMS) circuit."
+     ]
+    }
+   ]
+  },
+  {
+   "org": null,
+   "organisation": "Gopalan Skill Academy",
+   "location": "Bengaluru",
+   "roles": [
+    {
+     "title": "PCB Design Intern",
+     "period": "Oct 2023 – Nov 2023",
+     "project": "",
+     "points": [
+      "Designed and customised PCBs, created component footprints and built component libraries in Altium Designer."
+     ]
+    }
+   ]
+  }
+ ],
+ "education": [
+  {
+   "degree": "B.E., Electronics and Communication Engineering",
+   "institution": "Gopalan College of Engineering and Management",
+   "period": "2021 – 2025",
+   "detail": "CGPA 7.52"
+  }
+ ],
+ "training": [
+  {
+   "name": "PCB design internship: footprints, libraries and board customisation (Altium Designer)",
+   "issuer": "Gopalan Skill Academy",
+   "year": "2023"
+  },
+  {
+   "name": "Intel Unnati industrial training: applied cryptography and a custom secure-communication protocol",
+   "issuer": "Intel Unnati",
+   "year": "2024"
+  }
+ ],
+ "skills": [
+  {
+   "group": "PCB design",
+   "items": [
+    "KiCad",
+    "Altium Designer",
+    "Schematic capture",
+    "PCB layout & DRC",
+    "Gerber & fab outputs",
+    "Custom footprints & libraries",
+    "Circuit design & debugging"
+   ]
+  },
+  {
+   "group": "Embedded & IoT",
+   "items": [
+    "ESP32 (timers, PWM, MCPWM)",
+    "AVR ATmega328P / ATtiny85",
+    "Arduino",
+    "VS Code + PlatformIO",
+    "Embedded C / C++",
+    "MQTT, Wi-Fi / BLE"
+   ]
+  },
+  {
+   "group": "CAD & fabrication",
+   "items": [
+    "SolidWorks",
+    "Fusion 360",
+    "Assemblies & drawings",
+    "Laser-cut acrylic (DXF)",
+    "3D printing (STL)"
+   ]
+  },
+  {
+   "group": "Power electronics",
+   "items": [
+    "Buck converters",
+    "PWM & motor drivers",
+    "Electronic loads",
+    "Battery management (BMS)"
+   ]
+  },
+  {
+   "group": "Growing",
+   "level": "learning",
+   "items": [
+    "Multi-layer PCB layout",
+    "SMPS & MPPT control",
+    "Bare-metal ESP32 & Xtensa assembly",
+    "Freeform sculpting (Power Surfacing)",
+    "Python",
+    "JavaScript / Node.js",
+    "Local LLMs (Ollama)"
+   ]
+  },
+  {
+   "group": "Design tools",
+   "level": "familiar",
+   "items": [
+    "SOLIDWORKS PCB",
+    "SOLIDWORKS Composer & Visualize",
+    "FreeCAD",
+    "EAGLE",
+    "Saturn PCB Toolkit",
+    "Cirkit Designer",
+    "Cypress PSoC Creator",
+    "TI Code Composer Studio"
+   ]
+  },
+  {
+   "group": "Fabrication & programming",
+   "level": "familiar",
+   "items": [
+    "FlatCAM (PCB milling)",
+    "LaserGRBL / Grbl Controller",
+    "UltiMaker Cura",
+    "AVRDUDESS / avrdude",
+    "Xgpro universal programmer",
+    "ESP-IDF",
+    "OpenOCD",
+    "ESP8266, SAMD & Teensy",
+    "Arduino Cloud",
+    "Serial terminals (Termite)"
+   ]
+  },
+  {
+   "group": "Software & productivity",
+   "level": "familiar",
+   "items": [
+    "Git & GitHub CLI",
+    "Android Studio",
+    "Flutter / Dart",
+    "Java",
+    "Visual Studio C++ / CMake",
+    "PostgreSQL & pgAdmin",
+    "Conda",
+    "AI coding assistants (Claude Code, Copilot, Gemini)",
+    "Inkscape",
+    "Canva",
+    "Adobe Acrobat",
+    "Microsoft 365"
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "jwala",
+   "title": "Jwala: motion-control firmware",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "Embedded"
+   ],
+   "tools": [
+    "ESP32",
+    "A4988",
+    "NEMA-17",
+    "Xtensa assembly",
+    "Embedded C / C++",
+    "PlatformIO",
+    "Python"
+   ],
+   "platforms": [
+    "ESP32"
+   ],
+   "summary": "A clean-room motion-control firmware I'm writing from scratch, aiming at Marlin-class features: its own stepper drivers and a hardware abstraction layer for several microcontrollers, starting with the ESP32. Currently in an early development phase.",
+   "highlights": [
+    "Own A4988 stepper driver and a HAL designed for multiple MCUs (ESP32 first, AVR planned).",
+    "Bare-metal ESP32 timer and GPIO layer built directly from the ESP32 Technical Reference Manual and the Xtensa ISA.",
+    "Phase 0: a build-verified level-4 interrupt stepper ISR written in Xtensa assembly.",
+    "Documented failure analysis of V1, a decision log and a bench-check tracker. A feature only counts as done once it is verified on hardware.",
+    "Roadmap toward a motion planner, G-code, homing, thermal control, bed levelling and multiple kinematics."
+   ],
+   "period": "Feb 2026 – Nov 2026",
+   "last_updated": "2026-11-15",
+   "status": "In development",
+   "featured": true,
+   "order": 3,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 21,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why build it",
+     "text": "Marlin is the reference firmware for 3D printers and CNC machines, but it is a huge codebase. I wanted to understand motion control from the ground up, so Jwala is clean-room: Marlin is only the benchmark for features and behaviour, and none of its code is used."
+    },
+    {
+     "heading": "How it is built",
+     "text": "A hardware abstraction layer keeps the motion code independent of the microcontroller. The ESP32 is the first target, with AVR planned. The A4988 stepper driver is my own, and the ESP32 timer and GPIO layer is written directly against the ESP32 Technical Reference Manual and the Xtensa ISA manual."
+    },
+    {
+     "heading": "What went wrong in V1",
+     "text": "Version 1 compiled but did not run reliably: the bare-metal timer and interrupt layer conflicted with the ESP32 runtime. Before changing anything I wrote a full failure analysis, with evidence and a fix for every bug, and started a decision log and a bench-check tracker."
+    },
+    {
+     "heading": "What's next",
+     "text": "Phase 0 rebuilds the GPIO and timer layer and moves step generation into a level-4 interrupt written in Xtensa assembly, already build-verified. The goal is one motor moving reliably, verified on the bench, before the planner, G-code, homing and thermal control."
+    }
+   ],
+   "hero_stat": {
+    "value": "Xtensa",
+    "label": "assembly stepper interrupt, written from scratch"
+   },
+   "page": "projects/jwala.html"
+  },
+  {
+   "id": "sana",
+   "title": "SANA: offline AI voice assistant",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "IoT",
+    "Software"
+   ],
+   "tools": [
+    "Ollama",
+    "faster-whisper",
+    "Piper TTS",
+    "SQLite",
+    "MQTT",
+    "Arduino",
+    "JavaScript",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "A JARVIS-style personal assistant that runs entirely on a local PC: a local language model, on-device speech recognition and synthesis, long-term memory, an animated desktop orb, and control of ESP32 hardware.",
+   "highlights": [
+    "22 skills: app and media control, file search, reminders and notes, an exact calculator, web search, and shell commands that run only after approval.",
+    "Hands-free wake-word mode with faster-whisper speech-to-text and Piper text-to-speech, all on-device.",
+    "Switches ESP32 devices and reads their sensors over MQTT.",
+    "Swappable model providers (local Ollama by default) and a strict offline mode.",
+    "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
+   ],
+   "period": "Nov 2026",
+   "last_updated": "2026-11-15",
+   "status": "Active development",
+   "featured": true,
+   "order": 6,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 621,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why build it",
+     "text": "I wanted an assistant that keeps my data on my own machine and can talk to my own hardware. The language model, speech recognition, text-to-speech and memory all run locally; only the optional web tools touch the internet, and offline mode removes them."
+    },
+    {
+     "heading": "How it works",
+     "text": "A wake-word listener with voice-activity detection feeds faster-whisper for speech-to-text. An agent loop passes the request to a local model through Ollama, which can call 22 skills; tool arguments are validated and repaired before anything runs. Piper speaks the answer, and SQLite stores long-term memory, reminders and notes."
+    },
+    {
+     "heading": "Talking to hardware",
+     "text": "SANA switches ESP32 devices and reads their sensors over MQTT, with a mock mode until a real device is connected. Shell commands only run after I approve the exact command."
+    },
+    {
+     "heading": "Choosing the model",
+     "text": "On a CPU-only i5 laptop, a 4B instruct model handled all 9 of my test tasks. A 3B model was about twice as fast but invented results on 2 tasks instead of using its tools. Hardware settings live in one config file, so adding a GPU or a separate server needs no code changes."
+    },
+    {
+     "heading": "What's next",
+     "text": "A trained wake-word model, vision through a local model once a GPU is added, a phone client, and a multi-node ESP32 network."
+    }
+   ],
+   "hero_stat": {
+    "value": "22",
+    "label": "on-device skills, fully offline"
+   },
+   "page": "projects/sana.html"
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-13",
+   "status": "Active development",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 89,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "dese-remote-lab",
+   "title": "Remote Laboratory Setup",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "CAD",
+    "Embedded",
+    "Electronics",
+    "Software"
+   ],
+   "tools": [
+    "KiCad",
+    "Altium Designer",
+    "SolidWorks",
+    "VS Code",
+    "PlatformIO"
+   ],
+   "platforms": [],
+   "summary": "A remote laboratory that lets students run real hardware experiments in real time without being in the lab. I design and validate the PCBs, and work across circuit design and development, embedded systems, programming and CAD.",
+   "highlights": [
+    "Circuit design and development, from concept to working hardware.",
+    "PCB design and validation for remote hardware experimentation.",
+    "Embedded systems and programming that give students real-time remote access.",
+    "CAD design for the lab hardware."
+   ],
+   "period": "Dec 2025 – Present",
+   "last_updated": "2026-11-13",
+   "status": "Ongoing",
+   "featured": true,
+   "order": 2,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 10,
+     "label": "PCB layouts"
+    },
+    {
+     "key": "schematics",
+     "value": 19,
+     "label": "schematics"
+    },
+    {
+     "key": "libraries",
+     "value": 5,
+     "label": "component library files"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 6,
+     "label": "fab output sets"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [
+    {
+     "id": "dese-power-supply",
+     "title": "Programmable power supply",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Embedded",
+      "Electronics"
+     ],
+     "tools": [
+      "Embedded C / C++",
+      "KiCad",
+      "PlatformIO",
+      "Python"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 1,
+       "label": "PCB layout"
+      },
+      {
+       "key": "schematics",
+       "value": 3,
+       "label": "schematics"
+      },
+      {
+       "key": "firmware_projects",
+       "value": 2,
+       "label": "firmware projects"
+      },
+      {
+       "key": "source_files",
+       "value": 3,
+       "label": "source files"
+      }
+     ],
+     "period": "Apr 2026 – Aug 2026",
+     "last_updated": "2026-08-19",
+     "order": 1
+    },
+    {
+     "id": "dese-electronic-load",
+     "title": "Electronic load",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Embedded",
+      "Electronics"
+     ],
+     "tools": [
+      "Embedded C / C++",
+      "KiCad",
+      "PlatformIO"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 1,
+       "label": "PCB layout"
+      },
+      {
+       "key": "schematics",
+       "value": 2,
+       "label": "schematics"
+      },
+      {
+       "key": "gerber_sets",
+       "value": 1,
+       "label": "fab output set"
+      },
+      {
+       "key": "firmware_projects",
+       "value": 1,
+       "label": "firmware project"
+      },
+      {
+       "key": "source_files",
+       "value": 1,
+       "label": "source file"
+      }
+     ],
+     "period": "Jan 2026 – Jun 2026",
+     "last_updated": "2026-06-23",
+     "order": 2
+    },
+    {
+     "id": "dese-current-sensor",
+     "title": "Current sensing board",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Electronics"
+     ],
+     "tools": [
+      "Embedded C / C++",
+      "KiCad",
+      "PlatformIO"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 1,
+       "label": "PCB layout"
+      },
+      {
+       "key": "schematics",
+       "value": 1,
+       "label": "schematic"
+      },
+      {
+       "key": "gerber_sets",
+       "value": 1,
+       "label": "fab output set"
+      },
+      {
+       "key": "firmware_projects",
+       "value": 1,
+       "label": "firmware project"
+      },
+      {
+       "key": "source_files",
+       "value": 1,
+       "label": "source file"
+      }
+     ],
+     "period": "Apr 2026 – Aug 2026",
+     "last_updated": "2026-08-11",
+     "order": 3
+    },
+    {
+     "id": "dese-voltage-sense",
+     "title": "Voltage sensing board",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Electronics"
+     ],
+     "tools": [
+      "KiCad"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 1,
+       "label": "PCB layout"
+      },
+      {
+       "key": "schematics",
+       "value": 1,
+       "label": "schematic"
+      },
+      {
+       "key": "libraries",
+       "value": 5,
+       "label": "component library files"
+      },
+      {
+       "key": "gerber_sets",
+       "value": 1,
+       "label": "fab output set"
+      }
+     ],
+     "period": "Feb 2026 – Jun 2026",
+     "last_updated": "2026-06-22",
+     "order": 4
+    },
+    {
+     "id": "dese-oscilloscope",
+     "title": "Oscilloscope front-end",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Electronics"
+     ],
+     "tools": [
+      "KiCad"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 2,
+       "label": "PCB layouts"
+      },
+      {
+       "key": "schematics",
+       "value": 6,
+       "label": "schematics"
+      }
+     ],
+     "period": "Jun 2026",
+     "last_updated": "2026-06-23",
+     "order": 5
+    },
+    {
+     "id": "dese-atmega-card",
+     "title": "ATmega328P controller card",
+     "visibility": "confidential",
+     "categories": [
+      "PCB",
+      "Embedded"
+     ],
+     "tools": [
+      "KiCad"
+     ],
+     "stats": [
+      {
+       "key": "pcb_layouts",
+       "value": 2,
+       "label": "PCB layouts"
+      },
+      {
+       "key": "schematics",
+       "value": 4,
+       "label": "schematics"
+      }
+     ],
+     "period": "Jun 2026",
+     "last_updated": "2026-06-23",
+     "order": 6
+    }
+   ],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": {
+    "value": "9",
+    "label": "PCB layouts, plus firmware, programming and CAD"
+   },
+   "page": null
+  },
+  {
+   "id": "dese-dac",
+   "title": "DAC interface",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Embedded",
+    "Electronics"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "AVR"
+   ],
+   "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "May 2026 – Nov 2026",
+   "last_updated": "2026-11-10",
+   "status": "Active",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 1,
+     "label": "source file"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "sculptforge",
+   "title": "SculptForge: photos to printable sculptures",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD",
+    "Software"
+   ],
+   "tools": [
+    "Three.js",
+    "MediaPipe",
+    "ONNX Runtime (WASM)",
+    "3D printing (STL)",
+    "JavaScript"
+   ],
+   "platforms": [],
+   "summary": "A browser app that fits template meshes to a photo and exports a closed, 3D-printable solid as STL or OBJ.",
+   "highlights": [
+    "Portrait bust templates built procedurally from CC0 MakeHuman meshes (age, sex, muscle and weight targets).",
+    "Ten object templates (vase, bottle, bowl, mug, goblet and more) generated in code.",
+    "Face detection and model inference run in the browser.",
+    "Generates a watertight print solid and exports STL or OBJ."
+   ],
+   "period": "Oct 2026 – Nov 2026",
+   "last_updated": "2026-11-03",
+   "status": "Active development",
+   "featured": false,
+   "order": 8,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 1,
+     "label": "CAD part"
+    },
+    {
+     "key": "source_files",
+     "value": 35,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "The idea",
+     "text": "Turn a photo into a sculpture you can 3D print, without leaving the browser."
+    },
+    {
+     "heading": "Templates",
+     "text": "Portrait busts are built from scratch by a script that downloads the CC0 MakeHuman base mesh and its age, sex, muscle and weight targets, shapes each body, smooths it, cuts out the bust and caps it into a closed solid. Object templates such as vases, bottles and mugs are generated in code."
+    },
+    {
+     "heading": "Fitting a photo",
+     "text": "Face detection and model inference run in the browser. Each template is matched against the photo, and models below the match threshold are shown in red instead of being silently dropped."
+    },
+    {
+     "heading": "Output",
+     "text": "The fitted mesh becomes a watertight print solid and exports as STL or OBJ, ready for a slicer."
+    }
+   ],
+   "hero_stat": null,
+   "page": "projects/sculptforge.html"
+  },
+  {
+   "id": "dese-avr-controller",
+   "title": "AVR controller board",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Embedded"
+   ],
+   "tools": [
+    "KiCad",
+    "SolidWorks"
+   ],
+   "platforms": [],
+   "summary": "PCB design and embedded firmware for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jun 2026 – Nov 2026",
+   "last_updated": "2026-11-02",
+   "status": "Active",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 1,
+     "label": "PCB layout"
+    },
+    {
+     "key": "schematics",
+     "value": 1,
+     "label": "schematic"
+    },
+    {
+     "key": "libraries",
+     "value": 5,
+     "label": "component library files"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 2,
+     "label": "fab output sets"
+    },
+    {
+     "key": "cad_parts",
+     "value": 6,
+     "label": "CAD parts"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "solidworks-sculpting",
+   "title": "Freeform sculpting in SolidWorks",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD"
+   ],
+   "tools": [
+    "SolidWorks",
+    "Power Surfacing"
+   ],
+   "platforms": [],
+   "summary": "A human head sculpted in SolidWorks with the Power Surfacing add-in. Alongside my mechanical work, I practise freeform, organic modelling like this to design shapes that standard sketch-and-feature CAD can't produce, and to keep learning new techniques in SolidWorks.",
+   "highlights": [
+    "Organic head form sculpted inside SolidWorks with the Power Surfacing add-in.",
+    "Subdivision-style freeform modelling, a different way of working from sketch-and-extrude parts.",
+    "Part of my ongoing self-learning in surfacing and sculpting for product design."
+   ],
+   "period": "Oct 2026",
+   "last_updated": "2026-10-31",
+   "status": "Ongoing practice",
+   "featured": true,
+   "order": 7,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 1,
+     "label": "CAD part"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [
+    {
+     "src": "assets/cad/solidworks-sculpting/head.png",
+     "v": 1793465784,
+     "kind": "Part",
+     "caption": "Sculpted head (Power Surfacing)"
+    }
+   ],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why sculpt in a mechanical CAD tool",
+     "text": "Most of my CAD work is plates, brackets and enclosures. Products that people hold or look at also need organic shapes, so I practise freeform sculpting in SolidWorks to be able to design those too."
+    },
+    {
+     "heading": "The approach",
+     "text": "The head was sculpted with Power Surfacing, an add-in that brings subdivision-style freeform modelling into SolidWorks, so the result lives in the same tool as the rest of a design."
+    },
+    {
+     "heading": "What's next",
+     "text": "Applying the same techniques to product forms such as grips, handles and enclosures, where a shape has to feel right as well as work."
+    }
+   ],
+   "hero_stat": null,
+   "page": "projects/solidworks-sculpting.html"
+  },
+  {
+   "id": "multilayer-pcb",
+   "title": "Multi-layer PCB stack-up study",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "PCB"
+   ],
+   "tools": [
+    "KiCad"
+   ],
+   "platforms": [],
+   "summary": "Self-study project on multi-layer board stack-ups and routing in KiCad.",
+   "highlights": [],
+   "period": "Oct 2026",
+   "last_updated": "2026-10-29",
+   "status": "Active",
+   "featured": false,
+   "order": 10,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 1,
+     "label": "PCB layout"
+    },
+    {
+     "key": "schematics",
+     "value": 1,
+     "label": "schematic"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/multilayer-pcb.html"
+  },
+  {
+   "id": "dese-pwm-inverter",
+   "title": "PWM inverter",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Embedded",
+    "Electronics"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "AVR"
+   ],
+   "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Oct 2026",
+   "last_updated": "2026-10-09",
+   "status": "Active",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 1,
+     "label": "source file"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "dese-dc-motor",
+   "title": "DC motor driver and encoder control",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Embedded",
+    "Electronics"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "KiCad",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "AVR"
+   ],
+   "summary": "PCB design, embedded firmware and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jun 2026 – Sep 2026",
+   "last_updated": "2026-09-26",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 1,
+     "label": "PCB layout"
+    },
+    {
+     "key": "schematics",
+     "value": 3,
+     "label": "schematics"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 1,
+     "label": "fab output set"
+    },
+    {
+     "key": "firmware_projects",
+     "value": 2,
+     "label": "firmware projects"
+    },
+    {
+     "key": "source_files",
+     "value": 2,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "engineer-survival",
+   "title": "Engineer Survival: electronics mini-game",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Pygame",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "A small Pygame game with engineering missions: restore power in a blackout by wiring a battery, resistor and LED, control a flood, and keep a Mars colony running.",
+   "highlights": [],
+   "period": "Sep 2026",
+   "last_updated": "2026-09-12",
+   "status": "",
+   "featured": false,
+   "order": 11,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 1,
+     "label": "source file"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/engineer-survival.html"
+  },
+  {
+   "id": "xiao-bridge",
+   "title": "ESP32 helper node: serial bridge and remote flashing",
+   "visibility": "confidential",
+   "org": "Private",
+   "org_name": "Private work",
+   "org_id": null,
+   "categories": [
+    "Embedded",
+    "IoT"
+   ],
+   "tools": [
+    "Arduino",
+    "Embedded C / C++"
+   ],
+   "platforms": [],
+   "summary": "Helper-node firmware that gives a developer a permanent serial bridge, a live monitor and remote firmware flashing for a headless ESP32 module.",
+   "highlights": [],
+   "period": "Sep 2026",
+   "last_updated": "2026-09-09",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 2,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "yosi-smart-stick",
+   "title": "Smart walking stick for elderly users",
+   "visibility": "confidential",
+   "org": "Yosi Innovation",
+   "org_name": "Yosi Innovation Pvt. Ltd.",
+   "org_id": "yosi",
+   "categories": [
+    "PCB",
+    "CAD",
+    "Embedded",
+    "IoT"
+   ],
+   "tools": [
+    "Altium Designer",
+    "SolidWorks",
+    "Fusion 360",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "ESP32"
+   ],
+   "summary": "A walking stick that makes elderly users safer and more independent, with health monitoring, fall and pit detection, and emergency features.",
+   "highlights": [
+    "SpO2 health monitoring and accelerometer-based fall detection.",
+    "Pit detection for uneven terrain.",
+    "Emergency torch, call and SMS alerts.",
+    "Enclosure in SolidWorks and Fusion 360, electronics and PCB in Altium Designer, and a bench-tested BMS."
+   ],
+   "period": "Dec 2023 – Sep 2025",
+   "last_updated": "2026-09-08",
+   "status": "Completed",
+   "featured": true,
+   "order": 5,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 2,
+     "label": "firmware projects"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": {
+    "value": "SpO₂",
+    "label": "health monitoring with fall and pit detection"
+   },
+   "page": null
+  },
+  {
+   "id": "dese-smps-emi",
+   "title": "SMPS circuits for EMI study",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Electronics"
+   ],
+   "tools": [
+    "KiCad"
+   ],
+   "platforms": [],
+   "summary": "PCB design and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jul 2026 – Aug 2026",
+   "last_updated": "2026-08-11",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 2,
+     "label": "PCB layouts"
+    },
+    {
+     "key": "schematics",
+     "value": 2,
+     "label": "schematics"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 1,
+     "label": "fab output set"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "dese-attiny85",
+   "title": "ATtiny85 USB development board",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Embedded"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "KiCad",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "AVR"
+   ],
+   "summary": "PCB design and embedded firmware for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Dec 2025 – Jul 2026",
+   "last_updated": "2026-07-29",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 2,
+     "label": "PCB layouts"
+    },
+    {
+     "key": "schematics",
+     "value": 9,
+     "label": "schematics"
+    },
+    {
+     "key": "libraries",
+     "value": 10,
+     "label": "component library files"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 2,
+     "label": "fab output sets"
+    },
+    {
+     "key": "firmware_projects",
+     "value": 2,
+     "label": "firmware projects"
+    },
+    {
+     "key": "source_files",
+     "value": 2,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "dese-tl494",
+   "title": "TL494 PWM controller",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Electronics"
+   ],
+   "tools": [
+    "KiCad"
+   ],
+   "platforms": [],
+   "summary": "PCB design and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jul 2026",
+   "last_updated": "2026-07-28",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "schematics",
+     "value": 2,
+     "label": "schematics"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "fish-vending",
+   "title": "Fish vending machine: mechanical design",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD"
+   ],
+   "tools": [
+    "Laser-cut DXF",
+    "SolidWorks"
+   ],
+   "platforms": [],
+   "summary": "A four-chamber vending machine designed in SolidWorks and built from laser-cut acrylic, with a servo-driven dispensing mechanism, a hinged lid and full fabrication documentation.",
+   "highlights": [
+    "Complete SolidWorks assembly, sub-assemblies and drawing (558.8 × 158.8 × 609.6 mm overall).",
+    "DXF profiles for 3 mm acrylic laser cutting.",
+    "MG995 servo-driven dispenser caps on hinges, with servo brackets and a drive shaft.",
+    "Bill of materials, fastener-to-function map and a step-by-step assembly guide."
+   ],
+   "period": "Jul 2026",
+   "last_updated": "2026-07-26",
+   "status": "Completed",
+   "featured": true,
+   "order": 1,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 16,
+     "label": "CAD parts"
+    },
+    {
+     "key": "cad_assemblies",
+     "value": 3,
+     "label": "assemblies"
+    },
+    {
+     "key": "drawings",
+     "value": 16,
+     "label": "drawings / cut profiles"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [
+    {
+     "src": "assets/cad/fish-vending/chamber-assembly.png",
+     "v": 1785062938,
+     "kind": "Assembly",
+     "caption": "Dispensing chamber with MG995 servo"
+    },
+    {
+     "src": "assets/cad/fish-vending/assem1.png",
+     "v": 1785066983,
+     "kind": "Assembly",
+     "caption": "Complete machine"
+    },
+    {
+     "src": "assets/cad/fish-vending/lid-assembly.png",
+     "v": 1785062948,
+     "kind": "Assembly",
+     "caption": "Hinged lid"
+    },
+    {
+     "src": "assets/cad/fish-vending/lid-back.png",
+     "v": 1784958352,
+     "kind": "Part",
+     "caption": "Lid back"
+    },
+    {
+     "src": "assets/cad/fish-vending/lid-front.png",
+     "v": 1784958353,
+     "kind": "Part",
+     "caption": "Lid front"
+    },
+    {
+     "src": "assets/cad/fish-vending/front-plate.png",
+     "v": 1784973999,
+     "kind": "Part",
+     "caption": "Front plate"
+    },
+    {
+     "src": "assets/cad/fish-vending/side-plate.png",
+     "v": 1785062938,
+     "kind": "Part",
+     "caption": "Side plate"
+    },
+    {
+     "src": "assets/cad/fish-vending/lid-base.png",
+     "v": 1784917968,
+     "kind": "Part",
+     "caption": "Lid base"
+    }
+   ],
+   "media": [],
+   "story": [
+    {
+     "heading": "The brief",
+     "text": "A machine that stores and dispenses product from four separate chambers, built from materials that can be laser cut quickly."
+    },
+    {
+     "heading": "The design",
+     "text": "Every structural part is a 3 mm acrylic plate, so the whole machine goes from SolidWorks straight to DXF cutting files. Each chamber has a hinged dispenser cap opened by an MG995 servo through a servo shaft, and a hinged lid closes the top. The machine is 558.8 × 158.8 × 609.6 mm overall, with 101.6 × 101.6 × 233.2 mm chambers."
+    },
+    {
+     "heading": "Documentation",
+     "text": "The design ships with a bill of materials, a fastener-to-function map (M3 for the chambers, M6 for the hinges and lid, M1.6 at the servo joints), the assembly hierarchy, step-by-step assembly instructions and a troubleshooting guide."
+    },
+    {
+     "heading": "Lesson learned",
+     "text": "The hinge model I downloaded was 40 mm with 6.5 mm holes, while the standard hinge is 38 mm with smaller holes. Downloaded models now get checked against the real part before they go into a design."
+    }
+   ],
+   "hero_stat": null,
+   "page": "projects/fish-vending.html"
+  },
+  {
+   "id": "dese-dual-stepper",
+   "title": "Dual stepper motor driver",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "PCB",
+    "Electronics"
+   ],
+   "tools": [
+    "KiCad"
+   ],
+   "platforms": [],
+   "summary": "PCB design and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jun 2026",
+   "last_updated": "2026-06-20",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "pcb_layouts",
+     "value": 1,
+     "label": "PCB layout"
+    },
+    {
+     "key": "schematics",
+     "value": 1,
+     "label": "schematic"
+    },
+    {
+     "key": "gerber_sets",
+     "value": 2,
+     "label": "fab output sets"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "dese-va-meter",
+   "title": "Volt/amp meter enclosure",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "CAD"
+   ],
+   "tools": [
+    "3D printing (STL)",
+    "SolidWorks"
+   ],
+   "platforms": [],
+   "summary": "Mechanical CAD for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jun 2026",
+   "last_updated": "2026-06-19",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 5,
+     "label": "CAD parts"
+    },
+    {
+     "key": "cad_assemblies",
+     "value": 3,
+     "label": "assemblies"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "xiao-esp32c3-library",
+   "title": "XIAO ESP32-C3 component library (Altium)",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "PCB"
+   ],
+   "tools": [
+    "Altium Designer"
+   ],
+   "platforms": [],
+   "summary": "A custom Altium Designer component library for the Seeed Studio XIAO ESP32-C3 module, with its own schematic symbol and PCB footprint, so the module can be placed straight into board designs.",
+   "highlights": [
+    "Schematic symbol for the XIAO ESP32-C3 module (SchLib).",
+    "PCB footprint for the module (PcbLib).",
+    "Organised as an Altium integrated library package (LibPkg), so symbol and footprint stay linked."
+   ],
+   "period": "Mar 2026",
+   "last_updated": "2026-03-20",
+   "status": "Completed",
+   "featured": false,
+   "order": 9,
+   "stats": [
+    {
+     "key": "libraries",
+     "value": 3,
+     "label": "component library files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/xiao-esp32c3-library.html"
+  },
+  {
+   "id": "dese-buck",
+   "title": "Buck converter control",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Embedded",
+    "Electronics"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "AVR"
+   ],
+   "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Feb 2026 – Mar 2026",
+   "last_updated": "2026-03-05",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 1,
+     "label": "source file"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "solar-ev-mppt",
+   "title": "Solar backup charging for electric vehicles (MPPT)",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "PCB",
+    "Embedded",
+    "Electronics"
+   ],
+   "tools": [
+    "ESP32",
+    "PlatformIO",
+    "Embedded C / C++"
+   ],
+   "platforms": [
+    "ESP32"
+   ],
+   "summary": "Final-year project: an on-board solar charging system that gives an electric vehicle enough backup range to reach a charging point. Covers the MPPT charge controller, the synchronous buck power stage and its firmware.",
+   "highlights": [
+    "Synchronous buck converter sized from first principles (component design worksheet).",
+    "ESP32 MCPWM complementary gate drive at 48 kHz with configurable dead time.",
+    "Three iterations of the MPPT algorithm, with current sensing (ACS712) and voltage sensing.",
+    "Grew out of a mini-project on pulse generation and timing for an EV charger."
+   ],
+   "period": "May 2024 – May 2025",
+   "last_updated": "2026-03-04",
+   "status": "Completed",
+   "featured": true,
+   "order": 4,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 1,
+     "label": "source file"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "The problem",
+     "text": "An electric vehicle that runs out of charge away from a charging point is stuck. This project adds an on-board solar charging system so the vehicle has enough backup range to reach a charger."
+    },
+    {
+     "heading": "Power stage",
+     "text": "A synchronous buck converter sits between the panel and the battery. Its component values were worked out from first principles in a design worksheet."
+    },
+    {
+     "heading": "Control",
+     "text": "The ESP32's MCPWM peripheral drives the high- and low-side MOSFETs with complementary 48 kHz PWM and hardware dead time. The MPPT algorithm went through three iterations, using current sensing (ACS712) and voltage sensing to track the panel's maximum power point."
+    },
+    {
+     "heading": "Where it started",
+     "text": "It grew out of a mini-project on pulse generation and timers for an EV charger."
+    }
+   ],
+   "hero_stat": {
+    "value": "48 kHz",
+    "label": "complementary gate drive with hardware dead time"
+   },
+   "page": "projects/solar-ev-mppt.html"
+  },
+  {
+   "id": "dese-embedded-lab",
+   "title": "Embedded systems lab (TI microcontrollers)",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Embedded"
+   ],
+   "tools": [
+    "Embedded C / C++",
+    "Code Composer Studio"
+   ],
+   "platforms": [
+    "TI MCU"
+   ],
+   "summary": "Embedded firmware for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Jan 2026",
+   "last_updated": "2026-01-14",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 2,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "akumen-vision-tof",
+   "title": "Camera and depth-sensing prototype",
+   "visibility": "confidential",
+   "org": "Akumen",
+   "org_name": "Akumen (internship)",
+   "org_id": "akumen",
+   "categories": [
+    "Embedded",
+    "IoT"
+   ],
+   "tools": [],
+   "platforms": [],
+   "summary": "Internship prototype that combines a camera with a time-of-flight depth sensor on a compact microcontroller board.",
+   "highlights": [],
+   "period": "2024",
+   "last_updated": "2025-01-03",
+   "status": "",
+   "featured": false,
+   "order": 999,
+   "stats": [],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "line-follower",
+   "title": "Line follower robot with obstacle avoidance",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD",
+    "Embedded",
+    "Robotics"
+   ],
+   "tools": [
+    "Arduino Uno",
+    "ESP32",
+    "IR / QTR-8A sensors",
+    "L293D / TB6612FNG"
+   ],
+   "platforms": [],
+   "summary": "A robot that follows a track without drifting off it, and detects and avoids obstacles in its path.",
+   "highlights": [
+    "Arduino Uno controller, later ported to the ESP32.",
+    "Evaluated IR sensor pairs and a QTR-8A reflectance array with L293D, L298 and TB6612FNG motor drivers.",
+    "Chassis and RC-car CAD designs."
+   ],
+   "period": "Feb 2022 – Mar 2022",
+   "last_updated": "2023-11-22",
+   "status": "Completed",
+   "featured": false,
+   "order": 8,
+   "stats": [],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/line-follower.html"
+  },
+  {
+   "id": "robotic-arm",
+   "title": "3-DOF pick-and-place robotic arm",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD",
+    "Embedded",
+    "Robotics"
+   ],
+   "tools": [
+    "Arduino",
+    "Servo motors",
+    "MIT App Inventor"
+   ],
+   "platforms": [],
+   "summary": "A 3-DOF arm that picks and places objects of up to 200 g. A servo drives the end effector, and the joints are driven from push buttons through a microcontroller.",
+   "highlights": [
+    "Firmware went through many versions (v4 to v29), adding Bluetooth, potentiometer and RF control modes.",
+    "Phone control app built with MIT App Inventor.",
+    "Custom gripper finger design and a stepper-motor driver stage."
+   ],
+   "period": "Dec 2023 – May 2024",
+   "last_updated": null,
+   "status": "Completed",
+   "featured": false,
+   "order": 7,
+   "stats": [],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/robotic-arm.html"
+  },
+  {
+   "id": "altium-relay-boards",
+   "title": "Relay modules and Arduino Nano board",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "PCB"
+   ],
+   "tools": [
+    "Altium Designer"
+   ],
+   "platforms": [],
+   "summary": "PCB designs from my internship: 1- and 2-channel relay modules, an Arduino Nano-style board and practice circuits, with custom footprints and component libraries.",
+   "highlights": [],
+   "period": "Oct 2023 – Nov 2023",
+   "last_updated": null,
+   "status": "Completed",
+   "featured": false,
+   "order": 9,
+   "stats": [],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": "projects/altium-relay-boards.html"
+  }
+ ],
+ "feed": [
+  {
+   "date": "2026-11-15",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-15",
+   "type": "updated",
+   "project": "jwala",
+   "text": "Updated: Jwala: motion-control firmware",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-15",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-15",
+   "type": "updated",
+   "project": "dese-remote-lab",
+   "text": "Updated: Remote Laboratory Setup (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-15",
+   "type": "updated",
+   "project": "dese-dac",
+   "text": "Updated: DAC interface (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-07",
+   "type": "added",
+   "project": "solidworks-sculpting",
+   "text": "New project: Freeform sculpting in SolidWorks",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-07",
+   "type": "added",
+   "project": "xiao-esp32c3-library",
+   "text": "New project: XIAO ESP32-C3 component library (Altium)",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "activity",
+   "project": "datasheet-lab",
+   "text": "Worked on: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-03",
+   "type": "activity",
+   "project": "jwala",
+   "text": "Worked on: Jwala: motion-control firmware",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-03",
+   "type": "activity",
+   "project": "sana",
+   "text": "Worked on: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-03",
+   "type": "activity",
+   "project": "sculptforge",
+   "text": "Worked on: SculptForge: photos to printable sculptures",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-02",
+   "type": "activity",
+   "project": "dese-avr-controller",
+   "text": "Worked on: AVR controller board (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-10-29",
+   "type": "activity",
+   "project": "multilayer-pcb",
+   "text": "Worked on: Multi-layer PCB stack-up study",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-10-09",
+   "type": "activity",
+   "project": "dese-pwm-inverter",
+   "text": "Worked on: PWM inverter (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-10-08",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-09-26",
+   "type": "activity",
+   "project": "dese-dc-motor",
+   "text": "Worked on: DC motor driver and encoder control (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-09-12",
+   "type": "activity",
+   "project": "engineer-survival",
+   "text": "Worked on: Engineer Survival: electronics mini-game",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-09-09",
+   "type": "activity",
+   "project": "xiao-bridge",
+   "text": "Worked on: ESP32 helper node: serial bridge and remote flashing (Private, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-09-08",
+   "type": "activity",
+   "project": "yosi-smart-stick",
+   "text": "Worked on: Smart walking stick for elderly users (Yosi Innovation, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-08-19",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › Programmable power supply (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-08-18",
+   "type": "activity",
+   "project": "dese-dac",
+   "text": "Worked on: DAC interface (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-08-11",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › Current sensing board (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-08-11",
+   "type": "activity",
+   "project": "dese-smps-emi",
+   "text": "Worked on: SMPS circuits for EMI study (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-07-29",
+   "type": "activity",
+   "project": "dese-attiny85",
+   "text": "Worked on: ATtiny85 USB development board (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-07-28",
+   "type": "activity",
+   "project": "dese-tl494",
+   "text": "Worked on: TL494 PWM controller (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-07-26",
+   "type": "activity",
+   "project": "fish-vending",
+   "text": "Worked on: Fish vending machine: mechanical design",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-06-23",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › Electronic load (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-06-23",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › ATmega328P controller card (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-06-23",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › Oscilloscope front-end (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-06-22",
+   "type": "activity",
+   "project": "dese-remote-lab",
+   "text": "Worked on: Remote Laboratory Setup › Voltage sensing board (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-06-20",
+   "type": "activity",
+   "project": "dese-dual-stepper",
+   "text": "Worked on: Dual stepper motor driver (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-06-19",
+   "type": "activity",
+   "project": "dese-va-meter",
+   "text": "Worked on: Volt/amp meter enclosure (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-03-05",
+   "type": "activity",
+   "project": "dese-buck",
+   "text": "Worked on: Buck converter control (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-03-04",
+   "type": "activity",
+   "project": "solar-ev-mppt",
+   "text": "Worked on: Solar backup charging for electric vehicles (MPPT)",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-01-14",
+   "type": "activity",
+   "project": "dese-embedded-lab",
+   "text": "Worked on: Embedded systems lab (TI microcontrollers) (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2025-01-03",
+   "type": "activity",
+   "project": "akumen-vision-tof",
+   "text": "Worked on: Camera and depth-sensing prototype (Akumen, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2023-11-22",
+   "type": "activity",
+   "project": "line-follower",
+   "text": "Worked on: Line follower robot with obstacle avoidance",
+   "visibility": "public"
+  }
+ ],
+ "organisations": {
+  "dese": {
+   "name": "DESE, Indian Institute of Science",
+   "short": "DESE, IISc",
+   "current": true
+  },
+  "yosi": {
+   "name": "Yosi Innovation Pvt. Ltd.",
+   "short": "Yosi Innovation",
+   "current": false
+  },
+  "akumen": {
+   "name": "Akumen (internship)",
+   "short": "Akumen",
+   "current": false
+  }
+ },
+ "totals": {
+  "projects": 28,
+  "public": 12,
+  "confidential": 16,
+  "pcb_boards": 30,
+  "cad_models": 35,
+  "firmware": 18,
+  "categories": {
+   "PCB": 12,
+   "CAD": 8,
+   "Embedded": 15,
+   "IoT": 4,
+   "Electronics": 9,
+   "Robotics": 2,
+   "Software": 5
+  }
+ },
+ "pdf": "Vinay_Raghava_Portfolio.pdf",
+ "builder": "1.0",
+ "generated": "2026-11-15T20:43",
+ "generated_display": "15 Nov 2026, 20:43"
+}

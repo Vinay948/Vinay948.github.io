@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinay Raghava</title>
+<meta name="description" content="Vinay Raghava: PCB Design &amp; Embedded Systems Engineer. Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vinay Raghava · PCB Design &amp; Embedded Systems Engineer">
+<meta property="og:description" content="Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vinay Raghava · PCB Design &amp; Embedded Systems Engineer">
+<meta name="twitter:description" content="Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.">
+<meta property="og:image" content="https://vinay948.github.io/og-image.png">
+<meta name="twitter:image" content="https://vinay948.github.io/og-image.png">
+<meta property="og:url" content="https://vinay948.github.io/">
+<link rel="canonical" href="https://vinay948.github.io/">
+<meta name="theme-color" content="#08120e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Vinay Raghava", "jobTitle": "PCB Design & Embedded Systems Engineer", "description": "Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.", "knowsAbout": ["KiCad", "Altium Designer", "Schematic capture", "PCB layout & DRC", "Gerber & fab outputs", "Custom footprints & libraries", "Circuit design & debugging", "ESP32 (timers, PWM, MCPWM)", "AVR ATmega328P / ATtiny85", "Arduino", "VS Code + PlatformIO", "Embedded C / C++", "MQTT, Wi-Fi / BLE", "SolidWorks", "Fusion 360", "Assemblies & drawings", "Laser-cut acrylic (DXF)", "3D printing (STL)", "Buck converters", "PWM & motor drivers"], "address": {"@type": "PostalAddress", "addressLocality": "Bengaluru"}, "worksFor": {"@type": "Organization", "name": "DESE, Indian Institute of Science"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Gopalan College of Engineering and Management"}, "sameAs": ["https://www.linkedin.com/in/vinay-raghava"], "url": "https://vinay948.github.io/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23167556'/%3E%3Ccircle cx='18' cy='46' r='6' fill='%23f3c99b'/%3E%3Cpath d='M18 46V30l14-14h14' stroke='%23f3c99b' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='46' cy='16' r='6' fill='%23f3c99b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f7f6f2; --surface:#ffffff; --surface-2:#f1efe8; --surface-3:#e8e5dc;
+  --text:#14181a; --muted:#525c57; --faint:#858e89;
+  --border:#e3e0d7; --border-strong:#cfcabe;
+  --accent:#b5591c; --accent-2:#d9822b; --accent-ink:#ffffff; --accent-soft:rgba(181,89,28,.09);
+  --green:#167556; --green-soft:rgba(22,117,86,.10);
+  --c-pcb:#167556; --c-cad:#2f69ad; --c-embedded:#b5591c; --c-iot:#7650b0; --c-electronics:#a87b0b; --c-software:#55636e; --c-robotics:#0e7f80;
+  --shadow:0 1px 2px rgba(20,24,26,.05),0 12px 32px -14px rgba(20,24,26,.18);
+  --shadow-lg:0 34px 70px -34px rgba(20,24,26,.38);
+  --radius:18px; --radius-sm:12px;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"Cascadia Code",Consolas,monospace;
+  /* the hero and contact panels are always a dark "solder mask" band */
+  --h-bg:#08120e; --h-text:#e9f0ec; --h-muted:#9fb1a8; --h-copper:#e8955a; --h-gold:#f3c27a; --h-green:#52c79c; --h-line:rgba(255,255,255,.09);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0f0d; --surface:#121815; --surface-2:#17201c; --surface-3:#1e2924;
+    --text:#e7ede9; --muted:#a3afa9; --faint:#74817b;
+    --border:#222d28; --border-strong:#33433b;
+    --accent:#e8955a; --accent-2:#f3b06a; --accent-ink:#1b0f05; --accent-soft:rgba(232,149,90,.12);
+    --green:#52c79c; --green-soft:rgba(82,199,156,.12);
+    --c-pcb:#52c79c; --c-cad:#79abea; --c-embedded:#e8955a; --c-iot:#b496ea; --c-electronics:#e3bb52; --c-software:#a6b5c1; --c-robotics:#52cccc;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -16px rgba(0,0,0,.65);
+    --shadow-lg:0 34px 70px -30px rgba(0,0,0,.8);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0f0d; --surface:#121815; --surface-2:#17201c; --surface-3:#1e2924;
+  --text:#e7ede9; --muted:#a3afa9; --faint:#74817b;
+  --border:#222d28; --border-strong:#33433b;
+  --accent:#e8955a; --accent-2:#f3b06a; --accent-ink:#1b0f05; --accent-soft:rgba(232,149,90,.12);
+  --green:#52c79c; --green-soft:rgba(82,199,156,.12);
+  --c-pcb:#52c79c; --c-cad:#79abea; --c-embedded:#e8955a; --c-iot:#b496ea; --c-electronics:#e3bb52; --c-software:#a6b5c1; --c-robotics:#52cccc;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -16px rgba(0,0,0,.65);
+  --shadow-lg:0 34px 70px -30px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{display:block}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media (min-width:720px){.wrap{padding:0 32px}}
+.mono{font-family:var(--mono);font-size:.76rem;letter-spacing:.02em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.06rem;letter-spacing:-.01em;white-space:nowrap;margin-right:auto}
+.brand .mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#1d8a66,#0c4a37);display:grid;place-items:center;color:#f3c99b;box-shadow:0 6px 16px -6px rgba(22,117,86,.7)}
+.nav-links{display:flex;gap:2px}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500;padding:7px 11px;border-radius:9px}
+.nav-links a:hover{color:var(--text);background:var(--surface-2)}
+.nav-cta{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:.88rem;padding:8px 15px;border-radius:10px;background:var(--text);color:var(--bg);white-space:nowrap}
+.nav-cta:hover{opacity:.9}
+@media (max-width:900px){.nav-links{display:none}}
+.theme{border:1px solid var(--border);background:var(--surface);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;cursor:pointer;flex:none}
+.theme:hover{border-color:var(--border-strong)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;color:var(--h-text);padding:60px 0 44px;
+  background:radial-gradient(900px 520px at 88% -8%,rgba(232,149,90,.22),transparent 62%),radial-gradient(760px 520px at -6% 108%,rgba(82,199,156,.16),transparent 60%),var(--h-bg)}
+@media (min-width:960px){.hero{padding:92px 0 64px}}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 88%);mask-image:linear-gradient(180deg,#000,transparent 88%)}
+.traces{position:absolute;inset:0;width:100%;height:100%;color:var(--h-copper);opacity:.34;pointer-events:none}
+.traces path{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.8s cubic-bezier(.6,.1,.2,1) forwards}
+.traces path:nth-of-type(2n){animation-delay:.25s}.traces path:nth-of-type(3n){animation-delay:.5s}
+.traces circle{fill:var(--h-bg);animation:pad 3.4s ease-in-out infinite}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (max-width:700px){.traces{opacity:.16}}
+@keyframes pad{0%,100%{stroke-opacity:.55}50%{stroke-opacity:1}}
+.hero-grid{position:relative;display:grid;gap:48px}
+@media (min-width:960px){.hero-grid{grid-template-columns:1.12fr .88fr;align-items:center;gap:56px}.hero-grid.one{grid-template-columns:1fr}}
+.avail{display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 12px;border-radius:999px;background:rgba(82,199,156,.10);border:1px solid rgba(82,199,156,.35);color:#c4f0df;font-size:.86rem;font-weight:600}
+.avail i{width:8px;height:8px;border-radius:50%;background:var(--h-green);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(82,199,156,.55)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(2.7rem,7.4vw,5.3rem);line-height:.98;margin:22px 0 0;font-weight:700;letter-spacing:-.045em;color:#fff}
+.grad{background:linear-gradient(100deg,var(--h-copper),var(--h-gold) 58%,#ffe3b3);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-size:clamp(1.06rem,2vw,1.24rem);color:var(--h-muted);max-width:52ch;margin:22px 0 0}
+.who{display:flex;align-items:center;gap:13px;margin-top:30px;color:var(--h-muted);font-size:.9rem;line-height:1.45}
+.who b{color:var(--h-text);font-weight:600}
+.avatar{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;color:#1b0f05;background:linear-gradient(135deg,var(--h-gold),var(--h-copper));box-shadow:0 0 0 3px rgba(232,149,90,.25)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:.94rem;padding:11px 18px;border-radius:12px;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);transition:transform .15s,border-color .15s,background .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translateY(-1px);border-color:var(--text)}
+.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.btn svg{width:17px;height:17px}
+.hero .btn,.contact .btn{background:rgba(255,255,255,.05);color:var(--h-text);border-color:rgba(255,255,255,.18)}
+.hero .btn:hover,.contact .btn:hover{border-color:rgba(255,255,255,.55)}
+.hero .btn.primary,.btn.glow{background:linear-gradient(135deg,var(--h-copper),#cf7432);color:#1b0f05;border-color:transparent;box-shadow:0 12px 30px -12px rgba(232,149,90,.75)}
+.hero .btn.primary:hover,.btn.glow:hover{box-shadow:0 16px 36px -12px rgba(232,149,90,.95)}
+
+.collage{position:relative;height:440px;max-width:540px;width:100%;margin:0 auto}
+.shot{position:absolute;margin:0;background:#fff;border-radius:20px;box-shadow:0 34px 60px -24px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.08);overflow:hidden;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:16px 16px 34px;box-sizing:border-box}
+.shot figcaption{position:absolute;left:12px;right:12px;bottom:10px;font:600 .66rem/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:#56605b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shot.s1{width:60%;height:72%;left:2%;top:8%;transform:rotate(-5deg);z-index:2}
+.shot.s2{width:50%;height:58%;right:0;top:0;transform:rotate(4deg);z-index:1}
+.shot.s3{width:46%;height:50%;right:7%;bottom:2%;transform:rotate(-2deg);z-index:3}
+.collage:hover .shot{transform:rotate(0) translateY(-4px)}
+.chip-float{position:absolute;z-index:4;display:flex;align-items:center;gap:11px;background:rgba(8,18,14,.86);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:10px 14px 10px 11px;box-shadow:0 18px 34px -14px rgba(0,0,0,.7)}
+.chip-float .ci{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(232,149,90,.16);color:var(--h-copper)}
+.chip-float .ci svg{width:18px;height:18px}
+.chip-float b{display:block;font-family:var(--display);font-size:1rem;line-height:1.1;color:#fff}
+.chip-float span{display:block;font-size:.76rem;color:var(--h-muted);line-height:1.25}
+.chip-float.c1{left:-3%;bottom:4%}
+.chip-float.c2{right:-3%;top:46%}
+@media (max-width:600px){.collage{height:340px}.chip-float.c1{left:0}.chip-float.c2{right:0;top:38%}}
+.kpis{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:56px;background:var(--h-line);border:1px solid var(--h-line);border-radius:18px;overflow:hidden}
+@media (min-width:760px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:rgba(8,18,14,.88);padding:20px 22px}
+.kpi b{display:block;font-family:var(--display);font-size:clamp(2rem,4vw,2.6rem);line-height:1;letter-spacing:-.03em;color:#fff;font-variant-numeric:tabular-nums}
+.kpi span{display:block;margin-top:7px;color:var(--h-muted);font-size:.86rem}
+.now{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:18px;color:var(--h-muted);font-size:.88rem}
+.now .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--h-green);margin-right:4px}
+.now-link{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);color:var(--h-text);padding:4px 11px;border-radius:999px;cursor:pointer;font-size:.84rem}
+.now-link:hover{border-color:var(--h-copper)}
+
+/* ---------- marquee ---------- */
+.marquee{border-bottom:1px solid var(--border);background:var(--surface);overflow:hidden;padding:15px 0}
+.mq-track{display:flex;width:max-content;animation:mq 50s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-track span{display:inline-flex;align-items:center;gap:34px;padding-right:34px;font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--faint);white-space:nowrap}
+.mq-track span::after{content:"";width:7px;height:7px;border-radius:2px;background:var(--accent);opacity:.55;transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section.block{padding:88px 0}
+section.block.alt{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px 28px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3rem);line-height:1.04;margin:12px 0 0;font-weight:700;letter-spacing:-.04em}
+.sec-kicker{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-family:var(--mono);font-size:.73rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+.sec-kicker::before{content:"";width:20px;height:2px;background:currentColor;border-radius:2px}
+.sec-sub{color:var(--muted);max-width:50ch;margin:0;font-size:1.02rem}
+
+/* ---------- services ---------- */
+.services{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr))}
+.svc{position:relative;display:flex;flex-direction:column;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:28px;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;overflow:hidden}
+.svc::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:linear-gradient(135deg,var(--accent),transparent 42%,transparent 58%,var(--green));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.svc:hover::after{opacity:1}
+.svc .ico{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.svc .ico svg{width:25px;height:25px}
+.svc h3{margin:4px 0 0;font-size:1.3rem}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.svc ul{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:8px;font-size:.9rem}
+.svc li{display:flex;gap:9px;align-items:flex-start}
+.svc li svg{flex:none;width:16px;height:16px;margin-top:4px;color:var(--green)}
+.svc .tools{margin-top:auto;padding-top:8px}
+.svc.cta-card{background:linear-gradient(150deg,var(--h-bg),#0f241b);color:var(--h-text);border-color:transparent;justify-content:center}
+.svc.cta-card p{color:var(--h-muted)}
+
+/* ---------- featured work ---------- */
+.fx-list{display:grid;gap:28px}
+.fx{display:grid;background:var(--surface);border:1px solid var(--border);border-radius:26px;overflow:hidden;box-shadow:var(--shadow);transition:box-shadow .3s}
+.fx:hover{box-shadow:var(--shadow-lg)}
+@media (min-width:900px){.fx{grid-template-columns:1.05fr 1fr}.fx.rev .fx-visual{order:2}}
+.fx-visual{position:relative;min-height:300px;display:grid;place-items:center;overflow:hidden}
+.fx-visual.img{background:#fff}
+.fx-visual.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:30px;box-sizing:border-box;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.fx:hover .fx-visual.img img{transform:scale(1.045)}
+.fx-visual.spec{color:#fff;padding:40px;background:radial-gradient(520px 320px at 28% 18%,color-mix(in srgb,var(--c) 38%,transparent),transparent 70%),radial-gradient(420px 300px at 90% 100%,rgba(232,149,90,.18),transparent 70%),#0a1410}
+.fx-visual.spec::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:30px 30px;-webkit-mask-image:radial-gradient(circle at 50% 50%,#000,transparent 80%);mask-image:radial-gradient(circle at 50% 50%,#000,transparent 80%)}
+.fx-stat{position:relative;text-align:center}
+.fx-stat b{display:block;font-family:var(--display);font-size:clamp(3.2rem,8vw,5.4rem);line-height:1;letter-spacing:-.045em;background:linear-gradient(120deg,#fff 30%,color-mix(in srgb,var(--c) 55%,#fff));-webkit-background-clip:text;background-clip:text;color:transparent}
+.fx-stat span{display:block;margin:14px auto 0;max-width:26ch;color:#b6c5be;font-size:.96rem}
+.fx-lock{position:absolute;top:18px;left:18px;display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:600;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#e1e9e5;z-index:1}
+.fx-visual.img .fx-lock{background:rgba(20,24,26,.75)}
+.fx-lock svg{width:12px;height:12px}
+.fx-text{padding:30px 28px 28px;display:flex;flex-direction:column;gap:15px}
+@media (min-width:900px){.fx-text{padding:44px 46px}}
+.fx-kick{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.fx h3{margin:0;font-size:clamp(1.45rem,2.7vw,2rem);line-height:1.12;letter-spacing:-.03em}
+.fx p.sum{margin:0;color:var(--muted);font-size:1rem}
+.fx-foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:auto;padding-top:10px}
+.fx-foot .mono{color:var(--faint);margin-left:auto}
+
+/* ---------- client work (anonymized, from Sana's billing) ---------- */
+.cw{margin-top:64px}
+.cw-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 28px;margin-bottom:22px}
+.cw-head h3{font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;margin:10px 0 0;letter-spacing:-.03em}
+.cw-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px;margin-bottom:16px}
+.cw-stats div{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:16px 18px}
+.cw-stats b{display:block;font-family:var(--display);font-size:1.9rem;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.cw-stats span{display:block;margin-top:6px;color:var(--muted);font-size:.84rem}
+.cw-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.cw-card{background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.cw-card .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.cw-card h4{margin:0;font-size:1.02rem}
+.cw-card .tier{font-size:.72rem;font-weight:650;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.cw-card ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.cw-card li{font-size:.8rem;padding:3px 9px;border-radius:8px;background:var(--surface);border:1px solid var(--border);color:var(--muted)}
+.cw-card .foot{display:flex;justify-content:space-between;gap:8px;color:var(--faint);font-size:.8rem;margin-top:auto}
+.cw-card .live{color:var(--accent);font-weight:600}
+
+/* ---------- process & faq ---------- */
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.step{position:relative;padding:28px 24px 24px;background:var(--surface);border:1px solid var(--border);border-radius:20px}
+.step .n{font-family:var(--display);font-weight:700;font-size:2.7rem;line-height:1;background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.step h3{margin:16px 0 6px;font-size:1.15rem}
+.step p{margin:0;color:var(--muted);font-size:.94rem}
+.faq{display:grid;gap:10px;max-width:880px}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2px 22px;transition:border-color .2s}
+.faq details[open]{border-color:var(--border-strong)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.5rem;line-height:1;color:var(--accent);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 20px;color:var(--muted)}
+
+/* ---------- tags & chips ---------- */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:600;padding:3px 10px 3px 8px;border-radius:999px;background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--c);white-space:nowrap}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.tool{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--muted);padding:3px 8px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);white-space:nowrap}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+
+/* ---------- project cards ---------- */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
+.card{position:relative;display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s;text-align:left;min-width:0}
+.card:hover{transform:translateY(-3px);border-color:var(--border-strong);box-shadow:var(--shadow)}
+.card-img{margin:-20px -20px 0;aspect-ratio:16/9;background:#fff;border-bottom:1px solid var(--border);border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;position:relative}
+.card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box;transition:transform .5s}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card h3{margin:0;font-size:1.1rem;line-height:1.3;letter-spacing:-.015em}
+.card-sum{margin:0;color:var(--muted);font-size:.93rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hl{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.92rem}
+.hl li{position:relative;padding-left:20px}
+.hl li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:2px;border-radius:2px;background:var(--accent)}
+.card-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:12px;border-top:1px solid var(--border);color:var(--faint)}
+.more{display:inline-flex;align-items:center;gap:5px;font-size:.84rem;font-weight:600;color:var(--text)}
+.more svg{width:15px;height:15px;transition:transform .2s}
+.card:hover .more svg{transform:translateX(3px)}
+.status{font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap;border:1px solid var(--border)}
+.status.on{color:var(--green);background:var(--green-soft);border-color:transparent}
+.badge-conf{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:650;padding:3px 9px;border-radius:999px;background:var(--surface-3);color:var(--muted);white-space:nowrap}
+.badge-conf svg{width:12px;height:12px}
+.card.is-conf{background:repeating-linear-gradient(135deg,var(--surface) 0 14px,color-mix(in srgb,var(--surface-2) 70%,var(--surface)) 14px 15px);border-style:dashed;border-color:var(--border-strong)}
+.incl{font-size:.84rem;color:var(--muted);padding:9px 12px;border-radius:10px;background:var(--surface-2);border:1px solid var(--border)}
+.incl b{color:var(--text);font-weight:650;margin-right:4px}
+.stats-line{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:.8rem}
+.stats-line b{color:var(--text);font-variant-numeric:tabular-nums}
+.comps{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.comp{border:1px solid var(--border);border-radius:12px;padding:12px 14px;background:var(--surface-2);display:grid;gap:7px;min-width:0;align-content:start}
+.comp-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.comp-h b{font-size:.93rem;line-height:1.3}
+.comp-h .mono{color:var(--faint);white-space:nowrap;font-size:.7rem}
+
+/* ---------- toolbar ---------- */
+.toolbar{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+@media (min-width:860px){.toolbar{flex-direction:row;align-items:center;justify-content:space-between}}
+.filters{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
+.seg{display:inline-flex;padding:3px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border);max-width:100%;overflow-x:auto}
+.seg button{border:0;background:none;padding:7px 14px;border-radius:9px;font-size:.86rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--border);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:600;color:var(--muted);cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.chip .n{font-family:var(--mono);font-size:.7rem;color:var(--faint)}
+.chip[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:var(--bg)}
+.chip[aria-pressed="true"] .n{color:inherit;opacity:.7}
+.search{position:relative;flex:0 1 270px}
+.search input{width:100%;font:inherit;font-size:.9rem;padding:10px 12px 10px 37px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--faint)}
+.count{color:var(--faint);font-size:.85rem;margin:-6px 0 16px}
+.empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--border-strong);border-radius:var(--radius)}
+
+/* ---------- CAD gallery ---------- */
+.cad-group+.cad-group{margin-top:36px}
+.cad-group-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:14px}
+.cad-group-head h3{margin:0;font-size:1.2rem}
+.cad-group-head button{border:0;background:none;padding:0;cursor:pointer;font-size:.86rem;font-weight:600;display:inline-flex;align-items:center;gap:5px}
+.cad-group-head button svg{width:15px;height:15px}
+.cad-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr))}
+.cad-tile{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--surface);cursor:zoom-in;padding:0;text-align:left;transition:transform .2s,box-shadow .2s,border-color .2s}
+.cad-tile:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.cad-tile .ph{background:#fff;aspect-ratio:4/3;display:block;position:relative;overflow:hidden}
+.cad-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10px;box-sizing:border-box;transition:transform .5s}
+.cad-tile:hover img{transform:scale(1.06)}
+a.cad-tile{text-decoration:none;color:inherit}
+.cad-tile .cap{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 12px;border-top:1px solid var(--border);font-size:.85rem;min-width:0}
+.cad-tile .cap span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cad-tile .kind{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);flex:none}
+.cad-strip{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+.cad-strip .cad-tile{border-radius:10px}
+.cad-strip .cap{display:none}
+
+/* ---------- experience, skills, feed, education ---------- */
+.timeline{display:grid;gap:16px}
+.xp{display:grid;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px}
+@media (min-width:820px){.xp{grid-template-columns:250px 1fr;gap:30px}}
+.xp-org h3{margin:0;font-size:1.12rem}
+.xp-org p{margin:4px 0 0;color:var(--muted);font-size:.88rem}
+.xp-org .now-badge{display:inline-block;margin-top:10px}
+.role+.role{margin-top:18px;padding-top:18px;border-top:1px dashed var(--border)}
+.role-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
+.role-head b{font-size:1rem}
+.role-head .mono{color:var(--faint)}
+.role .proj{color:var(--green);font-weight:600;font-size:.88rem;margin-top:2px}
+.role ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}
+.role li{margin:4px 0}
+.skills{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.skill{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px 22px}
+.skill h3{margin:0 0 12px;font-size:1rem;display:flex;align-items:center;gap:9px;font-family:var(--font);font-weight:650;letter-spacing:0}
+.skill h3 i{width:9px;height:9px;border-radius:3px;background:var(--c,var(--accent));display:inline-block}
+.skill .items{display:flex;flex-wrap:wrap;gap:6px}
+.skill .items span,.skill .items button{font:inherit;font-size:.84rem;padding:4px 10px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);color:inherit}
+.skill .items button{cursor:pointer}
+.skill .items button:hover{border-color:var(--accent);color:var(--accent)}
+.skill.familiar{border-style:dashed;border-color:var(--border-strong);background:transparent}
+.skill.familiar .items span,.skill.familiar .items button{background:transparent;color:var(--muted)}
+.skill.learning{background:linear-gradient(160deg,var(--accent-soft),transparent 55%),var(--surface)}
+.skill.learning .lvl{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.skill .lvl:empty{display:none}
+.skill:not(.learning):not(.familiar) .lvl{color:var(--green);border-color:color-mix(in srgb,var(--green) 40%,transparent)}
+.skill .lvl{margin-left:auto;font-family:var(--mono);font-size:.66rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);border:1px solid var(--border);border-radius:999px;padding:2px 8px}
+.feed{list-style:none;margin:0;padding:0;position:relative}
+.feed::before{content:"";position:absolute;left:111px;top:6px;bottom:6px;width:1px;background:var(--border-strong)}
+@media (max-width:600px){.feed::before{left:7px}}
+.feed li{display:grid;grid-template-columns:96px 30px 1fr;align-items:start;padding:9px 0}
+@media (max-width:600px){.feed li{grid-template-columns:30px 1fr}.feed time{grid-column:2;order:-1}.feed .dot{grid-row:1/3}}
+.feed time{color:var(--faint);font-family:var(--mono);font-size:.74rem;padding-top:3px;text-align:right}
+@media (max-width:600px){.feed time{text-align:left}}
+.feed .dot{justify-self:center;margin-top:7px;width:11px;height:11px;border-radius:50%;background:var(--surface);border:2px solid var(--green);position:relative;z-index:1}
+.feed .t-added .dot{background:var(--accent);border-color:var(--accent)}
+.feed .c-conf .dot{border-style:dashed;border-color:var(--faint)}
+.feed .txt{font-size:.93rem;min-width:0;overflow-wrap:anywhere}
+.feed .txt button{border:0;background:none;padding:0;cursor:pointer;text-align:left;font-size:inherit;text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:3px}
+.feed .txt button:hover{text-decoration-color:var(--accent)}
+.feed .kind{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin-left:8px}
+.feed-more{margin-top:16px}
+.two{display:grid;gap:16px}
+@media (min-width:820px){.two{grid-template-columns:1fr 1fr}}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px}
+.panel h3{margin:0 0 14px;font-size:1.05rem}
+.panel ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.panel li b{display:block;font-size:.97rem}
+.panel li span{color:var(--muted);font-size:.88rem}
+
+/* ---------- contact ---------- */
+.contact{position:relative;display:grid;border-radius:30px;overflow:hidden;color:var(--h-text);box-shadow:var(--shadow-lg);
+  background:radial-gradient(700px 420px at 0% 0%,rgba(232,149,90,.20),transparent 60%),radial-gradient(600px 420px at 100% 100%,rgba(82,199,156,.14),transparent 60%),var(--h-bg)}
+@media (min-width:980px){.contact{grid-template-columns:.92fr 1.08fr}}
+.c-left{position:relative;padding:40px 28px 28px}
+@media (min-width:980px){.c-left{padding:58px 50px}}
+.c-left h2{font-size:clamp(2.1rem,4.8vw,3.3rem);line-height:1.02;margin:18px 0 0;letter-spacing:-.045em;color:#fff}
+.c-left p{color:var(--h-muted);margin:16px 0 0;max-width:40ch}
+.c-links{display:grid;gap:10px;margin-top:28px}
+.c-links a,.c-links button{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--h-text);padding:12px 14px;border-radius:13px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);font-weight:500;cursor:pointer;text-align:left;width:100%;font-size:.95rem}
+.c-links a:hover,.c-links button:hover{border-color:rgba(255,255,255,.4)}
+.c-links svg{width:18px;height:18px;color:var(--h-copper);flex:none}
+.c-links small{margin-left:auto;color:var(--h-muted);font-size:.78rem}
+.enq{position:relative;background:var(--surface);color:var(--text);padding:28px 22px;display:grid;gap:14px;margin:8px;border-radius:24px;align-content:start}
+@media (min-width:980px){.enq{padding:40px;margin:14px}}
+.enq h3{margin:0;font-size:1.35rem}
+.enq .row2{display:grid;gap:14px}
+@media (min-width:620px){.enq .row2{grid-template-columns:1fr 1fr}}
+.enq label{display:grid;gap:6px;font-size:.84rem;font-weight:600;color:var(--muted)}
+.enq input,.enq select,.enq textarea{font:inherit;font-size:.95rem;font-weight:400;color:var(--text);background:var(--bg);border:1px solid var(--border-strong);border-radius:12px;padding:11px 13px;width:100%}
+.enq textarea{resize:vertical;min-height:130px}
+.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.enq .send{justify-self:start}
+.enq .hint{margin:0;color:var(--faint);font-size:.8rem}
+footer{padding:30px 0 44px;color:var(--faint);font-size:.84rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+footer p{margin:0;max-width:70ch}
+
+/* ---------- dialogs ---------- */
+dialog{border:0;padding:0;background:transparent;max-width:min(780px,calc(100vw - 24px));width:100%;max-height:calc(100dvh - 24px);color:var(--text)}
+dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
+.dlg{background:var(--surface);border:1px solid var(--border);border-radius:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:auto;max-height:calc(100dvh - 24px)}
+.dlg-head{position:sticky;top:0;background:var(--surface);padding:22px 24px 16px;border-bottom:1px solid var(--border);z-index:1}
+.dlg-head h2{margin:12px 0 0;font-size:clamp(1.35rem,3.5vw,1.8rem);letter-spacing:-.03em;line-height:1.15;padding-right:40px}
+.dlg-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:10px;border:1px solid var(--border);background:var(--surface);cursor:pointer;display:grid;place-items:center}
+.dlg-body{padding:20px 24px 26px;display:grid;gap:22px}
+.dlg-body h4{margin:0 0 10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:.86rem;margin-top:10px}
+.meta b{color:var(--text);font-weight:600}
+.notice{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:12px;background:var(--surface-2);border:1px dashed var(--border-strong);color:var(--muted);font-size:.9rem}
+.notice svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--text)}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.stat{border:1px solid var(--border);border-radius:12px;padding:12px 14px;background:var(--surface-2)}
+.stat b{display:block;font-family:var(--display);font-size:1.5rem;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.15}
+.stat span{color:var(--muted);font-size:.8rem}
+.dlg p.lede{margin:0;font-size:1.02rem}
+#lightbox .dlg{max-width:860px}
+.lb-img{background:#fff;display:grid;place-items:center}
+.lb-img img{width:100%;max-height:70dvh;object-fit:contain}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid var(--border)}
+.lb-bar .t{font-weight:600}
+.lb-bar .t span{display:block;color:var(--faint);font-weight:400;font-size:.82rem}
+.lb-nav{display:flex;gap:8px}
+.lb-nav button{width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--surface);cursor:pointer;display:grid;place-items:center}
+.lb-nav button svg{width:16px;height:16px}
+
+/* ---------- motion ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .traces path{stroke-dashoffset:0}
+  .mq-track{flex-wrap:wrap;width:auto}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js");</script>
+<script id="portfolio-data" type="application/json">{"client_work": null, "freelance": {"available": true, "badge": "Available for freelance & prototype work", "headline": "Turning ideas into", "headline_accent": "working prototypes.", "subhead": "PCB design, embedded firmware and CAD for prototypes and small-batch products. I design and validate boards for a remote laboratory at IISc, and take on freelance work from a single board to a complete prototype.", "copy": {"services_title": "What I can build for you", "services_sub": "From a single board to a complete prototype, with the circuit, firmware and enclosure designed to work together. I flag scope and risks before we start.", "cta_title": "Not sure which you need?", "cta_text": "Describe the problem and I'll suggest an approach, the main parts and a rough plan.", "process_sub": "A clear process with review points along the way.", "contact_title": "Have something to build?", "contact_text": "Boards, firmware, enclosures or the whole prototype. Tell me what you have in mind and I'll get back to you with questions or a plan."}, "_hero_images_help": "Up to 3 CAD renders for the hero collage, as project-id/image-name (see site/assets/cad/).", "hero_images": ["fish-vending/chamber-assembly", "solidworks-sculpting/head", "fish-vending/assem1"], "services": [{"icon": "board", "title": "PCB design & layout", "text": "Schematics, PCB layouts and fab-ready outputs in KiCad or Altium, including custom symbols and footprints, checked against your fab house's rules.", "deliverables": ["Schematic & BOM", "PCB layout with DRC against fab rules", "Gerber, drill & pick-and-place files", "Custom component libraries"], "tools": ["KiCad", "Altium"]}, {"icon": "chip", "title": "Embedded firmware & IoT", "text": "Firmware for ESP32 and AVR, from timers, PWM and peripheral drivers to connected devices over Wi-Fi, BLE or MQTT.", "deliverables": ["Structured firmware source", "Sensor, motor & display drivers", "Wi-Fi / BLE / MQTT connectivity", "Board bring-up & bench testing"], "tools": ["PlatformIO", "Arduino", "C/C++"]}, {"icon": "cube", "title": "CAD, enclosures & mechanisms", "text": "Enclosures and mechanisms in SolidWorks and Fusion 360, ready for laser cutting or 3D printing, plus organic shapes with freeform modelling.", "deliverables": ["3D models & assemblies", "Drawings", "DXF for laser cutting, STL for printing", "BOM & assembly guide"], "tools": ["SolidWorks", "Fusion 360"]}, {"icon": "bolt", "title": "Power electronics & motor control", "text": "Low-voltage DC power and motor-control circuits: buck converters, motor drivers and battery charging, with PWM control firmware and bench testing.", "deliverables": ["Topology & component selection", "Gate drive & PWM control firmware", "Bench testing"], "tools": ["ESP32 MCPWM", "AVR", "KiCad"]}, {"icon": "rocket", "title": "Complete prototypes", "text": "Circuit, PCB, firmware and enclosure designed together, for student projects, startups and small-batch products.", "deliverables": ["Working prototype", "Design files", "Documentation & handover"], "tools": ["End to end"]}], "process": [{"title": "Share your idea", "text": "Tell me what it should do, where it will be used and any constraints. A sketch or a reference product is enough to start."}, {"title": "Plan & scope", "text": "I suggest an approach, the main parts and a timeline, and flag anything risky or outside my experience before we agree on scope."}, {"title": "Design & build", "text": "Schematic, PCB, firmware and CAD, with review points along the way so there are no surprises."}, {"title": "Test & hand over", "text": "Bench testing against the agreed requirements, then the agreed deliverables and documentation are handed over."}], "faq": [{"q": "What's your experience?", "a": "I graduated in 2025 (B.E., ECE) and have about three years of hands-on product work: R&D on a smart walking stick at Yosi Innovation, and PCB design for a remote laboratory at IISc. I'm strongest in PCB design, ESP32/AVR firmware and SolidWorks, and I'm deepening my multi-layer layout and power electronics. If a project needs specialist depth, such as high-speed, RF or high-voltage design, I'll say so upfront."}, {"q": "What kind of projects suit you best?", "a": "Prototypes and small-batch products: custom boards, firmware for sensors, motors and connected devices, enclosures and mechanisms, or the whole prototype."}, {"q": "Can you keep my design confidential?", "a": "Yes. Most of my professional work is confidential, so keeping client designs private is normal for me. We can put an NDA in place before you share details."}, {"q": "What do I get at the end?", "a": "The deliverables we agree on at the start: for example a working prototype, design files and documentation. Terms are settled before any work begins."}, {"q": "Where are you based?", "a": "Bengaluru, India. Working remotely is fine, and in-person meetings are possible around Bengaluru."}], "project_types": ["PCB design", "Embedded firmware / IoT", "CAD / enclosure", "Power electronics", "Complete prototype", "Something else"], "sizes": ["Small (a few days)", "Medium (a few weeks)", "Large (a few months)", "Not sure yet"], "timelines": ["As soon as possible", "Within a month", "Flexible"]}, "site_url": "https://vinay948.github.io/", "og_image": "og-image.png", "now": [{"id": "jwala", "title": "Jwala", "org": null}, {"id": "sana", "title": "SANA", "org": null}, {"id": "datasheet-lab", "title": "Datasheet Lab", "org": "DESE, IISc"}], "profile": {"name": "Vinay Raghava", "title": "PCB Design & Embedded Systems Engineer", "current_role": "Project Associate-I (PCB Design Engineer) at DESE, Indian Institute of Science", "location": "Bengaluru, India", "summary": "Electronics and communication engineer (B.E. 2025) working across PCB design, embedded firmware and CAD. At IISc I design and validate the boards for a remote laboratory; before that I built the electronics, PCB and structure of a smart walking stick at Yosi Innovation. In my own time I take on ambitious projects: a motion-control firmware written from scratch for the ESP32, an offline voice assistant, and freeform sculpting in SolidWorks.", "focus": ["PCB design", "Power electronics", "Embedded firmware", "CAD & enclosures", "IoT"], "email": "vinayraghava80@gmail.com", "github": "", "linkedin": "https://www.linkedin.com/in/vinay-raghava", "languages": ["English", "Kannada", "Telugu", "Hindi"]}, "experience": [{"org": "dese", "organisation": "DESE, Indian Institute of Science", "location": "Bengaluru", "roles": [{"title": "Project Associate-I: PCB Design Engineer", "period": "Dec 2025 – Present", "project": "Remote Laboratory Setup (ongoing)", "points": ["Work across the remote lab build: circuit design and development, PCB design, embedded systems, programming and CAD.", "Design and validate PCB layouts for remote hardware experimentation.", "Integrate embedded-systems workflows that give students real-time remote access to lab hardware.", "Support scalable R&D validation by reducing dependence on physical lab time."]}, {"title": "Workshop Coordinator", "period": "Dec 2025 – Present", "project": "EPD student workshops", "points": ["Run the department's student workshops, covering logistics and technical sessions.", "Coordinate participant engagement so training sessions run smoothly."]}]}, {"org": "yosi", "organisation": "Yosi Innovation Pvt. Ltd.", "location": "Bengaluru", "roles": [{"title": "Embedded Systems Engineer (R&D)", "period": "Dec 2023 – Sep 2025", "project": "Smart Walking Stick", "points": ["Developed a smart walking stick that improves safety and independence for elderly users.", "Integrated SpO2 health monitoring, accelerometer fall detection, pit detection, and emergency torch, call and SMS features.", "Designed the structural model in SolidWorks and Fusion 360, and the electronics and PCB in Altium Designer.", "Designed and bench-tested the battery management (BMS) circuit."]}]}, {"org": null, "organisation": "Gopalan Skill Academy", "location": "Bengaluru", "roles": [{"title": "PCB Design Intern", "period": "Oct 2023 – Nov 2023", "project": "", "points": ["Designed and customised PCBs, created component footprints and built component libraries in Altium Designer."]}]}], "education": [{"degree": "B.E., Electronics and Communication Engineering", "institution": "Gopalan College of Engineering and Management", "period": "2021 – 2025", "detail": "CGPA 7.52"}], "training": [{"name": "PCB design internship: footprints, libraries and board customisation (Altium Designer)", "issuer": "Gopalan Skill Academy", "year": "2023"}, {"name": "Intel Unnati industrial training: applied cryptography and a custom secure-communication protocol", "issuer": "Intel Unnati", "year": "2024"}], "skills": [{"group": "PCB design", "items": ["KiCad", "Altium Designer", "Schematic capture", "PCB layout & DRC", "Gerber & fab outputs", "Custom footprints & libraries", "Circuit design & debugging"]}, {"group": "Embedded & IoT", "items": ["ESP32 (timers, PWM, MCPWM)", "AVR ATmega328P / ATtiny85", "Arduino", "VS Code + PlatformIO", "Embedded C / C++", "MQTT, Wi-Fi / BLE"]}, {"group": "CAD & fabrication", "items": ["SolidWorks", "Fusion 360", "Assemblies & drawings", "Laser-cut acrylic (DXF)", "3D printing (STL)"]}, {"group": "Power electronics", "items": ["Buck converters", "PWM & motor drivers", "Electronic loads", "Battery management (BMS)"]}, {"group": "Growing", "level": "learning", "items": ["Multi-layer PCB layout", "SMPS & MPPT control", "Bare-metal ESP32 & Xtensa assembly", "Freeform sculpting (Power Surfacing)", "Python", "JavaScript / Node.js", "Local LLMs (Ollama)"]}, {"group": "Design tools", "level": "familiar", "items": ["SOLIDWORKS PCB", "SOLIDWORKS Composer & Visualize", "FreeCAD", "EAGLE", "Saturn PCB Toolkit", "Cirkit Designer", "Cypress PSoC Creator", "TI Code Composer Studio"]}, {"group": "Fabrication & programming", "level": "familiar", "items": ["FlatCAM (PCB milling)", "LaserGRBL / Grbl Controller", "UltiMaker Cura", "AVRDUDESS / avrdude", "Xgpro universal programmer", "ESP-IDF", "OpenOCD", "ESP8266, SAMD & Teensy", "Arduino Cloud", "Serial terminals (Termite)"]}, {"group": "Software & productivity", "level": "familiar", "items": ["Git & GitHub CLI", "Android Studio", "Flutter / Dart", "Java", "Visual Studio C++ / CMake", "PostgreSQL & pgAdmin", "Conda", "AI coding assistants (Claude Code, Copilot, Gemini)", "Inkscape", "Canva", "Adobe Acrobat", "Microsoft 365"]}], "projects": [{"id": "jwala", "title": "Jwala: motion-control firmware", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["Embedded"], "tools": ["ESP32", "A4988", "NEMA-17", "Xtensa assembly", "Embedded C / C++", "PlatformIO", "Python"], "platforms": ["ESP32"], "summary": "A clean-room motion-control firmware I'm writing from scratch, aiming at Marlin-class features: its own stepper drivers and a hardware abstraction layer for several microcontrollers, starting with the ESP32. Currently in an early development phase.", "highlights": ["Own A4988 stepper driver and a HAL designed for multiple MCUs (ESP32 first, AVR planned).", "Bare-metal ESP32 timer and GPIO layer built directly from the ESP32 Technical Reference Manual and the Xtensa ISA.", "Phase 0: a build-verified level-4 interrupt stepper ISR written in Xtensa assembly.", "Documented failure analysis of V1, a decision log and a bench-check tracker. A feature only counts as done once it is verified on hardware.", "Roadmap toward a motion planner, G-code, homing, thermal control, bed levelling and multiple kinematics."], "period": "Feb 2026 – Nov 2026", "last_updated": "2026-11-15", "status": "In development", "featured": true, "order": 3, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 21, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [{"heading": "Why build it", "text": "Marlin is the reference firmware for 3D printers and CNC machines, but it is a huge codebase. I wanted to understand motion control from the ground up, so Jwala is clean-room: Marlin is only the benchmark for features and behaviour, and none of its code is used."}, {"heading": "How it is built", "text": "A hardware abstraction layer keeps the motion code independent of the microcontroller. The ESP32 is the first target, with AVR planned. The A4988 stepper driver is my own, and the ESP32 timer and GPIO layer is written directly against the ESP32 Technical Reference Manual and the Xtensa ISA manual."}, {"heading": "What went wrong in V1", "text": "Version 1 compiled but did not run reliably: the bare-metal timer and interrupt layer conflicted with the ESP32 runtime. Before changing anything I wrote a full failure analysis, with evidence and a fix for every bug, and started a decision log and a bench-check tracker."}, {"heading": "What's next", "text": "Phase 0 rebuilds the GPIO and timer layer and moves step generation into a level-4 interrupt written in Xtensa assembly, already build-verified. The goal is one motor moving reliably, verified on the bench, before the planner, G-code, homing and thermal control."}], "hero_stat": {"value": "Xtensa", "label": "assembly stepper interrupt, written from scratch"}, "page": "projects/jwala.html"}, {"id": "sana", "title": "SANA: offline AI voice assistant", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["IoT", "Software"], "tools": ["Ollama", "faster-whisper", "Piper TTS", "SQLite", "MQTT", "Arduino", "JavaScript", "Python"], "platforms": [], "summary": "A JARVIS-style personal assistant that runs entirely on a local PC: a local language model, on-device speech recognition and synthesis, long-term memory, an animated desktop orb, and control of ESP32 hardware.", "highlights": ["22 skills: app and media control, file search, reminders and notes, an exact calculator, web search, and shell commands that run only after approval.", "Hands-free wake-word mode with faster-whisper speech-to-text and Piper text-to-speech, all on-device.", "Switches ESP32 devices and reads their sensors over MQTT.", "Swappable model providers (local Ollama by default) and a strict offline mode.", "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."], "period": "Nov 2026", "last_updated": "2026-11-15", "status": "Active development", "featured": true, "order": 6, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 621, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [{"heading": "Why build it", "text": "I wanted an assistant that keeps my data on my own machine and can talk to my own hardware. The language model, speech recognition, text-to-speech and memory all run locally; only the optional web tools touch the internet, and offline mode removes them."}, {"heading": "How it works", "text": "A wake-word listener with voice-activity detection feeds faster-whisper for speech-to-text. An agent loop passes the request to a local model through Ollama, which can call 22 skills; tool arguments are validated and repaired before anything runs. Piper speaks the answer, and SQLite stores long-term memory, reminders and notes."}, {"heading": "Talking to hardware", "text": "SANA switches ESP32 devices and reads their sensors over MQTT, with a mock mode until a real device is connected. Shell commands only run after I approve the exact command."}, {"heading": "Choosing the model", "text": "On a CPU-only i5 laptop, a 4B instruct model handled all 9 of my test tasks. A 3B model was about twice as fast but invented results on 2 tasks instead of using its tools. Hardware settings live in one config file, so adding a GPU or a separate server needs no code changes."}, {"heading": "What's next", "text": "A trained wake-word model, vision through a local model once a GPU is added, a phone client, and a multi-node ESP32 network."}], "hero_stat": {"value": "22", "label": "on-device skills, fully offline"}, "page": "projects/sana.html"}, {"id": "datasheet-lab", "title": "Datasheet Lab", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["Software"], "tools": ["Electron", "JavaScript", "Node.js"], "platforms": [], "summary": "Software application built for DESE, Indian Institute of Science.", "highlights": [], "period": "Aug 2026 – Nov 2026", "last_updated": "2026-11-13", "status": "Active development", "featured": false, "order": 999, "stats": [{"key": "source_files", "value": 89, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "dese-remote-lab", "title": "Remote Laboratory Setup", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "CAD", "Embedded", "Electronics", "Software"], "tools": ["KiCad", "Altium Designer", "SolidWorks", "VS Code", "PlatformIO"], "platforms": [], "summary": "A remote laboratory that lets students run real hardware experiments in real time without being in the lab. I design and validate the PCBs, and work across circuit design and development, embedded systems, programming and CAD.", "highlights": ["Circuit design and development, from concept to working hardware.", "PCB design and validation for remote hardware experimentation.", "Embedded systems and programming that give students real-time remote access.", "CAD design for the lab hardware."], "period": "Dec 2025 – Present", "last_updated": "2026-11-13", "status": "Ongoing", "featured": true, "order": 2, "stats": [{"key": "pcb_layouts", "value": 10, "label": "PCB layouts"}, {"key": "schematics", "value": 19, "label": "schematics"}, {"key": "libraries", "value": 5, "label": "component library files"}, {"key": "gerber_sets", "value": 6, "label": "fab output sets"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [{"id": "dese-power-supply", "title": "Programmable power supply", "visibility": "confidential", "categories": ["PCB", "Embedded", "Electronics"], "tools": ["Embedded C / C++", "KiCad", "PlatformIO", "Python"], "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 3, "label": "schematics"}, {"key": "firmware_projects", "value": 2, "label": "firmware projects"}, {"key": "source_files", "value": 3, "label": "source files"}], "period": "Apr 2026 – Aug 2026", "last_updated": "2026-08-19", "order": 1}, {"id": "dese-electronic-load", "title": "Electronic load", "visibility": "confidential", "categories": ["PCB", "Embedded", "Electronics"], "tools": ["Embedded C / C++", "KiCad", "PlatformIO"], "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 2, "label": "schematics"}, {"key": "gerber_sets", "value": 1, "label": "fab output set"}, {"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "period": "Jan 2026 – Jun 2026", "last_updated": "2026-06-23", "order": 2}, {"id": "dese-current-sensor", "title": "Current sensing board", "visibility": "confidential", "categories": ["PCB", "Electronics"], "tools": ["Embedded C / C++", "KiCad", "PlatformIO"], "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 1, "label": "schematic"}, {"key": "gerber_sets", "value": 1, "label": "fab output set"}, {"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "period": "Apr 2026 – Aug 2026", "last_updated": "2026-08-11", "order": 3}, {"id": "dese-voltage-sense", "title": "Voltage sensing board", "visibility": "confidential", "categories": ["PCB", "Electronics"], "tools": ["KiCad"], "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 1, "label": "schematic"}, {"key": "libraries", "value": 5, "label": "component library files"}, {"key": "gerber_sets", "value": 1, "label": "fab output set"}], "period": "Feb 2026 – Jun 2026", "last_updated": "2026-06-22", "order": 4}, {"id": "dese-oscilloscope", "title": "Oscilloscope front-end", "visibility": "confidential", "categories": ["PCB", "Electronics"], "tools": ["KiCad"], "stats": [{"key": "pcb_layouts", "value": 2, "label": "PCB layouts"}, {"key": "schematics", "value": 6, "label": "schematics"}], "period": "Jun 2026", "last_updated": "2026-06-23", "order": 5}, {"id": "dese-atmega-card", "title": "ATmega328P controller card", "visibility": "confidential", "categories": ["PCB", "Embedded"], "tools": ["KiCad"], "stats": [{"key": "pcb_layouts", "value": 2, "label": "PCB layouts"}, {"key": "schematics", "value": 4, "label": "schematics"}], "period": "Jun 2026", "last_updated": "2026-06-23", "order": 6}], "cad": [], "media": [], "story": [], "hero_stat": {"value": "9", "label": "PCB layouts, plus firmware, programming and CAD"}, "page": null}, {"id": "dese-dac", "title": "DAC interface", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["Embedded", "Electronics"], "tools": ["Embedded C / C++", "PlatformIO"], "platforms": ["AVR"], "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "May 2026 – Nov 2026", "last_updated": "2026-11-10", "status": "Active", "featured": false, "order": 999, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "sculptforge", "title": "SculptForge: photos to printable sculptures", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["CAD", "Software"], "tools": ["Three.js", "MediaPipe", "ONNX Runtime (WASM)", "3D printing (STL)", "JavaScript"], "platforms": [], "summary": "A browser app that fits template meshes to a photo and exports a closed, 3D-printable solid as STL or OBJ.", "highlights": ["Portrait bust templates built procedurally from CC0 MakeHuman meshes (age, sex, muscle and weight targets).", "Ten object templates (vase, bottle, bowl, mug, goblet and more) generated in code.", "Face detection and model inference run in the browser.", "Generates a watertight print solid and exports STL or OBJ."], "period": "Oct 2026 – Nov 2026", "last_updated": "2026-11-03", "status": "Active development", "featured": false, "order": 8, "stats": [{"key": "cad_parts", "value": 1, "label": "CAD part"}, {"key": "source_files", "value": 35, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [{"heading": "The idea", "text": "Turn a photo into a sculpture you can 3D print, without leaving the browser."}, {"heading": "Templates", "text": "Portrait busts are built from scratch by a script that downloads the CC0 MakeHuman base mesh and its age, sex, muscle and weight targets, shapes each body, smooths it, cuts out the bust and caps it into a closed solid. Object templates such as vases, bottles and mugs are generated in code."}, {"heading": "Fitting a photo", "text": "Face detection and model inference run in the browser. Each template is matched against the photo, and models below the match threshold are shown in red instead of being silently dropped."}, {"heading": "Output", "text": "The fitted mesh becomes a watertight print solid and exports as STL or OBJ, ready for a slicer."}], "hero_stat": null, "page": "projects/sculptforge.html"}, {"id": "dese-avr-controller", "title": "AVR controller board", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Embedded"], "tools": ["KiCad", "SolidWorks"], "platforms": [], "summary": "PCB design and embedded firmware for DESE, Indian Institute of Science.", "highlights": [], "period": "Jun 2026 – Nov 2026", "last_updated": "2026-11-02", "status": "Active", "featured": false, "order": 999, "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 1, "label": "schematic"}, {"key": "libraries", "value": 5, "label": "component library files"}, {"key": "gerber_sets", "value": 2, "label": "fab output sets"}, {"key": "cad_parts", "value": 6, "label": "CAD parts"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "solidworks-sculpting", "title": "Freeform sculpting in SolidWorks", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["CAD"], "tools": ["SolidWorks", "Power Surfacing"], "platforms": [], "summary": "A human head sculpted in SolidWorks with the Power Surfacing add-in. Alongside my mechanical work, I practise freeform, organic modelling like this to design shapes that standard sketch-and-feature CAD can't produce, and to keep learning new techniques in SolidWorks.", "highlights": ["Organic head form sculpted inside SolidWorks with the Power Surfacing add-in.", "Subdivision-style freeform modelling, a different way of working from sketch-and-extrude parts.", "Part of my ongoing self-learning in surfacing and sculpting for product design."], "period": "Oct 2026", "last_updated": "2026-10-31", "status": "Ongoing practice", "featured": true, "order": 7, "stats": [{"key": "cad_parts", "value": 1, "label": "CAD part"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [{"src": "assets/cad/solidworks-sculpting/head.png", "v": 1793465784, "kind": "Part", "caption": "Sculpted head (Power Surfacing)"}], "media": [], "story": [{"heading": "Why sculpt in a mechanical CAD tool", "text": "Most of my CAD work is plates, brackets and enclosures. Products that people hold or look at also need organic shapes, so I practise freeform sculpting in SolidWorks to be able to design those too."}, {"heading": "The approach", "text": "The head was sculpted with Power Surfacing, an add-in that brings subdivision-style freeform modelling into SolidWorks, so the result lives in the same tool as the rest of a design."}, {"heading": "What's next", "text": "Applying the same techniques to product forms such as grips, handles and enclosures, where a shape has to feel right as well as work."}], "hero_stat": null, "page": "projects/solidworks-sculpting.html"}, {"id": "multilayer-pcb", "title": "Multi-layer PCB stack-up study", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["PCB"], "tools": ["KiCad"], "platforms": [], "summary": "Self-study project on multi-layer board stack-ups and routing in KiCad.", "highlights": [], "period": "Oct 2026", "last_updated": "2026-10-29", "status": "Active", "featured": false, "order": 10, "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 1, "label": "schematic"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/multilayer-pcb.html"}, {"id": "dese-pwm-inverter", "title": "PWM inverter", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["Embedded", "Electronics"], "tools": ["Embedded C / C++", "PlatformIO"], "platforms": ["AVR"], "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Aug 2026 – Oct 2026", "last_updated": "2026-10-09", "status": "Active", "featured": false, "order": 999, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "dese-dc-motor", "title": "DC motor driver and encoder control", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Embedded", "Electronics"], "tools": ["Embedded C / C++", "KiCad", "PlatformIO"], "platforms": ["AVR"], "summary": "PCB design, embedded firmware and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Jun 2026 – Sep 2026", "last_updated": "2026-09-26", "status": "", "featured": false, "order": 999, "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 3, "label": "schematics"}, {"key": "gerber_sets", "value": 1, "label": "fab output set"}, {"key": "firmware_projects", "value": 2, "label": "firmware projects"}, {"key": "source_files", "value": 2, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "engineer-survival", "title": "Engineer Survival: electronics mini-game", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["Software"], "tools": ["Pygame", "Python"], "platforms": [], "summary": "A small Pygame game with engineering missions: restore power in a blackout by wiring a battery, resistor and LED, control a flood, and keep a Mars colony running.", "highlights": [], "period": "Sep 2026", "last_updated": "2026-09-12", "status": "", "featured": false, "order": 11, "stats": [{"key": "source_files", "value": 1, "label": "source file"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/engineer-survival.html"}, {"id": "xiao-bridge", "title": "ESP32 helper node: serial bridge and remote flashing", "visibility": "confidential", "org": "Private", "org_name": "Private work", "org_id": null, "categories": ["Embedded", "IoT"], "tools": ["Arduino", "Embedded C / C++"], "platforms": [], "summary": "Helper-node firmware that gives a developer a permanent serial bridge, a live monitor and remote firmware flashing for a headless ESP32 module.", "highlights": [], "period": "Sep 2026", "last_updated": "2026-09-09", "status": "", "featured": false, "order": 999, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 2, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "yosi-smart-stick", "title": "Smart walking stick for elderly users", "visibility": "confidential", "org": "Yosi Innovation", "org_name": "Yosi Innovation Pvt. Ltd.", "org_id": "yosi", "categories": ["PCB", "CAD", "Embedded", "IoT"], "tools": ["Altium Designer", "SolidWorks", "Fusion 360", "PlatformIO"], "platforms": ["ESP32"], "summary": "A walking stick that makes elderly users safer and more independent, with health monitoring, fall and pit detection, and emergency features.", "highlights": ["SpO2 health monitoring and accelerometer-based fall detection.", "Pit detection for uneven terrain.", "Emergency torch, call and SMS alerts.", "Enclosure in SolidWorks and Fusion 360, electronics and PCB in Altium Designer, and a bench-tested BMS."], "period": "Dec 2023 – Sep 2025", "last_updated": "2026-09-08", "status": "Completed", "featured": true, "order": 5, "stats": [{"key": "firmware_projects", "value": 2, "label": "firmware projects"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": {"value": "SpO₂", "label": "health monitoring with fall and pit detection"}, "page": null}, {"id": "dese-smps-emi", "title": "SMPS circuits for EMI study", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Electronics"], "tools": ["KiCad"], "platforms": [], "summary": "PCB design and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Jul 2026 – Aug 2026", "last_updated": "2026-08-11", "status": "", "featured": false, "order": 999, "stats": [{"key": "pcb_layouts", "value": 2, "label": "PCB layouts"}, {"key": "schematics", "value": 2, "label": "schematics"}, {"key": "gerber_sets", "value": 1, "label": "fab output set"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "dese-attiny85", "title": "ATtiny85 USB development board", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Embedded"], "tools": ["Embedded C / C++", "KiCad", "PlatformIO"], "platforms": ["AVR"], "summary": "PCB design and embedded firmware for DESE, Indian Institute of Science.", "highlights": [], "period": "Dec 2025 – Jul 2026", "last_updated": "2026-07-29", "status": "", "featured": false, "order": 999, "stats": [{"key": "pcb_layouts", "value": 2, "label": "PCB layouts"}, {"key": "schematics", "value": 9, "label": "schematics"}, {"key": "libraries", "value": 10, "label": "component library files"}, {"key": "gerber_sets", "value": 2, "label": "fab output sets"}, {"key": "firmware_projects", "value": 2, "label": "firmware projects"}, {"key": "source_files", "value": 2, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "dese-tl494", "title": "TL494 PWM controller", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Electronics"], "tools": ["KiCad"], "platforms": [], "summary": "PCB design and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Jul 2026", "last_updated": "2026-07-28", "status": "", "featured": false, "order": 999, "stats": [{"key": "schematics", "value": 2, "label": "schematics"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "fish-vending", "title": "Fish vending machine: mechanical design", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["CAD"], "tools": ["Laser-cut DXF", "SolidWorks"], "platforms": [], "summary": "A four-chamber vending machine designed in SolidWorks and built from laser-cut acrylic, with a servo-driven dispensing mechanism, a hinged lid and full fabrication documentation.", "highlights": ["Complete SolidWorks assembly, sub-assemblies and drawing (558.8 × 158.8 × 609.6 mm overall).", "DXF profiles for 3 mm acrylic laser cutting.", "MG995 servo-driven dispenser caps on hinges, with servo brackets and a drive shaft.", "Bill of materials, fastener-to-function map and a step-by-step assembly guide."], "period": "Jul 2026", "last_updated": "2026-07-26", "status": "Completed", "featured": true, "order": 1, "stats": [{"key": "cad_parts", "value": 16, "label": "CAD parts"}, {"key": "cad_assemblies", "value": 3, "label": "assemblies"}, {"key": "drawings", "value": 16, "label": "drawings / cut profiles"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [{"src": "assets/cad/fish-vending/chamber-assembly.png", "v": 1785062938, "kind": "Assembly", "caption": "Dispensing chamber with MG995 servo"}, {"src": "assets/cad/fish-vending/assem1.png", "v": 1785066983, "kind": "Assembly", "caption": "Complete machine"}, {"src": "assets/cad/fish-vending/lid-assembly.png", "v": 1785062948, "kind": "Assembly", "caption": "Hinged lid"}, {"src": "assets/cad/fish-vending/lid-back.png", "v": 1784958352, "kind": "Part", "caption": "Lid back"}, {"src": "assets/cad/fish-vending/lid-front.png", "v": 1784958353, "kind": "Part", "caption": "Lid front"}, {"src": "assets/cad/fish-vending/front-plate.png", "v": 1784973999, "kind": "Part", "caption": "Front plate"}, {"src": "assets/cad/fish-vending/side-plate.png", "v": 1785062938, "kind": "Part", "caption": "Side plate"}, {"src": "assets/cad/fish-vending/lid-base.png", "v": 1784917968, "kind": "Part", "caption": "Lid base"}], "media": [], "story": [{"heading": "The brief", "text": "A machine that stores and dispenses product from four separate chambers, built from materials that can be laser cut quickly."}, {"heading": "The design", "text": "Every structural part is a 3 mm acrylic plate, so the whole machine goes from SolidWorks straight to DXF cutting files. Each chamber has a hinged dispenser cap opened by an MG995 servo through a servo shaft, and a hinged lid closes the top. The machine is 558.8 × 158.8 × 609.6 mm overall, with 101.6 × 101.6 × 233.2 mm chambers."}, {"heading": "Documentation", "text": "The design ships with a bill of materials, a fastener-to-function map (M3 for the chambers, M6 for the hinges and lid, M1.6 at the servo joints), the assembly hierarchy, step-by-step assembly instructions and a troubleshooting guide."}, {"heading": "Lesson learned", "text": "The hinge model I downloaded was 40 mm with 6.5 mm holes, while the standard hinge is 38 mm with smaller holes. Downloaded models now get checked against the real part before they go into a design."}], "hero_stat": null, "page": "projects/fish-vending.html"}, {"id": "dese-dual-stepper", "title": "Dual stepper motor driver", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["PCB", "Electronics"], "tools": ["KiCad"], "platforms": [], "summary": "PCB design and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Jun 2026", "last_updated": "2026-06-20", "status": "", "featured": false, "order": 999, "stats": [{"key": "pcb_layouts", "value": 1, "label": "PCB layout"}, {"key": "schematics", "value": 1, "label": "schematic"}, {"key": "gerber_sets", "value": 2, "label": "fab output sets"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "dese-va-meter", "title": "Volt/amp meter enclosure", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["CAD"], "tools": ["3D printing (STL)", "SolidWorks"], "platforms": [], "summary": "Mechanical CAD for DESE, Indian Institute of Science.", "highlights": [], "period": "Jun 2026", "last_updated": "2026-06-19", "status": "", "featured": false, "order": 999, "stats": [{"key": "cad_parts", "value": 5, "label": "CAD parts"}, {"key": "cad_assemblies", "value": 3, "label": "assemblies"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "xiao-esp32c3-library", "title": "XIAO ESP32-C3 component library (Altium)", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["PCB"], "tools": ["Altium Designer"], "platforms": [], "summary": "A custom Altium Designer component library for the Seeed Studio XIAO ESP32-C3 module, with its own schematic symbol and PCB footprint, so the module can be placed straight into board designs.", "highlights": ["Schematic symbol for the XIAO ESP32-C3 module (SchLib).", "PCB footprint for the module (PcbLib).", "Organised as an Altium integrated library package (LibPkg), so symbol and footprint stay linked."], "period": "Mar 2026", "last_updated": "2026-03-20", "status": "Completed", "featured": false, "order": 9, "stats": [{"key": "libraries", "value": 3, "label": "component library files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/xiao-esp32c3-library.html"}, {"id": "dese-buck", "title": "Buck converter control", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["Embedded", "Electronics"], "tools": ["Embedded C / C++", "PlatformIO"], "platforms": ["AVR"], "summary": "Embedded firmware and circuit design for DESE, Indian Institute of Science.", "highlights": [], "period": "Feb 2026 – Mar 2026", "last_updated": "2026-03-05", "status": "", "featured": false, "order": 999, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "solar-ev-mppt", "title": "Solar backup charging for electric vehicles (MPPT)", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["PCB", "Embedded", "Electronics"], "tools": ["ESP32", "PlatformIO", "Embedded C / C++"], "platforms": ["ESP32"], "summary": "Final-year project: an on-board solar charging system that gives an electric vehicle enough backup range to reach a charging point. Covers the MPPT charge controller, the synchronous buck power stage and its firmware.", "highlights": ["Synchronous buck converter sized from first principles (component design worksheet).", "ESP32 MCPWM complementary gate drive at 48 kHz with configurable dead time.", "Three iterations of the MPPT algorithm, with current sensing (ACS712) and voltage sensing.", "Grew out of a mini-project on pulse generation and timing for an EV charger."], "period": "May 2024 – May 2025", "last_updated": "2026-03-04", "status": "Completed", "featured": true, "order": 4, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 1, "label": "source file"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [{"heading": "The problem", "text": "An electric vehicle that runs out of charge away from a charging point is stuck. This project adds an on-board solar charging system so the vehicle has enough backup range to reach a charger."}, {"heading": "Power stage", "text": "A synchronous buck converter sits between the panel and the battery. Its component values were worked out from first principles in a design worksheet."}, {"heading": "Control", "text": "The ESP32's MCPWM peripheral drives the high- and low-side MOSFETs with complementary 48 kHz PWM and hardware dead time. The MPPT algorithm went through three iterations, using current sensing (ACS712) and voltage sensing to track the panel's maximum power point."}, {"heading": "Where it started", "text": "It grew out of a mini-project on pulse generation and timers for an EV charger."}], "hero_stat": {"value": "48 kHz", "label": "complementary gate drive with hardware dead time"}, "page": "projects/solar-ev-mppt.html"}, {"id": "dese-embedded-lab", "title": "Embedded systems lab (TI microcontrollers)", "visibility": "confidential", "org": "DESE, IISc", "org_name": "DESE, Indian Institute of Science", "org_id": "dese", "categories": ["Embedded"], "tools": ["Embedded C / C++", "Code Composer Studio"], "platforms": ["TI MCU"], "summary": "Embedded firmware for DESE, Indian Institute of Science.", "highlights": [], "period": "Jan 2026", "last_updated": "2026-01-14", "status": "", "featured": false, "order": 999, "stats": [{"key": "firmware_projects", "value": 1, "label": "firmware project"}, {"key": "source_files", "value": 2, "label": "source files"}], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "akumen-vision-tof", "title": "Camera and depth-sensing prototype", "visibility": "confidential", "org": "Akumen", "org_name": "Akumen (internship)", "org_id": "akumen", "categories": ["Embedded", "IoT"], "tools": [], "platforms": [], "summary": "Internship prototype that combines a camera with a time-of-flight depth sensor on a compact microcontroller board.", "highlights": [], "period": "2024", "last_updated": "2025-01-03", "status": "", "featured": false, "order": 999, "stats": [], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": null}, {"id": "line-follower", "title": "Line follower robot with obstacle avoidance", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["CAD", "Embedded", "Robotics"], "tools": ["Arduino Uno", "ESP32", "IR / QTR-8A sensors", "L293D / TB6612FNG"], "platforms": [], "summary": "A robot that follows a track without drifting off it, and detects and avoids obstacles in its path.", "highlights": ["Arduino Uno controller, later ported to the ESP32.", "Evaluated IR sensor pairs and a QTR-8A reflectance array with L293D, L298 and TB6612FNG motor drivers.", "Chassis and RC-car CAD designs."], "period": "Feb 2022 – Mar 2022", "last_updated": "2023-11-22", "status": "Completed", "featured": false, "order": 8, "stats": [], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/line-follower.html"}, {"id": "robotic-arm", "title": "3-DOF pick-and-place robotic arm", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["CAD", "Embedded", "Robotics"], "tools": ["Arduino", "Servo motors", "MIT App Inventor"], "platforms": [], "summary": "A 3-DOF arm that picks and places objects of up to 200 g. A servo drives the end effector, and the joints are driven from push buttons through a microcontroller.", "highlights": ["Firmware went through many versions (v4 to v29), adding Bluetooth, potentiometer and RF control modes.", "Phone control app built with MIT App Inventor.", "Custom gripper finger design and a stepper-motor driver stage."], "period": "Dec 2023 – May 2024", "last_updated": null, "status": "Completed", "featured": false, "order": 7, "stats": [], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/robotic-arm.html"}, {"id": "altium-relay-boards", "title": "Relay modules and Arduino Nano board", "visibility": "public", "org": null, "org_name": null, "org_id": null, "categories": ["PCB"], "tools": ["Altium Designer"], "platforms": [], "summary": "PCB designs from my internship: 1- and 2-channel relay modules, an Arduino Nano-style board and practice circuits, with custom footprints and component libraries.", "highlights": [], "period": "Oct 2023 – Nov 2023", "last_updated": null, "status": "Completed", "featured": false, "order": 9, "stats": [], "links": {}, "commits": [], "commit_count": 0, "parent": null, "components": [], "cad": [], "media": [], "story": [], "hero_stat": null, "page": "projects/altium-relay-boards.html"}], "feed": [{"date": "2026-11-15", "type": "updated", "project": "datasheet-lab", "text": "Updated: Datasheet Lab (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-11-15", "type": "updated", "project": "jwala", "text": "Updated: Jwala: motion-control firmware", "visibility": "public"}, {"date": "2026-11-15", "type": "updated", "project": "sana", "text": "Updated: SANA: offline AI voice assistant", "visibility": "public"}, {"date": "2026-11-15", "type": "updated", "project": "dese-remote-lab", "text": "Updated: Remote Laboratory Setup (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-11-15", "type": "updated", "project": "dese-dac", "text": "Updated: DAC interface (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-11-07", "type": "added", "project": "solidworks-sculpting", "text": "New project: Freeform sculpting in SolidWorks", "visibility": "public"}, {"date": "2026-11-07", "type": "added", "project": "xiao-esp32c3-library", "text": "New project: XIAO ESP32-C3 component library (Altium)", "visibility": "public"}, {"date": "2026-11-06", "type": "activity", "project": "datasheet-lab", "text": "Worked on: Datasheet Lab (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-11-03", "type": "activity", "project": "jwala", "text": "Worked on: Jwala: motion-control firmware", "visibility": "public"}, {"date": "2026-11-03", "type": "activity", "project": "sana", "text": "Worked on: SANA: offline AI voice assistant", "visibility": "public"}, {"date": "2026-11-03", "type": "activity", "project": "sculptforge", "text": "Worked on: SculptForge: photos to printable sculptures", "visibility": "public"}, {"date": "2026-11-02", "type": "activity", "project": "dese-avr-controller", "text": "Worked on: AVR controller board (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-10-29", "type": "activity", "project": "multilayer-pcb", "text": "Worked on: Multi-layer PCB stack-up study", "visibility": "public"}, {"date": "2026-10-09", "type": "activity", "project": "dese-pwm-inverter", "text": "Worked on: PWM inverter (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-10-08", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-09-26", "type": "activity", "project": "dese-dc-motor", "text": "Worked on: DC motor driver and encoder control (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-09-12", "type": "activity", "project": "engineer-survival", "text": "Worked on: Engineer Survival: electronics mini-game", "visibility": "public"}, {"date": "2026-09-09", "type": "activity", "project": "xiao-bridge", "text": "Worked on: ESP32 helper node: serial bridge and remote flashing (Private, confidential)", "visibility": "confidential"}, {"date": "2026-09-08", "type": "activity", "project": "yosi-smart-stick", "text": "Worked on: Smart walking stick for elderly users (Yosi Innovation, confidential)", "visibility": "confidential"}, {"date": "2026-08-19", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › Programmable power supply (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-08-18", "type": "activity", "project": "dese-dac", "text": "Worked on: DAC interface (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-08-11", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › Current sensing board (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-08-11", "type": "activity", "project": "dese-smps-emi", "text": "Worked on: SMPS circuits for EMI study (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-07-29", "type": "activity", "project": "dese-attiny85", "text": "Worked on: ATtiny85 USB development board (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-07-28", "type": "activity", "project": "dese-tl494", "text": "Worked on: TL494 PWM controller (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-07-26", "type": "activity", "project": "fish-vending", "text": "Worked on: Fish vending machine: mechanical design", "visibility": "public"}, {"date": "2026-06-23", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › Electronic load (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-06-23", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › ATmega328P controller card (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-06-23", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › Oscilloscope front-end (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-06-22", "type": "activity", "project": "dese-remote-lab", "text": "Worked on: Remote Laboratory Setup › Voltage sensing board (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-06-20", "type": "activity", "project": "dese-dual-stepper", "text": "Worked on: Dual stepper motor driver (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-06-19", "type": "activity", "project": "dese-va-meter", "text": "Worked on: Volt/amp meter enclosure (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-03-05", "type": "activity", "project": "dese-buck", "text": "Worked on: Buck converter control (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2026-03-04", "type": "activity", "project": "solar-ev-mppt", "text": "Worked on: Solar backup charging for electric vehicles (MPPT)", "visibility": "public"}, {"date": "2026-01-14", "type": "activity", "project": "dese-embedded-lab", "text": "Worked on: Embedded systems lab (TI microcontrollers) (DESE, IISc, confidential)", "visibility": "confidential"}, {"date": "2025-01-03", "type": "activity", "project": "akumen-vision-tof", "text": "Worked on: Camera and depth-sensing prototype (Akumen, confidential)", "visibility": "confidential"}, {"date": "2023-11-22", "type": "activity", "project": "line-follower", "text": "Worked on: Line follower robot with obstacle avoidance", "visibility": "public"}], "organisations": {"dese": {"name": "DESE, Indian Institute of Science", "short": "DESE, IISc", "current": true}, "yosi": {"name": "Yosi Innovation Pvt. Ltd.", "short": "Yosi Innovation", "current": false}, "akumen": {"name": "Akumen (internship)", "short": "Akumen", "current": false}}, "totals": {"projects": 28, "public": 12, "confidential": 16, "pcb_boards": 30, "cad_models": 35, "firmware": 18, "categories": {"PCB": 12, "CAD": 8, "Embedded": 15, "IoT": 4, "Electronics": 9, "Robotics": 2, "Software": 5}}, "pdf": "Vinay_Raghava_Portfolio.pdf", "builder": "1.0", "generated": "2026-11-15T20:43", "generated_display": "15 Nov 2026, 20:43"}</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.2"/><path d="M6 15.8V11l6-6h4"/><circle cx="18.2" cy="5" r="2.2"/></svg></span>
+      <span id="brand-name"></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#services" id="nav-services" hidden>Services</a><a href="#work">Work</a><a href="#cad" id="nav-cad" hidden>CAD</a><a href="#projects">All projects</a><a href="#experience">Experience</a>
+    </nav>
+    <a class="nav-cta" href="#contact" id="nav-cta">Contact</a>
+    <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="traces" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-20 92H250l40 40h170"/><circle cx="460" cy="132" r="6"/>
+      <path d="M-20 136H210l40 40h80"/><circle cx="330" cy="176" r="6"/>
+      <path d="M1220 52H990l-50 50H820"/><circle cx="820" cy="102" r="6"/>
+      <path d="M1220 590H1060l-40-40H900"/><circle cx="900" cy="550" r="6"/>
+      <path d="M-20 520H140l50-50h130"/><circle cx="320" cy="470" r="6"/>
+      <path d="M-20 560H230l40 40h260"/><circle cx="530" cy="600" r="6"/>
+      <path d="M1220 140H1100v130l-40 40"/><circle cx="1060" cy="310" r="6"/>
+    </svg>
+    <div class="wrap">
+      <div class="hero-grid" id="hero-grid">
+        <div>
+          <span class="avail" id="avail" hidden><i></i><span></span></span>
+          <h1 id="headline"></h1>
+          <p class="sub" id="subhead"></p>
+          <div class="actions" id="hero-actions"></div>
+          <div class="who" id="who"></div>
+        </div>
+        <div class="collage" id="collage" aria-hidden="true"></div>
+      </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="now" id="now"></div>
+    </div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
+
+  <section class="block" id="services" hidden>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">What I do</div><h2 id="svc-title">How I can help</h2></div>
+        <p class="sec-sub" id="svc-sub"></p>
+      </div>
+      <div class="services" id="svc"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">Selected work</div><h2>Projects I've built</h2></div>
+        <p class="sec-sub">Product design, power electronics, firmware and lab hardware. Employer projects show their scope only.</p>
+      </div>
+      <div class="fx-list" id="featured"></div>
+      <div class="cw" id="clientwork" hidden>
+        <div class="cw-head reveal">
+          <div><div class="sec-kicker">Client work</div><h3 id="cw-title">Delivered for clients</h3></div>
+          <p class="sec-sub" id="cw-sub"></p>
+        </div>
+        <div class="cw-stats reveal" id="cw-stats"></div>
+        <div class="cw-grid" id="cw-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="process" hidden>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">How it works</div><h2>From idea to prototype</h2></div>
+        <p class="sec-sub" id="process-sub"></p>
+      </div>
+      <div class="steps" id="steps"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">Everything</div><h2>All projects</h2></div>
+        <p class="sec-sub" id="projects-sub"></p>
+      </div>
+      <div class="toolbar">
+        <div class="filters">
+          <div class="seg" role="group" aria-label="Show" id="vis"></div>
+          <div class="chips" role="group" aria-label="Filter by area" id="cats"></div>
+        </div>
+        <label class="search"><span class="sr">Search projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Search projects, tools…" autocomplete="off">
+        </label>
+      </div>
+      <p class="count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="cad" hidden>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">CAD</div><h2>CAD gallery</h2></div>
+        <p class="sec-sub">Rendered previews of my own models, refreshed automatically when a part changes. The CAD source files are not included.</p>
+      </div>
+      <div id="cad-groups"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><div class="sec-kicker">Experience</div><h2>Where I've worked</h2></div></div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><div class="sec-kicker">Toolbox</div><h2>Skills</h2></div><p class="sec-sub" id="skills-sub" hidden></p></div>
+      <div class="skills" id="skill-grid"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="updates">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="sec-kicker">Changelog</div><h2>Recent updates</h2></div>
+        <p class="sec-sub">This list fills itself in. The portfolio rebuilds from my project folders whenever a project is added or changed.</p>
+      </div>
+      <ol class="feed" id="feed"></ol>
+      <button class="btn feed-more" id="feed-more" type="button" hidden>Show more</button>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><div class="sec-kicker">Background</div><h2>Education &amp; training</h2></div></div>
+      <div class="two">
+        <div class="panel"><h3>Education</h3><ul id="edu"></ul></div>
+        <div class="panel"><h3>Training &amp; certifications</h3><ul id="training"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="faq-sec" hidden>
+    <div class="wrap">
+      <div class="sec-head reveal"><div><div class="sec-kicker">FAQ</div><h2>Good to know</h2></div></div>
+      <div class="faq" id="faq"></div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="contact reveal">
+        <div class="c-left">
+          <span class="avail" id="avail2" hidden><i></i><span></span></span>
+          <h2 id="c-title">Have something to build?</h2>
+          <p id="cta-sub"></p>
+          <div class="c-links" id="c-links"></div>
+        </div>
+        <form class="enq" id="enquiry" hidden novalidate>
+          <h3>Tell me about your project</h3>
+          <div class="row2">
+            <label>Your name<input name="name" autocomplete="name"></label>
+            <label>Project type<select name="type" id="f-type"></select></label>
+          </div>
+          <div class="row2">
+            <label>Size<select name="size" id="f-size"></select></label>
+            <label>Timeline<select name="when" id="f-when"></select></label>
+          </div>
+          <label>What should it do?<textarea name="msg" id="f-msg" placeholder="A few lines about the idea, where it will be used, and anything you already have: sketches, parts or a reference product."></textarea></label>
+          <button class="btn glow send" type="submit">Send enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="hint" id="f-hint">Opens your email app with these details filled in. Nothing is stored on this site.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><p id="foot-note"></p><p id="foot-date" class="mono"></p></div></footer>
+
+<dialog id="detail" aria-labelledby="dlg-title"><div class="dlg" id="dlg"></div></dialog>
+<dialog id="lightbox" aria-label="CAD preview"><div class="dlg">
+  <div class="lb-img"><img id="lb-img" alt=""></div>
+  <div class="lb-bar"><div class="t" id="lb-cap"></div>
+    <div class="lb-nav">
+      <button type="button" id="lb-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+      <button type="button" id="lb-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button type="button" id="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div></div>
+</div></dialog>
+
+<script>
+(function(){
+  "use strict";
+  var D = JSON.parse(document.getElementById("portfolio-data").textContent);
+  var P = D.profile, F = D.freelance || {}, T = D.totals;
+  var $ = function(id){ return document.getElementById(id); };
+  var CAT_VAR = {PCB:"pcb",CAD:"cad",Embedded:"embedded",IoT:"iot",Electronics:"electronics",Software:"software",Robotics:"robotics"};
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var REDUCE = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+  function fmtDate(iso){ if(!iso) return ""; var p = iso.split("-"); return (+p[2]) + " " + MONTHS[+p[1]-1] + " " + p[0]; }
+  function safeUrl(u){ return /^(https?:|mailto:)/i.test(u||"") ? u : "#"; }
+  function svg(paths, w){ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="' + (w || 2) + '" stroke-linecap="round" stroke-linejoin="round">' + paths + '</svg>'; }
+  var ICON = {
+    lock: svg('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'),
+    arrow: svg('<path d="M5 12h14M13 6l6 6-6 6"/>'),
+    mail: svg('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'),
+    code: svg('<path d="m8 7-5 5 5 5M16 7l5 5-5 5"/>'),
+    doc: svg('<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v6M9 15l3 3 3-3"/>'),
+    ext: svg('<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>'),
+    x: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    "in": svg('<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>'),
+    copy: svg('<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>'),
+    check: svg('<path d="m5 12 5 5 9-10"/>', 2.4),
+    board: svg('<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.6"/><circle cx="16" cy="16" r="1.6"/><path d="M9.6 8H13l3 3v3.4M8 9.6V14l2 2h4.4"/>', 1.8),
+    chip: svg('<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/>', 1.8),
+    cube: svg('<path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/>', 1.8),
+    bolt: svg('<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>', 1.8),
+    rocket: svg('<path d="M5 15c-1.5 1.5-2 4-2 6 2 0 4.5-.5 6-2M9 18l-3-3M14.5 4.5C17 2 20 2 22 2c0 2 0 5-2.5 7.5L13 16l-5-5z"/><circle cx="16" cy="8" r="1.5"/>', 1.8)
+  };
+  function tag(c){ return '<span class="tag" style="--c:var(--c-' + (CAT_VAR[c]||"software") + ')">' + esc(c) + '</span>'; }
+  function isOn(s){ return /active|ongoing|development|practice/i.test(s||""); }
+  var byId = {}; D.projects.forEach(function(p){ byId[p.id] = p; });
+
+  /* ---------- motion helpers ---------- */
+  var io = ("IntersectionObserver" in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); if (e.target.hasAttribute("data-count")) countUp(e.target); } });
+  }, {threshold: 0.12}) : null;
+  function watch(root){ (root || document).querySelectorAll(".reveal,[data-count]").forEach(function(el){ if (io) io.observe(el); else { el.classList.add("in"); if (el.hasAttribute("data-count")) el.textContent = el.getAttribute("data-count"); } }); }
+  function countUp(el){
+    var n = +el.getAttribute("data-count");
+    if (REDUCE || !n) { el.textContent = n; return; }
+    var t0 = null;
+    function step(t){ if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1200); el.textContent = Math.round(n * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); else el.textContent = n; }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- theme ---------- */
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem("theme"); if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved); } catch(e){}
+  $("theme").addEventListener("click", function(){
+    var cur = root.getAttribute("data-theme") || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch(e){}
+  });
+
+  /* ---------- hero ---------- */
+  $("brand-name").textContent = P.name;
+  var hiring = !!F.available;
+  if (hiring) {
+    ["avail", "avail2"].forEach(function(id){ $(id).hidden = false; $(id).querySelector("span").textContent = F.badge || "Available for projects"; });
+    $("nav-cta").textContent = "Work with me";
+  }
+  $("headline").innerHTML = F.headline ? esc(F.headline) + ' <span class="grad">' + esc(F.headline_accent || "") + '</span>' : esc(P.name);
+  $("subhead").textContent = F.subhead || P.summary;
+  var actions = [];
+  actions.push('<a class="btn primary" href="#contact">' + (hiring ? "Start a project" : "Get in touch") + ' ' + ICON.arrow + '</a>');
+  actions.push('<a class="btn" href="#work">See my work</a>');
+  if (P.linkedin) actions.push('<a class="btn" href="' + esc(safeUrl(P.linkedin)) + '" target="_blank" rel="noopener" aria-label="LinkedIn">' + ICON["in"] + 'LinkedIn</a>');
+  if (D.pdf) actions.push('<a class="btn" href="' + esc(D.pdf) + '" download>' + ICON.doc + 'PDF</a>');
+  $("hero-actions").innerHTML = actions.join("");
+  var initials = (P.name || "").split(/\s+/).map(function(w){ return w[0]; }).join("").slice(0, 2);
+  var orgs = D.experience.map(function(x){ return x.organisation; }).slice(0, 2);
+  $("who").innerHTML = '<span class="avatar">' + esc(initials) + '</span><span><b>' + esc(P.name) + '</b> · ' + esc(P.title) +
+    (orgs.length ? '<br>Experience at ' + orgs.map(esc).join(" and ") : "") + '</span>';
+
+  /* collage of my own CAD renders */
+  var pool = [];
+  D.projects.slice().sort(function(a, b){ return a.order - b.order; }).forEach(function(p){ (p.cad || []).forEach(function(c){ pool.push({p: p, c: c}); }); });
+  var picks = [];
+  (F.hero_images || []).forEach(function(key){
+    var parts = key.split("/"), hit = pool.filter(function(x){ return x.p.id === parts[0] && x.c.src.indexOf("/" + parts[1] + ".png") > 0; })[0];
+    if (hit) picks.push(hit);
+  });
+  var seenP = {};
+  pool.forEach(function(x){ if (picks.length < 3 && !seenP[x.p.id] && picks.indexOf(x) < 0) { picks.push(x); seenP[x.p.id] = 1; } });
+  pool.forEach(function(x){ if (picks.length < 3 && picks.indexOf(x) < 0) picks.push(x); });
+  if (picks.length) {
+    $("collage").innerHTML = picks.slice(0, 3).map(function(x, i){
+      return '<figure class="shot s' + (i + 1) + '"><img src="' + esc(x.c.src) + '?v=' + x.c.v + '" alt=""><figcaption>' + esc(x.c.caption) + '</figcaption></figure>';
+    }).join("") +
+      '<div class="chip-float c1"><span class="ci">' + ICON.cube + '</span><div><b>' + T.cad_models + ' CAD parts</b><span>my own SolidWorks models</span></div></div>' +
+      '<div class="chip-float c2"><span class="ci">' + ICON.board + '</span><div><b>' + T.pcb_boards + ' PCB boards</b><span>KiCad · Altium</span></div></div>';
+  } else { $("collage").remove(); $("hero-grid").classList.add("one"); }
+
+  $("kpis").innerHTML = [[T.projects, "projects built"], [T.pcb_boards, "PCB boards designed"], [T.cad_models, "CAD parts & assemblies"], [T.firmware, "firmware projects"]]
+    .map(function(k){ return '<div class="kpi"><b data-count="' + k[0] + '">' + k[0] + '</b><span>' + esc(k[1]) + '</span></div>'; }).join("");
+  if (D.now && D.now.length) {
+    $("now").innerHTML = '<span class="lbl">Now building</span>' + D.now.map(function(n){
+      return '<button type="button" class="now-link" data-id="' + esc(n.id) + '">' + esc(n.title) + (n.org ? " · " + esc(n.org) : "") + '</button>';
+    }).join("");
+    $("now").addEventListener("click", function(e){ var b = e.target.closest(".now-link"); if (b) openDetail(b.getAttribute("data-id")); });
+  }
+
+  /* marquee of core tools */
+  var mq = [];
+  D.skills.forEach(function(g){ if (!g.level) g.items.slice(0, 5).forEach(function(i){ mq.push(i.replace(/\s*\(.*?\)/g, "")); }); });
+  var mqHtml = mq.map(function(t){ return "<span>" + esc(t) + "</span>"; }).join("");
+  $("mq").innerHTML = mqHtml + mqHtml;
+
+  /* ---------- services, process, faq ---------- */
+  var C = F.copy || {};
+  if (C.services_title) $("svc-title").textContent = C.services_title;
+  $("svc-sub").textContent = C.services_sub || "";
+  $("process-sub").textContent = C.process_sub || "";
+  if (F.services && F.services.length) {
+    $("services").hidden = false; $("nav-services").hidden = false;
+    $("svc").innerHTML = F.services.map(function(s){
+      return '<article class="svc reveal"><span class="ico">' + (ICON[s.icon] || ICON.chip) + '</span><h3>' + esc(s.title) + '</h3><p>' + esc(s.text) + '</p>' +
+        '<ul>' + (s.deliverables || []).map(function(d){ return '<li>' + ICON.check + '<span>' + esc(d) + '</span></li>'; }).join("") + '</ul>' +
+        '<div class="tools">' + (s.tools || []).map(function(t){ return '<span class="tool">' + esc(t) + '</span>'; }).join("") + '</div></article>';
+    }).join("") + (hiring ? '<article class="svc cta-card reveal"><h3>' + esc(C.cta_title || "Not sure if it's a fit?") + '</h3><p>' +
+      esc(C.cta_text || "Describe the project and I'll tell you how I'd approach it.") + '</p><div><a class="btn glow" href="#contact">Start a conversation ' + ICON.arrow + '</a></div></article>' : "");
+  }
+  var CW = D.client_work;
+  if (CW && CW.items && CW.items.length) {
+    $("clientwork").hidden = false;
+    $("cw-title").textContent = CW.title || "Client work";
+    $("cw-sub").textContent = CW.sub || "";
+    var cwStats = [[CW.delivered, CW.delivered === 1 ? "project delivered" : "projects delivered"]];
+    if (CW.in_progress) cwStats.push([CW.in_progress, "in progress"]);
+    if (CW.hours) cwStats.push([CW.hours + "+", "design hours"]);
+    if (CW.max_layers > 2) cwStats.push([CW.max_layers, "layers, most complex board"]);
+    if (CW.components) cwStats.push([CW.components, "components placed"]);
+    $("cw-stats").innerHTML = cwStats.map(function(k){ return '<div><b>' + esc(k[0]) + '</b><span>' + esc(k[1]) + '</span></div>'; }).join("");
+    $("cw-grid").innerHTML = CW.items.map(function(c){
+      return '<article class="cw-card reveal"><div class="top"><h4>' + esc(c.kind) + '</h4>' +
+        (c.tier ? '<span class="tier">' + esc(c.tier) + '</span>' : '') + '</div>' +
+        (c.facts.length ? '<ul>' + c.facts.map(function(f){ return '<li>' + esc(f) + '</li>'; }).join("") + '</ul>' : '') +
+        '<div class="foot"><span class="' + (c.status === "In progress" ? "live" : "") + '">' + esc(c.status) + '</span><span>' + esc(c.period) + '</span></div></article>';
+    }).join("");
+  }
+  if (F.process && F.process.length) {
+    $("process").hidden = false;
+    $("steps").innerHTML = F.process.map(function(s, i){
+      return '<div class="step reveal"><div class="n">0' + (i + 1) + '</div><h3>' + esc(s.title) + '</h3><p>' + esc(s.text) + '</p></div>';
+    }).join("");
+  }
+  if (F.faq && F.faq.length) {
+    $("faq-sec").hidden = false;
+    $("faq").innerHTML = F.faq.map(function(f, i){ return '<details' + (i ? "" : " open") + '><summary>' + esc(f.q) + '</summary><p>' + esc(f.a) + '</p></details>'; }).join("");
+  }
+
+  /* ---------- featured showcase ---------- */
+  function heroStat(p){
+    if (p.hero_stat) return p.hero_stat;
+    var s = p.stats.filter(function(x){ return x.key !== "source_files"; })[0];
+    return s ? {value: s.value, label: s.label} : {value: p.categories[0] || "", label: p.period};
+  }
+  function firstImage(p){ return (p.cad && p.cad[0]) || (p.media || []).filter(function(m){ return m.type === "image"; })[0]; }
+  function featureRow(p, i){
+    var conf = p.visibility === "confidential", pic = firstImage(p), hs = heroStat(p);
+    var lock = conf ? '<span class="fx-lock">' + ICON.lock + esc(p.org) + ' · confidential</span>' : "";
+    var visual = pic
+      ? '<div class="fx-visual img">' + lock + '<img loading="lazy" src="' + esc(pic.src) + '?v=' + pic.v + '" alt="' + esc(pic.caption) + '"></div>'
+      : '<div class="fx-visual spec" style="--c:var(--c-' + (CAT_VAR[p.categories[0]] || "software") + ')">' + lock + '<div class="fx-stat"><b>' + esc(hs.value) + '</b><span>' + esc(hs.label) + '</span></div></div>';
+    var status = conf ? "" : (p.status ? '<span class="status' + (isOn(p.status) ? " on" : "") + '">' + esc(p.status) + '</span>' : "");
+    var btns = (p.page ? '<a class="btn primary" href="' + esc(p.page) + '">Case study ' + ICON.arrow + '</a>' : "") +
+               '<button class="btn" type="button" data-open="' + esc(p.id) + '">' + (p.page ? "Quick view" : "Details") + '</button>';
+    return '<article class="fx reveal' + (i % 2 ? " rev" : "") + '">' + visual + '<div class="fx-text">' +
+      '<div class="fx-kick">' + p.categories.slice(0, 3).map(tag).join("") + status + '</div>' +
+      '<h3>' + esc(p.title) + '</h3><p class="sum">' + esc(p.summary) + '</p>' +
+      (p.highlights.length ? '<ul class="hl">' + p.highlights.slice(0, 3).map(function(h){ return "<li>" + esc(h) + "</li>"; }).join("") + '</ul>' : "") +
+      '<div class="tools">' + p.tools.slice(0, 6).map(function(t){ return '<span class="tool">' + esc(t) + '</span>'; }).join("") + '</div>' +
+      '<div class="fx-foot">' + btns + '<span class="mono">' + esc(p.period || "") + '</span></div></div></article>';
+  }
+  var featured = D.projects.filter(function(p){ return p.featured; }).sort(function(a, b){ return a.order - b.order; });
+  $("featured").innerHTML = featured.map(featureRow).join("");
+  $("featured").addEventListener("click", function(e){ var b = e.target.closest("[data-open]"); if (b) openDetail(b.getAttribute("data-open")); });
+
+  /* ---------- project cards ---------- */
+  function statsLine(p){
+    return p.stats.filter(function(s){ return s.key !== "source_files"; }).slice(0,3)
+      .map(function(s){ return "<span><b>" + s.value + "</b> " + esc(s.label) + "</span>"; }).join("");
+  }
+  function compNoun(comps){
+    var boards = comps.every(function(c){ return c.categories.indexOf("PCB") >= 0; });
+    return boards ? (comps.length === 1 ? "board" : "boards") : (comps.length === 1 ? "sub-project" : "sub-projects");
+  }
+  function card(p){
+    var conf = p.visibility === "confidential";
+    var badge = conf ? '<span class="badge-conf">' + ICON.lock + esc(p.org) + '</span>'
+                     : (p.status ? '<span class="status' + (isOn(p.status) ? " on" : "") + '">' + esc(p.status) + '</span>' : "");
+    var sl = conf ? statsLine(p) : "";
+    var comps = p.components || [];
+    var incl = comps.length ? '<div class="incl"><b>Includes ' + comps.length + ' ' + compNoun(comps) + ':</b>' +
+      comps.map(function(c){ return esc(c.title); }).join(" · ") + '</div>' : "";
+    var pic = firstImage(p);
+    var img = pic ? '<div class="card-img"><img loading="lazy" src="' + esc(pic.src) + '?v=' + pic.v + '" alt=""></div>' : "";
+    return '<article class="card' + (conf ? " is-conf" : "") + '" data-id="' + esc(p.id) + '" tabindex="0" role="button" aria-haspopup="dialog">' + img +
+      '<div class="card-top"><div class="tags">' + p.categories.slice(0,3).map(tag).join("") + '</div>' + badge + '</div>' +
+      '<h3>' + esc(p.title) + '</h3><p class="card-sum">' + esc(p.summary) + '</p>' + incl +
+      (sl ? '<div class="stats-line">' + sl + '</div>' : "") +
+      '<div class="tools">' + p.tools.slice(0, 4).map(function(t){ return '<span class="tool">' + esc(t) + '</span>'; }).join("") + '</div>' +
+      '<div class="card-foot"><span class="mono">' + esc(p.period || "") + '</span><span class="more">Details ' + ICON.arrow + '</span></div></article>';
+  }
+  function wire(container){
+    container.addEventListener("click", function(e){ var c = e.target.closest(".card"); if (c) openDetail(c.getAttribute("data-id")); });
+    container.addEventListener("keydown", function(e){ if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("card")) { e.preventDefault(); openDetail(e.target.getAttribute("data-id")); } });
+  }
+  var state = { vis: "all", cat: "All", q: "" };
+  try { var s = JSON.parse(localStorage.getItem("pf-filter") || "null"); if (s && s.vis) { state.vis = s.vis; state.cat = s.cat || "All"; } } catch(e){}
+  $("projects-sub").textContent = T.projects + " projects: " + T.public + " personal and " + T.confidential +
+    " for employers. Employer work is listed for scope only, without schematics, layouts or source code.";
+  var VIS = [["all","All"],["public","Personal"],["confidential","Organisation"]];
+  function projHay(p){
+    return [p.title, p.summary, p.org || "", p.tools.join(" "), p.categories.join(" "), p.highlights.join(" "),
+            (p.components || []).map(function(c){ return c.title; }).join(" ")].join(" ").toLowerCase();
+  }
+  function renderVis(){ $("vis").innerHTML = VIS.map(function(v){ return '<button type="button" data-v="' + v[0] + '" aria-pressed="' + (state.vis === v[0]) + '">' + v[1] + '</button>'; }).join(""); }
+  function renderCats(){
+    var pool = D.projects.filter(function(p){ return state.vis === "all" || p.visibility === state.vis; });
+    var counts = {}; pool.forEach(function(p){ p.categories.forEach(function(c){ counts[c] = (counts[c]||0) + 1; }); });
+    $("cats").innerHTML = ["All"].concat(Object.keys(T.categories)).map(function(c){
+      var n = c === "All" ? pool.length : (counts[c] || 0);
+      return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (state.cat === c) + '"' + (n ? "" : " disabled") + '>' + esc(c) + ' <span class="n">' + n + '</span></button>';
+    }).join("");
+  }
+  function renderGrid(){
+    var q = state.q.trim().toLowerCase();
+    var list = D.projects.filter(function(p){
+      if (state.vis !== "all" && p.visibility !== state.vis) return false;
+      if (state.cat !== "All" && p.categories.indexOf(state.cat) < 0) return false;
+      return !q || projHay(p).indexOf(q) >= 0;
+    }).sort(function(a,b){ return (b.last_updated||"").localeCompare(a.last_updated||"") || a.title.localeCompare(b.title); });
+    $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">No projects match these filters.</div>';
+    $("count").textContent = "Showing " + list.length + " of " + D.projects.length + ", most recently updated first";
+    try { localStorage.setItem("pf-filter", JSON.stringify({vis: state.vis, cat: state.cat})); } catch(e){}
+  }
+  $("vis").addEventListener("click", function(e){ var b = e.target.closest("button"); if (!b) return; state.vis = b.getAttribute("data-v"); state.cat = "All"; renderVis(); renderCats(); renderGrid(); });
+  $("cats").addEventListener("click", function(e){ var b = e.target.closest("button"); if (!b || b.disabled) return; state.cat = b.getAttribute("data-c"); renderCats(); renderGrid(); });
+  $("q").addEventListener("input", function(e){ state.q = e.target.value; renderGrid(); });
+  wire($("grid"));
+  renderVis(); renderCats(); renderGrid();
+
+  /* ---------- detail dialog ---------- */
+  var dlg = $("detail");
+  function openDetail(id){
+    var p = byId[id]; if (!p) return;
+    var conf = p.visibility === "confidential";
+    var meta = [];
+    if (p.period) meta.push("<span>Period <b>" + esc(p.period) + "</b></span>");
+    if (p.last_updated) meta.push("<span>Last updated <b>" + esc(fmtDate(p.last_updated)) + "</b></span>");
+    if (p.status) meta.push("<span>Status <b>" + esc(p.status) + "</b></span>");
+    if (conf) meta.push("<span>For <b>" + esc(p.org_name) + "</b></span>");
+    var body = [];
+    if (conf) body.push('<div class="notice">' + ICON.lock + '<div>This project belongs to <b>' + esc(p.org_name) + '</b>. Schematics, PCB layouts, CAD files and source code are confidential and are not shown. I am happy to talk about my role and approach where the organisation allows it.</div></div>');
+    body.push('<p class="lede">' + esc(p.summary) + '</p>');
+    if (p.highlights.length) body.push('<div><h4>Highlights</h4><ul class="hl">' + p.highlights.map(function(h){ return "<li>" + esc(h) + "</li>"; }).join("") + '</ul></div>');
+    var comps = p.components || [];
+    if (comps.length) body.push('<div><h4>' + (/board/.test(compNoun(comps)) ? "Boards" : "Sub-projects") + ' in this project</h4><div class="comps">' +
+      comps.map(function(c){
+        var sl = statsLine(c);
+        return '<div class="comp"><div class="comp-h"><b>' + esc(c.title) + '</b><span class="mono">' + esc(c.period || "") + '</span></div>' +
+          (sl ? '<div class="stats-line">' + sl + '</div>' : "") +
+          '<div class="tools">' + c.tools.slice(0,4).map(function(t){ return '<span class="tool">' + esc(t) + '</span>'; }).join("") + '</div></div>';
+      }).join("") + '</div></div>');
+    if (p.stats.length) body.push('<div><h4>' + (comps.length ? "Scope (main project)" : "Scope") + '</h4><div class="statgrid">' + p.stats.map(function(s){ return '<div class="stat"><b>' + s.value + '</b><span>' + esc(s.label) + '</span></div>'; }).join("") + '</div></div>');
+    if (p.cad && p.cad.length) body.push('<div><h4>CAD previews</h4><div class="cad-strip">' + p.cad.map(function(c, i){ return cadTile(p.id, i, c); }).join("") + '</div></div>');
+    var tools = p.tools.concat(p.platforms.filter(function(x){ return p.tools.join(" ").indexOf(x) < 0; }));
+    if (tools.length) body.push('<div><h4>Tools &amp; platforms</h4><div class="tools">' + tools.map(function(t){ return '<span class="tool">' + esc(t) + '</span>'; }).join("") + '</div></div>');
+    if (p.page) body.push('<div><a class="btn primary" href="' + esc(p.page) + '">Read the full case study ' + ICON.arrow + '</a></div>');
+    var links = Object.keys(p.links || {});
+    if (links.length) body.push('<div><h4>Links</h4><div class="actions" style="margin:0">' + links.map(function(k){ return '<a class="btn" href="' + esc(safeUrl(p.links[k])) + '" target="_blank" rel="noopener">' + ICON.ext + esc(k) + '</a>'; }).join("") + '</div></div>');
+    $("dlg").innerHTML =
+      '<div class="dlg-head"><div class="card-top" style="padding-right:44px"><div class="tags">' + p.categories.map(tag).join("") + '</div>' +
+      (conf ? '<span class="badge-conf">' + ICON.lock + 'Confidential</span>' : "") + '</div>' +
+      '<h2 id="dlg-title">' + esc(p.title) + '</h2><div class="meta">' + meta.join("") + '</div>' +
+      '<button class="dlg-close" type="button" aria-label="Close">' + ICON.x + '</button></div>' +
+      '<div class="dlg-body">' + body.join("") + '</div>';
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+    $("dlg").scrollTop = 0;
+  }
+  dlg.addEventListener("click", function(e){ if (e.target === dlg || e.target.closest(".dlg-close")) dlg.close(); });
+
+  /* ---------- CAD gallery & viewer ---------- */
+  var lb = $("lightbox"), lbList = [], lbIdx = 0;
+  function cadTile(pid, i, c){
+    return '<button type="button" class="cad-tile" data-p="' + esc(pid) + '" data-i="' + i + '" aria-label="View ' + esc(c.caption) + '">' +
+      '<span class="ph"><img loading="lazy" src="' + esc(c.src) + '?v=' + c.v + '" alt="' + esc(c.caption) + '"></span>' +
+      '<span class="cap"><span>' + esc(c.caption) + '</span><span class="kind">' + esc(c.kind) + '</span></span></button>';
+  }
+  function showLb(){
+    var c = lbList[lbIdx];
+    $("lb-img").src = c.src + "?v=" + c.v; $("lb-img").alt = c.caption;
+    $("lb-cap").innerHTML = esc(c.caption) + "<span>" + esc(c.kind) + " · " + (lbIdx + 1) + " of " + lbList.length + "</span>";
+  }
+  function openLb(pid, i){
+    var p = byId[pid]; if (!p || !p.cad || !p.cad.length) return;
+    lbList = p.cad; lbIdx = i; showLb();
+    if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
+  }
+  $("lb-prev").addEventListener("click", function(){ lbIdx = (lbIdx - 1 + lbList.length) % lbList.length; showLb(); });
+  $("lb-next").addEventListener("click", function(){ lbIdx = (lbIdx + 1) % lbList.length; showLb(); });
+  $("lb-close").addEventListener("click", function(){ lb.close(); });
+  lb.addEventListener("click", function(e){ if (e.target === lb) lb.close(); });
+  lb.addEventListener("keydown", function(e){ if (e.key === "ArrowLeft") $("lb-prev").click(); if (e.key === "ArrowRight") $("lb-next").click(); });
+  document.addEventListener("click", function(e){
+    var t = e.target.closest && e.target.closest(".cad-tile");
+    if (t && t.tagName === "BUTTON") { e.stopPropagation(); openLb(t.getAttribute("data-p"), +t.getAttribute("data-i")); }
+  }, true);
+  var cadProjects = D.projects.filter(function(p){ return p.cad && p.cad.length; })
+    .sort(function(a, b){ return b.cad.length - a.cad.length || a.order - b.order; });
+  if (cadProjects.length) {
+    $("cad").hidden = false; $("nav-cad").hidden = false;
+    $("cad-groups").innerHTML = cadProjects.map(function(p){
+      return '<div class="cad-group reveal"><div class="cad-group-head"><h3>' + esc(p.title) + '</h3>' +
+        '<button type="button" data-open="' + esc(p.id) + '">Project details ' + ICON.arrow + '</button></div>' +
+        '<div class="cad-grid">' + p.cad.map(function(c, i){ return cadTile(p.id, i, c); }).join("") + '</div></div>';
+    }).join("");
+    $("cad-groups").addEventListener("click", function(e){ var b = e.target.closest("[data-open]"); if (b) openDetail(b.getAttribute("data-open")); });
+  }
+
+  /* ---------- experience ---------- */
+  $("timeline").innerHTML = D.experience.map(function(x){
+    var cur = x.roles.some(function(r){ return /present/i.test(r.period); });
+    return '<article class="xp reveal"><div class="xp-org"><h3>' + esc(x.organisation) + '</h3><p>' + esc(x.location || "") + '</p>' +
+      (cur ? '<span class="status on now-badge">Current</span>' : "") + '</div><div>' +
+      x.roles.map(function(r){
+        return '<div class="role"><div class="role-head"><b>' + esc(r.title) + '</b><span class="mono">' + esc(r.period) + '</span></div>' +
+          (r.project ? '<div class="proj">' + esc(r.project) + '</div>' : "") +
+          '<ul>' + (r.points||[]).map(function(pt){ return "<li>" + esc(pt) + "</li>"; }).join("") + '</ul></div>';
+      }).join("") + '</div></article>';
+  }).join("");
+
+  /* ---------- skills (chips link to matching projects) ---------- */
+  var SK = ["pcb","electronics","embedded","iot","cad","software","robotics"];
+  var HAYS = D.projects.map(projHay);
+  function skillTerm(item){
+    var terms = item.replace(/\(.*?\)/g, " ").split(/\s*(?:\/|\+|,|&)\s*/).map(function(t){ return t.trim().toLowerCase(); }).filter(function(t){ return t.length > 1; });
+    for (var i = 0; i < terms.length; i++) {
+      var re = new RegExp("(^|[^a-z0-9])" + terms[i].replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "([^a-z0-9]|$)");
+      if (HAYS.some(function(h){ return re.test(h); })) return terms[i];
+    }
+    return null;
+  }
+  if (D.skills.some(function(g){ return g.level; })) {
+    $("skills-sub").textContent = "Core: what I use regularly and deliver with. Growing: areas I'm actively deepening. Familiar: tools I have explored. Click a skill to see the projects that use it.";
+    $("skills-sub").hidden = false;
+  }
+  var LVL = {learning: "Growing", familiar: "Familiar"};
+  var tiered = D.skills.some(function(g){ return g.level; });
+  $("skill-grid").innerHTML = D.skills.map(function(g, i){
+    var lvl = g.level || "";
+    return '<div class="skill' + (lvl ? " " + esc(lvl) : "") + '" style="--c:var(--c-' + SK[i % SK.length] + ')"><h3><i></i>' + esc(g.group) +
+      '<span class="lvl">' + (LVL[lvl] || (tiered ? "Core" : "")) + '</span></h3><div class="items">' +
+      g.items.map(function(s){ var term = skillTerm(s);
+        return term ? '<button type="button" data-skill="' + esc(term) + '" title="Show projects using ' + esc(s) + '">' + esc(s) + '</button>' : "<span>" + esc(s) + "</span>"; }).join("") + '</div></div>';
+  }).join("");
+  $("skill-grid").addEventListener("click", function(e){
+    var b = e.target.closest("button[data-skill]"); if (!b) return;
+    state.q = b.getAttribute("data-skill"); state.vis = "all"; state.cat = "All"; $("q").value = state.q;
+    renderVis(); renderCats(); renderGrid();
+    $("projects").scrollIntoView({behavior: REDUCE ? "auto" : "smooth"});
+  });
+
+  /* ---------- updates ---------- */
+  var FEED_STEP = 10, shown = FEED_STEP;
+  var KIND = {added:"new", updated:"update", activity:"work", commit:"commit"};
+  function renderFeed(){
+    $("feed").innerHTML = D.feed.slice(0, shown).map(function(f){
+      var txt = f.project && byId[f.project] ? '<button type="button" data-id="' + esc(f.project) + '">' + esc(f.text) + '</button>' : esc(f.text);
+      return '<li class="t-' + esc(f.type) + (f.visibility === "confidential" ? " c-conf" : "") + '"><time datetime="' + esc(f.date) + '">' + esc(fmtDate(f.date)) + '</time><span class="dot" aria-hidden="true"></span>' +
+        '<div class="txt">' + txt + '<span class="kind">' + esc(KIND[f.type] || f.type) + '</span></div></li>';
+    }).join("");
+    $("feed-more").hidden = shown >= D.feed.length;
+  }
+  $("feed").addEventListener("click", function(e){ var b = e.target.closest("button[data-id]"); if (b) openDetail(b.getAttribute("data-id")); });
+  $("feed-more").addEventListener("click", function(){ shown += FEED_STEP; renderFeed(); });
+  renderFeed();
+
+  /* ---------- education ---------- */
+  $("edu").innerHTML = D.education.map(function(e){ return "<li><b>" + esc(e.degree) + "</b><span>" + esc(e.institution) + " · " + esc(e.period) + (e.detail ? " · " + esc(e.detail) : "") + "</span></li>"; }).join("");
+  $("training").innerHTML = D.training.map(function(t){ return "<li><b>" + esc(t.name) + "</b><span>" + esc(t.issuer) + " · " + esc(t.year) + "</span></li>"; }).join("");
+
+  /* ---------- contact & enquiry form ---------- */
+  $("c-title").textContent = hiring ? (C.contact_title || "Have a project in mind?") : "Get in touch";
+  $("cta-sub").textContent = (hiring && C.contact_text ? C.contact_text + " " : "") + "Based in " + (P.location || "India") + ".";
+  var links = [];
+  if (P.email) {
+    links.push('<a href="mailto:' + esc(P.email) + '">' + ICON.mail + '<span>' + esc(P.email) + '</span><small>Email</small></a>');
+    links.push('<button type="button" id="copy-mail">' + ICON.copy + '<span>Copy email address</span></button>');
+  }
+  if (P.linkedin) links.push('<a href="' + esc(safeUrl(P.linkedin)) + '" target="_blank" rel="noopener">' + ICON["in"] + '<span>LinkedIn</span><small>Profile</small></a>');
+  if (D.pdf) links.push('<a href="' + esc(D.pdf) + '" download>' + ICON.doc + '<span>Portfolio PDF</span><small>Download</small></a>');
+  $("c-links").innerHTML = links.join("");
+  if ($("copy-mail")) $("copy-mail").addEventListener("click", function(){
+    var b = this, done = function(){ b.querySelector("span").textContent = "Copied!"; setTimeout(function(){ b.querySelector("span").textContent = "Copy email address"; }, 1600); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(P.email).then(done, function(){});
+  });
+  if (hiring && P.email) {
+    $("enquiry").hidden = false;
+    var opt = function(list){ return (list || []).map(function(o){ return "<option>" + esc(o) + "</option>"; }).join(""); };
+    $("f-type").innerHTML = opt(F.project_types); $("f-size").innerHTML = opt(F.sizes); $("f-when").innerHTML = opt(F.timelines);
+    $("enquiry").addEventListener("submit", function(e){
+      e.preventDefault();
+      var f = e.target, msg = f.msg.value.trim();
+      if (!msg) { $("f-hint").textContent = "Please add a few lines about the project first."; f.msg.focus(); return; }
+      var first = (P.name || "").split(" ")[0];
+      var subject = "Project enquiry: " + f.type.value + (f.name.value.trim() ? " (" + f.name.value.trim() + ")" : "");
+      var body = "Hi " + first + ",\n\n" + msg + "\n\nProject type: " + f.type.value + "\nSize: " + f.size.value + "\nTimeline: " + f.when.value + "\n\n" + (f.name.value.trim() || "");
+      window.location.href = "mailto:" + P.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  }
+  $("foot-note").textContent = "© " + new Date().getFullYear() + " " + P.name + ". This site rebuilds automatically from my project folders. Projects done for employers show only their scope; their design files and code stay private.";
+  $("foot-date").textContent = "Last rebuilt " + (D.generated_display || "");
+
+  watch();
+})();
+</script>
+</body>
+</html>
