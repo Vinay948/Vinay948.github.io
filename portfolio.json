@@ -1,6 +1,8 @@
 {
  "client_work": null,
  "freelance": {
+  "_enquiry_endpoint_help": "Where the website's enquiry form is sent. FormSubmit emails every enquiry to this address. Empty = open the visitor's email app instead.",
+  "enquiry_endpoint": "https://formsubmit.co/ajax/vinayraghava80@gmail.com",
   "available": true,
   "badge": "Available for freelance & prototype work",
   "headline": "Turning ideas into",
@@ -2456,6 +2458,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-15T20:43",
- "generated_display": "15 Nov 2026, 20:43"
+ "generated": "2026-11-15T20:49",
+ "generated_display": "15 Nov 2026, 20:49"
 }
