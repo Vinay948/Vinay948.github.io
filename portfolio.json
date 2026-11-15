@@ -4,18 +4,18 @@
   "_enquiry_endpoint_help": "Where the website's enquiry form is sent. FormSubmit emails every enquiry to this address. Empty = open the visitor's email app instead.",
   "enquiry_endpoint": "https://formsubmit.co/ajax/vinayraghava80@gmail.com",
   "available": true,
-  "badge": "Available for freelance & prototype work",
+  "badge": "New freelance practice: taking first projects",
   "headline": "Turning ideas into",
   "headline_accent": "working prototypes.",
-  "subhead": "PCB design, embedded firmware and CAD for prototypes and small-batch products. I design and validate boards for a remote laboratory at IISc, and take on freelance work from a single board to a complete prototype.",
+  "subhead": "PCB design, embedded firmware and CAD for prototypes and small-batch products. I design and validate boards for a remote laboratory at IISc, and have recently started taking on freelance work. As I'm new to freelancing, I take on a small number of projects at a time and I'm upfront about what I can and can't do yet.",
   "copy": {
    "services_title": "What I can build for you",
-   "services_sub": "From a single board to a complete prototype, with the circuit, firmware and enclosure designed to work together. I flag scope and risks before we start.",
+   "services_sub": "The areas I have hands-on experience in. I'm new to freelancing, so I'd rather start with something small and clearly defined, and I'll tell you honestly if a request is beyond my experience.",
    "cta_title": "Not sure which you need?",
-   "cta_text": "Describe the problem and I'll suggest an approach, the main parts and a rough plan.",
-   "process_sub": "A clear process with review points along the way.",
+   "cta_text": "Describe the problem and I'll suggest an approach and a rough plan, or tell you if it isn't a good fit for me.",
+   "process_sub": "Simple and transparent, with review points so you can see progress and change direction early.",
    "contact_title": "Have something to build?",
-   "contact_text": "Boards, firmware, enclosures or the whole prototype. Tell me what you have in mind and I'll get back to you with questions or a plan."
+   "contact_text": "Boards, firmware, enclosures or the whole prototype. Tell me what you have in mind and I'll get back to you with questions, an honest view of whether I'm the right fit, and a rough plan. As a new freelancer I'm best suited to small, well-defined first projects."
   },
   "_hero_images_help": "Up to 3 CAD renders for the hero collage, as project-id/image-name (see site/assets/cad/).",
   "hero_images": [
@@ -88,7 +88,7 @@
    {
     "icon": "rocket",
     "title": "Complete prototypes",
-    "text": "Circuit, PCB, firmware and enclosure designed together, for student projects, startups and small-batch products.",
+    "text": "Circuit, PCB, firmware and enclosure designed together, for student projects, startups and small-batch products. For a first project together, I suggest starting with one well-defined part.",
     "deliverables": [
      "Working prototype",
      "Design files",
@@ -106,11 +106,11 @@
    },
    {
     "title": "Plan & scope",
-    "text": "I suggest an approach, the main parts and a timeline, and flag anything risky or outside my experience before we agree on scope."
+    "text": "I suggest an approach, the main parts and a realistic timeline (not an optimistic one), and flag anything risky or outside my experience before we agree on scope."
    },
    {
     "title": "Design & build",
-    "text": "Schematic, PCB, firmware and CAD, with review points along the way so there are no surprises."
+    "text": "Schematic, PCB, firmware and CAD, with review points along the way. Prototypes rarely work perfectly first time, so we agree upfront how fixes and revisions are handled."
    },
    {
     "title": "Test & hand over",
@@ -118,6 +118,10 @@
    }
   ],
   "faq": [
+   {
+    "q": "Are you an established company?",
+    "a": "No. This is a new, one-person freelance practice. I have professional design experience, but only a small freelance track record so far, and I'd rather tell you that now than promise too much. So I start with small, clearly defined pieces of work, give realistic estimates, keep you updated as I go, and tell you early if something isn't going to work."
+   },
    {
     "q": "What's your experience?",
     "a": "I graduated in 2025 (B.E., ECE) and have about three years of hands-on product work: R&D on a smart walking stick at Yosi Innovation, and PCB design for a remote laboratory at IISc. I'm strongest in PCB design, ESP32/AVR firmware and SolidWorks, and I'm deepening my multi-layer layout and power electronics. If a project needs specialist depth, such as high-speed, RF or high-voltage design, I'll say so upfront."
@@ -132,7 +136,7 @@
    },
    {
     "q": "What do I get at the end?",
-    "a": "The deliverables we agree on at the start: for example a working prototype, design files and documentation. Terms are settled before any work begins."
+    "a": "The deliverables we agree on at the start: for example a working prototype, design files and documentation. Terms are settled before any work begins, and I won't commit to anything I'm not confident I can deliver."
    },
    {
     "q": "Where are you based?",
@@ -2458,6 +2462,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-15T21:13",
- "generated_display": "15 Nov 2026, 21:13"
+ "generated": "2026-11-15T21:41",
+ "generated_display": "15 Nov 2026, 21:41"
 }
