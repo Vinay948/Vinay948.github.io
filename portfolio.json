@@ -172,14 +172,14 @@
    "org": null
   },
   {
+   "id": "dese-remote-lab",
+   "title": "Remote Laboratory Setup",
+   "org": "DESE, IISc"
+  },
+  {
    "id": "jwala",
    "title": "Jwala",
    "org": null
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "org": "DESE, IISc"
   }
  ],
  "profile": {
@@ -476,125 +476,6 @@
    "page": "projects/sana.html"
   },
   {
-   "id": "jwala",
-   "title": "Jwala: motion-control firmware",
-   "visibility": "public",
-   "org": null,
-   "org_name": null,
-   "org_id": null,
-   "categories": [
-    "Embedded"
-   ],
-   "tools": [
-    "ESP32",
-    "A4988",
-    "NEMA-17",
-    "Xtensa assembly",
-    "Embedded C / C++",
-    "PlatformIO",
-    "Python"
-   ],
-   "platforms": [
-    "ESP32"
-   ],
-   "summary": "A clean-room motion-control firmware I'm writing from scratch, aiming at Marlin-class features: its own stepper drivers and a hardware abstraction layer for several microcontrollers, starting with the ESP32. Currently in an early development phase.",
-   "highlights": [
-    "Own A4988 stepper driver and a HAL designed for multiple MCUs (ESP32 first, AVR planned).",
-    "Bare-metal ESP32 timer and GPIO layer built directly from the ESP32 Technical Reference Manual and the Xtensa ISA.",
-    "Phase 0: a build-verified level-4 interrupt stepper ISR written in Xtensa assembly.",
-    "Documented failure analysis of V1, a decision log and a bench-check tracker. A feature only counts as done once it is verified on hardware.",
-    "Roadmap toward a motion planner, G-code, homing, thermal control, bed levelling and multiple kinematics."
-   ],
-   "period": "Feb 2026 – Nov 2026",
-   "last_updated": "2026-11-15",
-   "status": "In development",
-   "featured": true,
-   "order": 3,
-   "stats": [
-    {
-     "key": "firmware_projects",
-     "value": 1,
-     "label": "firmware project"
-    },
-    {
-     "key": "source_files",
-     "value": 21,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [
-    {
-     "heading": "Why build it",
-     "text": "Marlin is the reference firmware for 3D printers and CNC machines, but it is a huge codebase. I wanted to understand motion control from the ground up, so Jwala is clean-room: Marlin is only the benchmark for features and behaviour, and none of its code is used."
-    },
-    {
-     "heading": "How it is built",
-     "text": "A hardware abstraction layer keeps the motion code independent of the microcontroller. The ESP32 is the first target, with AVR planned. The A4988 stepper driver is my own, and the ESP32 timer and GPIO layer is written directly against the ESP32 Technical Reference Manual and the Xtensa ISA manual."
-    },
-    {
-     "heading": "What went wrong in V1",
-     "text": "Version 1 compiled but did not run reliably: the bare-metal timer and interrupt layer conflicted with the ESP32 runtime. Before changing anything I wrote a full failure analysis, with evidence and a fix for every bug, and started a decision log and a bench-check tracker."
-    },
-    {
-     "heading": "What's next",
-     "text": "Phase 0 rebuilds the GPIO and timer layer and moves step generation into a level-4 interrupt written in Xtensa assembly, already build-verified. The goal is one motor moving reliably, verified on the bench, before the planner, G-code, homing and thermal control."
-    }
-   ],
-   "hero_stat": {
-    "value": "Xtensa",
-    "label": "assembly stepper interrupt, written from scratch"
-   },
-   "page": "projects/jwala.html"
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-13",
-   "status": "Active development",
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 89,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
-  },
-  {
    "id": "dese-remote-lab",
    "title": "Remote Laboratory Setup",
    "visibility": "confidential",
@@ -624,7 +505,7 @@
     "CAD design for the lab hardware."
    ],
    "period": "Dec 2025 – Present",
-   "last_updated": "2026-11-13",
+   "last_updated": "2026-11-16",
    "status": "Ongoing",
    "featured": true,
    "order": 2,
@@ -884,6 +765,125 @@
     "value": "9",
     "label": "PCB layouts, plus firmware, programming and CAD"
    },
+   "page": null
+  },
+  {
+   "id": "jwala",
+   "title": "Jwala: motion-control firmware",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "Embedded"
+   ],
+   "tools": [
+    "ESP32",
+    "A4988",
+    "NEMA-17",
+    "Xtensa assembly",
+    "Embedded C / C++",
+    "PlatformIO",
+    "Python"
+   ],
+   "platforms": [
+    "ESP32"
+   ],
+   "summary": "A clean-room motion-control firmware I'm writing from scratch, aiming at Marlin-class features: its own stepper drivers and a hardware abstraction layer for several microcontrollers, starting with the ESP32. Currently in an early development phase.",
+   "highlights": [
+    "Own A4988 stepper driver and a HAL designed for multiple MCUs (ESP32 first, AVR planned).",
+    "Bare-metal ESP32 timer and GPIO layer built directly from the ESP32 Technical Reference Manual and the Xtensa ISA.",
+    "Phase 0: a build-verified level-4 interrupt stepper ISR written in Xtensa assembly.",
+    "Documented failure analysis of V1, a decision log and a bench-check tracker. A feature only counts as done once it is verified on hardware.",
+    "Roadmap toward a motion planner, G-code, homing, thermal control, bed levelling and multiple kinematics."
+   ],
+   "period": "Feb 2026 – Nov 2026",
+   "last_updated": "2026-11-15",
+   "status": "In development",
+   "featured": true,
+   "order": 3,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 21,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why build it",
+     "text": "Marlin is the reference firmware for 3D printers and CNC machines, but it is a huge codebase. I wanted to understand motion control from the ground up, so Jwala is clean-room: Marlin is only the benchmark for features and behaviour, and none of its code is used."
+    },
+    {
+     "heading": "How it is built",
+     "text": "A hardware abstraction layer keeps the motion code independent of the microcontroller. The ESP32 is the first target, with AVR planned. The A4988 stepper driver is my own, and the ESP32 timer and GPIO layer is written directly against the ESP32 Technical Reference Manual and the Xtensa ISA manual."
+    },
+    {
+     "heading": "What went wrong in V1",
+     "text": "Version 1 compiled but did not run reliably: the bare-metal timer and interrupt layer conflicted with the ESP32 runtime. Before changing anything I wrote a full failure analysis, with evidence and a fix for every bug, and started a decision log and a bench-check tracker."
+    },
+    {
+     "heading": "What's next",
+     "text": "Phase 0 rebuilds the GPIO and timer layer and moves step generation into a level-4 interrupt written in Xtensa assembly, already build-verified. The goal is one motor moving reliably, verified on the bench, before the planner, G-code, homing and thermal control."
+    }
+   ],
+   "hero_stat": {
+    "value": "Xtensa",
+    "label": "assembly stepper interrupt, written from scratch"
+   },
+   "page": "projects/jwala.html"
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-13",
+   "status": "Active development",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 89,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
    "page": null
   },
   {
@@ -2174,6 +2174,13 @@
    "visibility": "public"
   },
   {
+   "date": "2026-11-16",
+   "type": "updated",
+   "project": "dese-remote-lab",
+   "text": "Updated: Remote Laboratory Setup (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-15",
    "type": "updated",
    "project": "datasheet-lab",
@@ -2469,6 +2476,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-16T12:00",
- "generated_display": "16 Nov 2026, 12:00"
+ "generated": "2026-11-16T18:00",
+ "generated_display": "16 Nov 2026, 18:00"
 }
