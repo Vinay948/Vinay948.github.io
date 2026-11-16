@@ -6,14 +6,14 @@
    {
     "id": "cdbc862e2",
     "kind": "Design work",
-    "status": "In progress",
+    "status": "Delivered",
     "tier": "Simple",
     "facts": [],
     "period": "Nov 2026"
    }
   ],
-  "delivered": 0,
-  "in_progress": 1,
+  "delivered": 1,
+  "in_progress": 0,
   "hours": 0,
   "max_layers": 0,
   "components": 0
@@ -185,6 +185,11 @@
  "og_image": "og-image.png",
  "now": [
   {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
+  },
+  {
    "id": "sana",
    "title": "SANA",
    "org": null
@@ -193,11 +198,6 @@
    "id": "dese-remote-lab",
    "title": "Remote Laboratory Setup",
    "org": "DESE, IISc"
-  },
-  {
-   "id": "jwala",
-   "title": "Jwala",
-   "org": null
   }
  ],
  "profile": {
@@ -411,6 +411,47 @@
   }
  ],
  "projects": [
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-16",
+   "status": "Active development",
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 89,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
   {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
@@ -862,47 +903,6 @@
     "label": "assembly stepper interrupt, written from scratch"
    },
    "page": "projects/jwala.html"
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-13",
-   "status": "Active development",
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 89,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
   },
   {
    "id": "dese-dac",
@@ -2199,6 +2199,13 @@
    "visibility": "confidential"
   },
   {
+   "date": "2026-11-16",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-15",
    "type": "updated",
    "project": "datasheet-lab",
@@ -2494,6 +2501,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-16T22:16",
- "generated_display": "16 Nov 2026, 22:16"
+ "generated": "2026-11-16T22:25",
+ "generated_display": "16 Nov 2026, 22:25"
 }
