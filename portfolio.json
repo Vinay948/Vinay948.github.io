@@ -2167,6 +2167,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-16",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-15",
    "type": "updated",
    "project": "datasheet-lab",
@@ -2462,6 +2469,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-15T21:41",
- "generated_display": "15 Nov 2026, 21:41"
+ "generated": "2026-11-16T10:02",
+ "generated_display": "16 Nov 2026, 10:02"
 }
