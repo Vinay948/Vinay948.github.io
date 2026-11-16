@@ -196,14 +196,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "org": "DESE, IISc"
-  },
-  {
    "id": "sana",
    "title": "SANA",
    "org": null
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
   },
   {
    "id": "dese-remote-lab",
@@ -423,49 +423,6 @@
  ],
  "projects": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-16",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 90,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
-  },
-  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -496,7 +453,7 @@
     "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
    ],
    "period": "Nov 2026",
-   "last_updated": "2026-11-16",
+   "last_updated": "2026-11-17",
    "status": "Active development",
    "client": false,
    "featured": true,
@@ -547,6 +504,49 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-16",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 90,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
   },
   {
    "id": "dese-remote-lab",
@@ -2225,6 +2225,20 @@
  ],
  "feed": [
   {
+   "date": "2026-11-17",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-16",
    "type": "updated",
    "project": "sana",
@@ -2489,20 +2503,6 @@
    "project": "dese-embedded-lab",
    "text": "Worked on: Embedded systems lab (TI microcontrollers) (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2025-01-03",
-   "type": "activity",
-   "project": "akumen-vision-tof",
-   "text": "Worked on: Camera and depth-sensing prototype (Akumen, confidential)",
-   "visibility": "confidential"
-  },
-  {
-   "date": "2023-11-22",
-   "type": "activity",
-   "project": "line-follower",
-   "text": "Worked on: Line follower robot with obstacle avoidance",
-   "visibility": "public"
   }
  ],
  "organisations": {
@@ -2541,6 +2541,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-16T22:47",
- "generated_display": "16 Nov 2026, 22:47"
+ "generated": "2026-11-17T00:00",
+ "generated_display": "17 Nov 2026, 00:00"
 }
