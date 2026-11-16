@@ -354,6 +354,16 @@ a.cad-tile{text-decoration:none;color:inherit}
 .feed .txt button:hover{text-decoration-color:var(--accent)}
 .feed .kind{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin-left:8px}
 .feed-more{margin-top:16px}
+/* compact layout: dropdowns and "show more" buttons */
+.more{margin-top:12px}
+.more>summary{cursor:pointer;list-style:none;color:var(--accent);font-weight:600;font-size:.92rem;display:inline-flex;gap:8px;align-items:center;padding:4px 0}
+.more>summary::-webkit-details-marker{display:none}
+.more>summary::after{content:"+";font-family:var(--display);font-size:1.2rem;line-height:1;transition:transform .2s}
+.more[open]>summary::after{transform:rotate(45deg)}
+.more>ul{margin-top:8px}
+.skill-more{grid-column:1/-1;margin-top:4px}
+.skill-more>.skills{margin-top:14px}
+.show-more{display:flex;margin:26px auto 0}
 .two{display:grid;gap:16px}
 @media (min-width:820px){.two{grid-template-columns:1fr 1fr}}
 .panel{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px}
