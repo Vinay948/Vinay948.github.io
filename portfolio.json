@@ -5,10 +5,16 @@
   "items": [
    {
     "id": "cdbc862e2",
-    "kind": "Design work",
+    "kind": "PCB + mechanical design",
     "status": "Delivered",
-    "tier": "Simple",
-    "facts": [],
+    "tier": "Advanced",
+    "facts": [
+     "2-layer board",
+     "160 components",
+     "1 fine-pitch / BGA parts",
+     "9 schematic sheets",
+     "1 CAD part"
+    ],
     "period": "Nov 2026"
    },
    {
@@ -25,9 +31,9 @@
   ],
   "delivered": 2,
   "in_progress": 0,
-  "hours": 0,
-  "max_layers": 0,
-  "components": 0
+  "hours": 9,
+  "max_layers": 2,
+  "components": 160
  },
  "freelance": {
   "_enquiry_endpoint_help": "Where the website's enquiry form is sent. FormSubmit emails every enquiry to this address. Empty = open the visitor's email app instead.",
@@ -509,7 +515,7 @@
     },
     {
      "key": "source_files",
-     "value": 643,
+     "value": 649,
      "label": "source files"
     }
    ],
@@ -2541,6 +2547,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-17T15:00",
- "generated_display": "17 Nov 2026, 15:00"
+ "generated": "2026-11-17T17:38",
+ "generated_display": "17 Nov 2026, 17:38"
 }
