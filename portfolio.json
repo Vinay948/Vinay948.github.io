@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "org": "DESE, IISc"
-  },
-  {
    "id": "sana",
    "title": "SANA",
    "org": null
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
   },
   {
    "id": "dese-remote-lab",
@@ -429,6 +429,89 @@
  ],
  "projects": [
   {
+   "id": "sana",
+   "title": "SANA: offline AI voice assistant",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "IoT",
+    "Software"
+   ],
+   "tools": [
+    "Ollama",
+    "faster-whisper",
+    "Piper TTS",
+    "SQLite",
+    "MQTT",
+    "Arduino",
+    "JavaScript",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "A JARVIS-style personal assistant that runs entirely on a local PC: a local language model, on-device speech recognition and synthesis, long-term memory, an animated desktop orb, and control of ESP32 hardware.",
+   "highlights": [
+    "22 skills: app and media control, file search, reminders and notes, an exact calculator, web search, and shell commands that run only after approval.",
+    "Hands-free wake-word mode with faster-whisper speech-to-text and Piper text-to-speech, all on-device.",
+    "Switches ESP32 devices and reads their sensors over MQTT.",
+    "Swappable model providers (local Ollama by default) and a strict offline mode.",
+    "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
+   ],
+   "period": "Nov 2026",
+   "last_updated": "2026-11-18",
+   "status": "Active development",
+   "client": false,
+   "featured": true,
+   "order": 6,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 1,
+     "label": "firmware project"
+    },
+    {
+     "key": "source_files",
+     "value": 650,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why build it",
+     "text": "I wanted an assistant that keeps my data on my own machine and can talk to my own hardware. The language model, speech recognition, text-to-speech and memory all run locally; only the optional web tools touch the internet, and offline mode removes them."
+    },
+    {
+     "heading": "How it works",
+     "text": "A wake-word listener with voice-activity detection feeds faster-whisper for speech-to-text. An agent loop passes the request to a local model through Ollama, which can call 22 skills; tool arguments are validated and repaired before anything runs. Piper speaks the answer, and SQLite stores long-term memory, reminders and notes."
+    },
+    {
+     "heading": "Talking to hardware",
+     "text": "SANA switches ESP32 devices and reads their sensors over MQTT, with a mock mode until a real device is connected. Shell commands only run after I approve the exact command."
+    },
+    {
+     "heading": "Choosing the model",
+     "text": "On a CPU-only i5 laptop, a 4B instruct model handled all 9 of my test tasks. A 3B model was about twice as fast but invented results on 2 tasks instead of using its tools. Hardware settings live in one config file, so adding a GPU or a separate server needs no code changes."
+    },
+    {
+     "heading": "What's next",
+     "text": "A trained wake-word model, vision through a local model once a GPU is added, a phone client, and a multi-node ESP32 network."
+    }
+   ],
+   "hero_stat": {
+    "value": "22",
+    "label": "on-device skills, fully offline"
+   },
+   "page": "projects/sana.html"
+  },
+  {
    "id": "datasheet-lab",
    "title": "Datasheet Lab",
    "visibility": "confidential",
@@ -470,89 +553,6 @@
    "story": [],
    "hero_stat": null,
    "page": null
-  },
-  {
-   "id": "sana",
-   "title": "SANA: offline AI voice assistant",
-   "visibility": "public",
-   "org": null,
-   "org_name": null,
-   "org_id": null,
-   "categories": [
-    "IoT",
-    "Software"
-   ],
-   "tools": [
-    "Ollama",
-    "faster-whisper",
-    "Piper TTS",
-    "SQLite",
-    "MQTT",
-    "Arduino",
-    "JavaScript",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "A JARVIS-style personal assistant that runs entirely on a local PC: a local language model, on-device speech recognition and synthesis, long-term memory, an animated desktop orb, and control of ESP32 hardware.",
-   "highlights": [
-    "22 skills: app and media control, file search, reminders and notes, an exact calculator, web search, and shell commands that run only after approval.",
-    "Hands-free wake-word mode with faster-whisper speech-to-text and Piper text-to-speech, all on-device.",
-    "Switches ESP32 devices and reads their sensors over MQTT.",
-    "Swappable model providers (local Ollama by default) and a strict offline mode.",
-    "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
-   ],
-   "period": "Nov 2026",
-   "last_updated": "2026-11-17",
-   "status": "Active development",
-   "client": false,
-   "featured": true,
-   "order": 6,
-   "stats": [
-    {
-     "key": "firmware_projects",
-     "value": 2,
-     "label": "firmware projects"
-    },
-    {
-     "key": "source_files",
-     "value": 736,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [
-    {
-     "heading": "Why build it",
-     "text": "I wanted an assistant that keeps my data on my own machine and can talk to my own hardware. The language model, speech recognition, text-to-speech and memory all run locally; only the optional web tools touch the internet, and offline mode removes them."
-    },
-    {
-     "heading": "How it works",
-     "text": "A wake-word listener with voice-activity detection feeds faster-whisper for speech-to-text. An agent loop passes the request to a local model through Ollama, which can call 22 skills; tool arguments are validated and repaired before anything runs. Piper speaks the answer, and SQLite stores long-term memory, reminders and notes."
-    },
-    {
-     "heading": "Talking to hardware",
-     "text": "SANA switches ESP32 devices and reads their sensors over MQTT, with a mock mode until a real device is connected. Shell commands only run after I approve the exact command."
-    },
-    {
-     "heading": "Choosing the model",
-     "text": "On a CPU-only i5 laptop, a 4B instruct model handled all 9 of my test tasks. A 3B model was about twice as fast but invented results on 2 tasks instead of using its tools. Hardware settings live in one config file, so adding a GPU or a separate server needs no code changes."
-    },
-    {
-     "heading": "What's next",
-     "text": "A trained wake-word model, vision through a local model once a GPU is added, a phone client, and a multi-node ESP32 network."
-    }
-   ],
-   "hero_stat": {
-    "value": "22",
-    "label": "on-device skills, fully offline"
-   },
-   "page": "projects/sana.html"
   },
   {
    "id": "dese-remote-lab",
@@ -2231,6 +2231,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-18",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-17",
    "type": "updated",
    "project": "datasheet-lab",
@@ -2502,13 +2509,6 @@
    "project": "solar-ev-mppt",
    "text": "Worked on: Solar backup charging for electric vehicles (MPPT)",
    "visibility": "public"
-  },
-  {
-   "date": "2026-01-14",
-   "type": "activity",
-   "project": "dese-embedded-lab",
-   "text": "Worked on: Embedded systems lab (TI microcontrollers) (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2547,6 +2547,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-17T22:19",
- "generated_display": "17 Nov 2026, 22:19"
+ "generated": "2026-11-18T00:00",
+ "generated_display": "18 Nov 2026, 00:00"
 }
