@@ -427,6 +427,12 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
 .lb-nav{display:flex;gap:8px}
 .lb-nav button{width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--surface);cursor:pointer;display:grid;place-items:center}
 .lb-nav button svg{width:16px;height:16px}
+.lb-nav button.lb-3d{width:auto;padding:0 12px;font:600 .78rem/1 var(--mono);letter-spacing:.06em;color:var(--text)}
+.lb-nav button.lb-3d[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.lb-img model-viewer{width:100%;height:min(70dvh,560px);background:radial-gradient(circle at 50% 40%,#fff,#e9edf0);--poster-color:transparent}
+.lb-img .mv-hint{position:absolute;left:12px;bottom:10px;font-size:.74rem;color:#5b6670;background:rgba(255,255,255,.85);padding:4px 8px;border-radius:8px;pointer-events:none}
+.lb-img{position:relative}
+.badge3d{position:absolute;top:8px;right:8px;z-index:1;font:700 .62rem/1 var(--mono);letter-spacing:.08em;padding:5px 7px;border-radius:7px;background:var(--text);color:var(--bg)}
 
 /* ---------- motion ---------- */
 .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
@@ -452,6 +458,10 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
 .viewer-wrap,.pp-video{margin:0}
 .viewer{height:min(62vh,480px);border-radius:16px;border:1px solid var(--border);background:radial-gradient(circle at 50% 40%,var(--surface),var(--surface-2));overflow:hidden;position:relative;cursor:grab}
 .viewer canvas{display:block}
+model-viewer.viewer{display:block;width:100%;background:radial-gradient(circle at 50% 40%,#fff,#e9edf0);--poster-color:#fff}
+.mv-poster{position:absolute;inset:0;background:#fff center/contain no-repeat;background-origin:content-box;padding:16px}
+.mv-load{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);cursor:pointer;box-shadow:var(--shadow)}
+.mv-load span{font-weight:400;opacity:.7}
 .viewer-msg{position:absolute;inset:0;display:grid;place-items:center;margin:0;color:var(--faint);font-size:.9rem}
 .viewer.ready .viewer-msg{display:none}
 .viewer-wrap figcaption,.pp-video figcaption{color:var(--faint);font-size:.82rem;margin-top:8px}
@@ -480,6 +490,7 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
   <div class="pp-body"><section class="pp-sec"><h2>The problem</h2><p>An electric vehicle that runs out of charge away from a charging point is stuck. This project adds an on-board solar charging system so the vehicle has enough backup range to reach a charger.</p></section><section class="pp-sec"><h2>Power stage</h2><p>A synchronous buck converter sits between the panel and the battery. Its component values were worked out from first principles in a design worksheet.</p></section><section class="pp-sec"><h2>Control</h2><p>The ESP32&#x27;s MCPWM peripheral drives the high- and low-side MOSFETs with complementary 48 kHz PWM and hardware dead time. The MPPT algorithm went through three iterations, using current sensing (ACS712) and voltage sensing to track the panel&#x27;s maximum power point.</p></section><section class="pp-sec"><h2>Where it started</h2><p>It grew out of a mini-project on pulse generation and timers for an EV charger.</p></section><section class='pp-sec'><h2>Highlights</h2><ul class='hl'><li>Synchronous buck converter sized from first principles (component design worksheet).</li><li>ESP32 MCPWM complementary gate drive at 48 kHz with configurable dead time.</li><li>Three iterations of the MPPT algorithm, with current sensing (ACS712) and voltage sensing.</li><li>Grew out of a mini-project on pulse generation and timing for an EV charger.</li></ul></section><section class='pp-sec'><h2>Scope</h2><div class='statgrid'><div class='stat'><b>1</b><span>firmware project</span></div><div class='stat'><b>1</b><span>source file</span></div></div></section><section class='pp-sec'><h2>Tools & platforms</h2><div class='tools'><span class='tool'>ESP32</span><span class='tool'>PlatformIO</span><span class='tool'>Embedded C / C++</span></div></section><nav class="pp-pn"><a href="jwala.html"><span>Previous</span>Jwala: motion-control firmware</a><a class="nx" href="sana.html"><span>Next</span>SANA: offline AI voice assistant</a></nav></div>
 </main>
 <footer><div class="wrap"><p>© 2026 Vinay Raghava · <a href="../index.html">Back to the portfolio</a></p></div></footer>
+
 <script>
 (function(){var r=document.documentElement;try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")r.setAttribute("data-theme",s);}catch(e){}
 document.getElementById("theme").addEventListener("click",function(){var c=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");var n=c==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n);}catch(e){}});})();

@@ -472,7 +472,7 @@
     },
     {
      "key": "source_files",
-     "value": 650,
+     "value": 652,
      "label": "source files"
     }
    ],
@@ -1153,7 +1153,8 @@
      "src": "assets/cad/solidworks-sculpting/head.png",
      "v": 1793465784,
      "kind": "Part",
-     "caption": "Sculpted head (Power Surfacing)"
+     "caption": "Sculpted head (Power Surfacing)",
+     "model": "assets/models/solidworks-sculpting/head.glb"
     }
    ],
    "media": [],
@@ -2547,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-18T00:00",
- "generated_display": "18 Nov 2026, 00:00"
+ "generated": "2026-11-18T11:17",
+ "generated_display": "18 Nov 2026, 11:17"
 }

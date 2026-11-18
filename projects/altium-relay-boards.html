@@ -427,6 +427,12 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
 .lb-nav{display:flex;gap:8px}
 .lb-nav button{width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--surface);cursor:pointer;display:grid;place-items:center}
 .lb-nav button svg{width:16px;height:16px}
+.lb-nav button.lb-3d{width:auto;padding:0 12px;font:600 .78rem/1 var(--mono);letter-spacing:.06em;color:var(--text)}
+.lb-nav button.lb-3d[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.lb-img model-viewer{width:100%;height:min(70dvh,560px);background:radial-gradient(circle at 50% 40%,#fff,#e9edf0);--poster-color:transparent}
+.lb-img .mv-hint{position:absolute;left:12px;bottom:10px;font-size:.74rem;color:#5b6670;background:rgba(255,255,255,.85);padding:4px 8px;border-radius:8px;pointer-events:none}
+.lb-img{position:relative}
+.badge3d{position:absolute;top:8px;right:8px;z-index:1;font:700 .62rem/1 var(--mono);letter-spacing:.08em;padding:5px 7px;border-radius:7px;background:var(--text);color:var(--bg)}
 
 /* ---------- motion ---------- */
 .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
@@ -452,6 +458,10 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
 .viewer-wrap,.pp-video{margin:0}
 .viewer{height:min(62vh,480px);border-radius:16px;border:1px solid var(--border);background:radial-gradient(circle at 50% 40%,var(--surface),var(--surface-2));overflow:hidden;position:relative;cursor:grab}
 .viewer canvas{display:block}
+model-viewer.viewer{display:block;width:100%;background:radial-gradient(circle at 50% 40%,#fff,#e9edf0);--poster-color:#fff}
+.mv-poster{position:absolute;inset:0;background:#fff center/contain no-repeat;background-origin:content-box;padding:16px}
+.mv-load{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);cursor:pointer;box-shadow:var(--shadow)}
+.mv-load span{font-weight:400;opacity:.7}
 .viewer-msg{position:absolute;inset:0;display:grid;place-items:center;margin:0;color:var(--faint);font-size:.9rem}
 .viewer.ready .viewer-msg{display:none}
 .viewer-wrap figcaption,.pp-video figcaption{color:var(--faint);font-size:.82rem;margin-top:8px}
@@ -480,6 +490,7 @@ dialog::backdrop{background:rgba(6,10,8,.6);backdrop-filter:blur(4px)}
   <div class="pp-body"><section class='pp-sec'><h2>Tools & platforms</h2><div class='tools'><span class='tool'>Altium Designer</span></div></section><nav class="pp-pn"><a href="sculptforge.html"><span>Previous</span>SculptForge: photos to printable sculptures</a><a class="nx" href="xiao-esp32c3-library.html"><span>Next</span>XIAO ESP32-C3 component library (Altium)</a></nav></div>
 </main>
 <footer><div class="wrap"><p>© 2026 Vinay Raghava · <a href="../index.html">Back to the portfolio</a></p></div></footer>
+
 <script>
 (function(){var r=document.documentElement;try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")r.setAttribute("data-theme",s);}catch(e){}
 document.getElementById("theme").addEventListener("click",function(){var c=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");var n=c==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n);}catch(e){}});})();
