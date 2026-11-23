@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "sana",
-   "title": "SANA",
-   "org": null
-  },
-  {
    "id": "datasheet-lab",
    "title": "Datasheet Lab",
    "org": "DESE, IISc"
+  },
+  {
+   "id": "sana",
+   "title": "SANA",
+   "org": null
   },
   {
    "id": "dese-remote-lab",
@@ -429,6 +429,49 @@
  ],
  "projects": [
   {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-23",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 101,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -472,7 +515,7 @@
     },
     {
      "key": "source_files",
-     "value": 1271,
+     "value": 721,
      "label": "source files"
     }
    ],
@@ -510,49 +553,6 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-17",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 101,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
   },
   {
    "id": "dese-remote-lab",
@@ -2239,6 +2239,13 @@
    "visibility": "public"
   },
   {
+   "date": "2026-11-23",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-18",
    "type": "updated",
    "project": "sana",
@@ -2503,13 +2510,6 @@
    "project": "dese-dual-stepper",
    "text": "Worked on: Dual stepper motor driver (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-06-19",
-   "type": "activity",
-   "project": "dese-va-meter",
-   "text": "Worked on: Volt/amp meter enclosure (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2548,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-23T15:00",
- "generated_display": "23 Nov 2026, 15:00"
+ "generated": "2026-11-23T20:08",
+ "generated_display": "23 Nov 2026, 20:08"
 }
