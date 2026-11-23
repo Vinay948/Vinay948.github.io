@@ -1270,95 +1270,6 @@
    "page": null
   },
   {
-   "id": "yosi-smart-stick",
-   "title": "Smart walking stick for elderly users",
-   "visibility": "confidential",
-   "org": "Yosi Innovation",
-   "org_name": "Yosi Innovation Pvt. Ltd.",
-   "org_id": "yosi",
-   "categories": [
-    "PCB",
-    "CAD",
-    "Embedded",
-    "IoT"
-   ],
-   "tools": [
-    "Altium Designer",
-    "SolidWorks",
-    "Fusion 360",
-    "PlatformIO"
-   ],
-   "platforms": [
-    "ESP32"
-   ],
-   "summary": "A walking stick that makes elderly users safer and more independent, with health monitoring, fall and pit detection, and emergency features.",
-   "highlights": [
-    "SpO2 health monitoring and accelerometer-based fall detection.",
-    "Pit detection for uneven terrain.",
-    "Emergency torch, call and SMS alerts.",
-    "Enclosure in SolidWorks and Fusion 360, electronics and PCB in Altium Designer, and a bench-tested BMS."
-   ],
-   "period": "Dec 2023 – Sep 2025",
-   "last_updated": "2026-09-27",
-   "status": "Completed",
-   "client": false,
-   "featured": true,
-   "order": 5,
-   "stats": [
-    {
-     "key": "firmware_projects",
-     "value": 2,
-     "label": "firmware projects"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [
-    {
-     "id": "yosi-stick-pcbs",
-     "title": "Walking stick PCB set",
-     "visibility": "confidential",
-     "categories": [
-      "PCB",
-      "Electronics"
-     ],
-     "tools": [
-      "KiCad"
-     ],
-     "stats": [
-      {
-       "key": "pcb_layouts",
-       "value": 7,
-       "label": "PCB layouts"
-      },
-      {
-       "key": "schematics",
-       "value": 9,
-       "label": "schematics"
-      },
-      {
-       "key": "gerber_sets",
-       "value": 6,
-       "label": "fab output sets"
-      }
-     ],
-     "period": "Sep 2026",
-     "last_updated": "2026-09-27",
-     "order": 1
-    }
-   ],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": {
-    "value": "SpO₂",
-    "label": "health monitoring with fall and pit detection"
-   },
-   "page": null
-  },
-  {
    "id": "dese-dc-motor",
    "title": "DC motor driver and encoder control",
    "visibility": "confidential",
@@ -1510,6 +1421,62 @@
    "media": [],
    "story": [],
    "hero_stat": null,
+   "page": null
+  },
+  {
+   "id": "yosi-smart-stick",
+   "title": "Smart walking stick for elderly users",
+   "visibility": "confidential",
+   "org": "Yosi Innovation",
+   "org_name": "Yosi Innovation Pvt. Ltd.",
+   "org_id": "yosi",
+   "categories": [
+    "PCB",
+    "CAD",
+    "Embedded",
+    "IoT"
+   ],
+   "tools": [
+    "Altium Designer",
+    "SolidWorks",
+    "Fusion 360",
+    "PlatformIO"
+   ],
+   "platforms": [
+    "ESP32"
+   ],
+   "summary": "A walking stick that makes elderly users safer and more independent, with health monitoring, fall and pit detection, and emergency features.",
+   "highlights": [
+    "SpO2 health monitoring and accelerometer-based fall detection.",
+    "Pit detection for uneven terrain.",
+    "Emergency torch, call and SMS alerts.",
+    "Enclosure in SolidWorks and Fusion 360, electronics and PCB in Altium Designer, and a bench-tested BMS."
+   ],
+   "period": "Dec 2023 – Sep 2025",
+   "last_updated": "2026-09-08",
+   "status": "Completed",
+   "client": false,
+   "featured": true,
+   "order": 5,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 2,
+     "label": "firmware projects"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": {
+    "value": "SpO₂",
+    "label": "health monitoring with fall and pit detection"
+   },
    "page": null
   },
   {
@@ -2265,6 +2232,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-23",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-18",
    "type": "updated",
    "project": "sana",
@@ -2274,8 +2248,8 @@
   {
    "date": "2026-11-18",
    "type": "added",
-   "project": "yosi-smart-stick",
-   "text": "New project: Smart walking stick for elderly users › Walking stick PCB set (Yosi Innovation, confidential)",
+   "project": null,
+   "text": "New project: Walking stick PCB set (confidential)",
    "visibility": "confidential"
   },
   {
@@ -2536,13 +2510,6 @@
    "project": "dese-va-meter",
    "text": "Worked on: Volt/amp meter enclosure (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-03-05",
-   "type": "activity",
-   "project": "dese-buck",
-   "text": "Worked on: Buck converter control (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2566,7 +2533,7 @@
   "projects": 28,
   "public": 12,
   "confidential": 16,
-  "pcb_boards": 37,
+  "pcb_boards": 30,
   "cad_models": 35,
   "firmware": 18,
   "categories": {
@@ -2581,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-18T15:00",
- "generated_display": "18 Nov 2026, 15:00"
+ "generated": "2026-11-23T14:57",
+ "generated_display": "23 Nov 2026, 14:57"
 }
