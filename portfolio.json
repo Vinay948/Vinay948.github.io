@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "org": "DESE, IISc"
-  },
-  {
    "id": "sana",
    "title": "SANA",
    "org": null
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
   },
   {
    "id": "dese-remote-lab",
@@ -429,49 +429,6 @@
  ],
  "projects": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-23",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 101,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
-  },
-  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -502,7 +459,7 @@
     "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
    ],
    "period": "Nov 2026",
-   "last_updated": "2026-11-23",
+   "last_updated": "2026-11-24",
    "status": "Active development",
    "client": false,
    "featured": true,
@@ -553,6 +510,49 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-23",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 101,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
   },
   {
    "id": "dese-remote-lab",
@@ -2548,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-24T12:25",
- "generated_display": "24 Nov 2026, 12:25"
+ "generated": "2026-11-24T12:29",
+ "generated_display": "24 Nov 2026, 12:29"
 }
