@@ -1242,7 +1242,7 @@
    "highlights": [],
    "period": "Aug 2026 – Oct 2026",
    "last_updated": "2026-10-09",
-   "status": "Active",
+   "status": "",
    "client": false,
    "featured": false,
    "order": 999,
@@ -2232,6 +2232,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-24",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-23",
    "type": "updated",
    "project": "sana",
@@ -2503,13 +2510,6 @@
    "project": "dese-remote-lab",
    "text": "Worked on: Remote Laboratory Setup › Voltage sensing board (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-06-20",
-   "type": "activity",
-   "project": "dese-dual-stepper",
-   "text": "Worked on: Dual stepper motor driver (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2548,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-23T20:08",
- "generated_display": "23 Nov 2026, 20:08"
+ "generated": "2026-11-24T12:25",
+ "generated_display": "24 Nov 2026, 12:25"
 }
