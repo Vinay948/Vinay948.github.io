@@ -2232,6 +2232,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-25",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-24",
    "type": "updated",
    "project": "sana",
@@ -2503,13 +2510,6 @@
    "project": "dese-remote-lab",
    "text": "Worked on: Remote Laboratory Setup › Oscilloscope front-end (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-06-22",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › Voltage sensing board (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2548,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-24T20:26",
- "generated_display": "24 Nov 2026, 20:26"
+ "generated": "2026-11-25T10:33",
+ "generated_display": "25 Nov 2026, 10:33"
 }
