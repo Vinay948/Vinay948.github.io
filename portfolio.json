@@ -212,8 +212,8 @@
    "org": null
   },
   {
-   "id": "dese-remote-lab",
-   "title": "Remote Laboratory Setup",
+   "id": "iot-course-experiments",
+   "title": "IoT course experiments",
    "org": "DESE, IISc"
   }
  ],
@@ -553,6 +553,53 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
+  },
+  {
+   "id": "iot-course-experiments",
+   "title": "IoT course experiments",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Embedded",
+    "IoT"
+   ],
+   "tools": [
+    "Arduino",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Embedded firmware and IoT for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Nov 2026",
+   "last_updated": "2026-11-25",
+   "status": "Active",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "firmware_projects",
+     "value": 9,
+     "label": "firmware projects"
+    },
+    {
+     "key": "source_files",
+     "value": 13,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
   },
   {
    "id": "dese-remote-lab",
@@ -2246,6 +2293,13 @@
    "visibility": "confidential"
   },
   {
+   "date": "2026-11-25",
+   "type": "added",
+   "project": "iot-course-experiments",
+   "text": "New project: IoT course experiments (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-24",
    "type": "updated",
    "project": "sana",
@@ -2503,13 +2557,6 @@
    "project": "dese-remote-lab",
    "text": "Worked on: Remote Laboratory Setup › Electronic load (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-06-23",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › ATmega328P controller card (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2530,17 +2577,17 @@
   }
  },
  "totals": {
-  "projects": 28,
+  "projects": 29,
   "public": 12,
-  "confidential": 16,
+  "confidential": 17,
   "pcb_boards": 30,
   "cad_models": 35,
-  "firmware": 18,
+  "firmware": 19,
   "categories": {
    "PCB": 12,
    "CAD": 8,
-   "Embedded": 15,
-   "IoT": 4,
+   "Embedded": 16,
+   "IoT": 5,
    "Electronics": 9,
    "Robotics": 2,
    "Software": 5
@@ -2548,6 +2595,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-25T12:00",
- "generated_display": "25 Nov 2026, 12:00"
+ "generated": "2026-11-25T15:01",
+ "generated_display": "25 Nov 2026, 15:01"
 }
