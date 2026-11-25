@@ -456,7 +456,7 @@
    "stats": [
     {
      "key": "source_files",
-     "value": 106,
+     "value": 107,
      "label": "source files"
     }
    ],
@@ -515,7 +515,7 @@
     },
     {
      "key": "source_files",
-     "value": 727,
+     "value": 728,
      "label": "source files"
     }
    ],
@@ -2300,6 +2300,13 @@
    "visibility": "confidential"
   },
   {
+   "date": "2026-11-25",
+   "type": "updated",
+   "project": "iot-course-experiments",
+   "text": "Updated: IoT course experiments (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-24",
    "type": "updated",
    "project": "sana",
@@ -2550,13 +2557,6 @@
    "project": "fish-vending",
    "text": "Worked on: Fish vending machine: mechanical design",
    "visibility": "public"
-  },
-  {
-   "date": "2026-06-23",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › Electronic load (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2595,6 +2595,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-25T15:01",
- "generated_display": "25 Nov 2026, 15:01"
+ "generated": "2026-11-25T18:00",
+ "generated_display": "25 Nov 2026, 18:00"
 }
