@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "sana",
-   "title": "SANA",
-   "org": null
-  },
-  {
    "id": "datasheet-lab",
    "title": "Datasheet Lab",
    "org": "DESE, IISc"
+  },
+  {
+   "id": "sana",
+   "title": "SANA",
+   "org": null
   },
   {
    "id": "dese-remote-lab",
@@ -429,6 +429,49 @@
  ],
  "projects": [
   {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-25",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 103,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -510,49 +553,6 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-23",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 101,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
   },
   {
    "id": "dese-remote-lab",
@@ -2239,6 +2239,13 @@
    "visibility": "public"
   },
   {
+   "date": "2026-11-25",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-24",
    "type": "updated",
    "project": "sana",
@@ -2503,13 +2510,6 @@
    "project": "dese-remote-lab",
    "text": "Worked on: Remote Laboratory Setup › ATmega328P controller card (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-06-23",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › Oscilloscope front-end (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2548,6 +2548,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-25T10:40",
- "generated_display": "25 Nov 2026, 10:40"
+ "generated": "2026-11-25T11:15",
+ "generated_display": "25 Nov 2026, 11:15"
 }
