@@ -448,7 +448,7 @@
    "summary": "Software application built for DESE, Indian Institute of Science.",
    "highlights": [],
    "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-25",
+   "last_updated": "2026-11-26",
    "status": "Active development",
    "client": false,
    "featured": false,
@@ -456,7 +456,7 @@
    "stats": [
     {
      "key": "source_files",
-     "value": 107,
+     "value": 109,
      "label": "source files"
     }
    ],
@@ -503,7 +503,7 @@
     "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
    ],
    "period": "Nov 2026",
-   "last_updated": "2026-11-25",
+   "last_updated": "2026-11-26",
    "status": "Active development",
    "client": false,
    "featured": true,
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-26T09:48",
- "generated_display": "26 Nov 2026, 09:48"
+ "generated": "2026-11-26T09:56",
+ "generated_display": "26 Nov 2026, 09:56"
 }
