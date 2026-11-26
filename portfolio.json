@@ -489,6 +489,7 @@
     "SQLite",
     "MQTT",
     "Arduino",
+    "Embedded C / C++",
     "JavaScript",
     "Python"
    ],
@@ -515,7 +516,7 @@
     },
     {
      "key": "source_files",
-     "value": 728,
+     "value": 730,
      "label": "source files"
     }
    ],
@@ -2279,6 +2280,20 @@
  ],
  "feed": [
   {
+   "date": "2026-11-26",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
+   "date": "2026-11-26",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-25",
    "type": "updated",
    "project": "sana",
@@ -2543,20 +2558,6 @@
    "project": "dese-attiny85",
    "text": "Worked on: ATtiny85 USB development board (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-07-28",
-   "type": "activity",
-   "project": "dese-tl494",
-   "text": "Worked on: TL494 PWM controller (DESE, IISc, confidential)",
-   "visibility": "confidential"
-  },
-  {
-   "date": "2026-07-26",
-   "type": "activity",
-   "project": "fish-vending",
-   "text": "Worked on: Fish vending machine: mechanical design",
-   "visibility": "public"
   }
  ],
  "organisations": {
@@ -2595,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-25T18:00",
- "generated_display": "25 Nov 2026, 18:00"
+ "generated": "2026-11-26T09:48",
+ "generated_display": "26 Nov 2026, 09:48"
 }
