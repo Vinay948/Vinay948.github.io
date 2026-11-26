@@ -516,7 +516,7 @@
     },
     {
      "key": "source_files",
-     "value": 735,
+     "value": 737,
      "label": "source files"
     }
    ],
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-26T21:33",
- "generated_display": "26 Nov 2026, 21:33"
+ "generated": "2026-11-26T21:37",
+ "generated_display": "26 Nov 2026, 21:37"
 }
