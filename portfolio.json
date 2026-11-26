@@ -212,9 +212,9 @@
    "org": null
   },
   {
-   "id": "iot-course-experiments",
-   "title": "IoT course experiments",
-   "org": "DESE, IISc"
+   "id": "sculptforge",
+   "title": "SculptForge",
+   "org": null
   }
  ],
  "profile": {
@@ -516,7 +516,7 @@
     },
     {
      "key": "source_files",
-     "value": 730,
+     "value": 735,
      "label": "source files"
     }
    ],
@@ -554,6 +554,144 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
+  },
+  {
+   "id": "sculptforge",
+   "title": "SculptForge: photos to printable sculptures",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD",
+    "Software"
+   ],
+   "tools": [
+    "Three.js",
+    "MediaPipe",
+    "ONNX Runtime (WASM)",
+    "3D printing (STL)",
+    "JavaScript"
+   ],
+   "platforms": [],
+   "summary": "A browser app that fits template meshes to a photo and exports a closed, 3D-printable solid as STL or OBJ.",
+   "highlights": [
+    "Portrait bust templates built procedurally from CC0 MakeHuman meshes (age, sex, muscle and weight targets).",
+    "Ten object templates (vase, bottle, bowl, mug, goblet and more) generated in code.",
+    "Face detection and model inference run in the browser.",
+    "Generates a watertight print solid and exports STL or OBJ."
+   ],
+   "period": "Oct 2026 – Nov 2026",
+   "last_updated": "2026-11-26",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 8,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 1,
+     "label": "CAD part"
+    },
+    {
+     "key": "source_files",
+     "value": 35,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [
+    {
+     "heading": "The idea",
+     "text": "Turn a photo into a sculpture you can 3D print, without leaving the browser."
+    },
+    {
+     "heading": "Templates",
+     "text": "Portrait busts are built from scratch by a script that downloads the CC0 MakeHuman base mesh and its age, sex, muscle and weight targets, shapes each body, smooths it, cuts out the bust and caps it into a closed solid. Object templates such as vases, bottles and mugs are generated in code."
+    },
+    {
+     "heading": "Fitting a photo",
+     "text": "Face detection and model inference run in the browser. Each template is matched against the photo, and models below the match threshold are shown in red instead of being silently dropped."
+    },
+    {
+     "heading": "Output",
+     "text": "The fitted mesh becomes a watertight print solid and exports as STL or OBJ, ready for a slicer."
+    }
+   ],
+   "hero_stat": null,
+   "page": "projects/sculptforge.html"
+  },
+  {
+   "id": "solidworks-sculpting",
+   "title": "Freeform sculpting in SolidWorks",
+   "visibility": "public",
+   "org": null,
+   "org_name": null,
+   "org_id": null,
+   "categories": [
+    "CAD"
+   ],
+   "tools": [
+    "SolidWorks",
+    "Power Surfacing"
+   ],
+   "platforms": [],
+   "summary": "A human head sculpted in SolidWorks with the Power Surfacing add-in. Alongside my mechanical work, I practise freeform, organic modelling like this to design shapes that standard sketch-and-feature CAD can't produce, and to keep learning new techniques in SolidWorks.",
+   "highlights": [
+    "Organic head form sculpted inside SolidWorks with the Power Surfacing add-in.",
+    "Subdivision-style freeform modelling, a different way of working from sketch-and-extrude parts.",
+    "Part of my ongoing self-learning in surfacing and sculpting for product design."
+   ],
+   "period": "Nov 2026",
+   "last_updated": "2026-11-26",
+   "status": "Ongoing practice",
+   "client": false,
+   "featured": true,
+   "order": 7,
+   "stats": [
+    {
+     "key": "cad_parts",
+     "value": 1,
+     "label": "CAD part"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [
+    {
+     "src": "assets/cad/solidworks-sculpting/head.png",
+     "v": 1795680304,
+     "kind": "Part",
+     "caption": "Sculpted head (Power Surfacing)",
+     "model": "assets/models/solidworks-sculpting/head.glb"
+    }
+   ],
+   "media": [],
+   "story": [
+    {
+     "heading": "Why sculpt in a mechanical CAD tool",
+     "text": "Most of my CAD work is plates, brackets and enclosures. Products that people hold or look at also need organic shapes, so I practise freeform sculpting in SolidWorks to be able to design those too."
+    },
+    {
+     "heading": "The approach",
+     "text": "The head was sculpted with Power Surfacing, an add-in that brings subdivision-style freeform modelling into SolidWorks, so the result lives in the same tool as the rest of a design."
+    },
+    {
+     "heading": "What's next",
+     "text": "Applying the same techniques to product forms such as grips, handles and enclosures, where a shape has to feel right as well as work."
+    }
+   ],
+   "hero_stat": null,
+   "page": "projects/solidworks-sculpting.html"
   },
   {
    "id": "iot-course-experiments",
@@ -1024,78 +1162,6 @@
    "page": null
   },
   {
-   "id": "sculptforge",
-   "title": "SculptForge: photos to printable sculptures",
-   "visibility": "public",
-   "org": null,
-   "org_name": null,
-   "org_id": null,
-   "categories": [
-    "CAD",
-    "Software"
-   ],
-   "tools": [
-    "Three.js",
-    "MediaPipe",
-    "ONNX Runtime (WASM)",
-    "3D printing (STL)",
-    "JavaScript"
-   ],
-   "platforms": [],
-   "summary": "A browser app that fits template meshes to a photo and exports a closed, 3D-printable solid as STL or OBJ.",
-   "highlights": [
-    "Portrait bust templates built procedurally from CC0 MakeHuman meshes (age, sex, muscle and weight targets).",
-    "Ten object templates (vase, bottle, bowl, mug, goblet and more) generated in code.",
-    "Face detection and model inference run in the browser.",
-    "Generates a watertight print solid and exports STL or OBJ."
-   ],
-   "period": "Oct 2026 – Nov 2026",
-   "last_updated": "2026-11-03",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 8,
-   "stats": [
-    {
-     "key": "cad_parts",
-     "value": 1,
-     "label": "CAD part"
-    },
-    {
-     "key": "source_files",
-     "value": 35,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [
-    {
-     "heading": "The idea",
-     "text": "Turn a photo into a sculpture you can 3D print, without leaving the browser."
-    },
-    {
-     "heading": "Templates",
-     "text": "Portrait busts are built from scratch by a script that downloads the CC0 MakeHuman base mesh and its age, sex, muscle and weight targets, shapes each body, smooths it, cuts out the bust and caps it into a closed solid. Object templates such as vases, bottles and mugs are generated in code."
-    },
-    {
-     "heading": "Fitting a photo",
-     "text": "Face detection and model inference run in the browser. Each template is matched against the photo, and models below the match threshold are shown in red instead of being silently dropped."
-    },
-    {
-     "heading": "Output",
-     "text": "The fitted mesh becomes a watertight print solid and exports as STL or OBJ, ready for a slicer."
-    }
-   ],
-   "hero_stat": null,
-   "page": "projects/sculptforge.html"
-  },
-  {
    "id": "dese-avr-controller",
    "title": "AVR controller board",
    "visibility": "confidential",
@@ -1156,72 +1222,6 @@
    "story": [],
    "hero_stat": null,
    "page": null
-  },
-  {
-   "id": "solidworks-sculpting",
-   "title": "Freeform sculpting in SolidWorks",
-   "visibility": "public",
-   "org": null,
-   "org_name": null,
-   "org_id": null,
-   "categories": [
-    "CAD"
-   ],
-   "tools": [
-    "SolidWorks",
-    "Power Surfacing"
-   ],
-   "platforms": [],
-   "summary": "A human head sculpted in SolidWorks with the Power Surfacing add-in. Alongside my mechanical work, I practise freeform, organic modelling like this to design shapes that standard sketch-and-feature CAD can't produce, and to keep learning new techniques in SolidWorks.",
-   "highlights": [
-    "Organic head form sculpted inside SolidWorks with the Power Surfacing add-in.",
-    "Subdivision-style freeform modelling, a different way of working from sketch-and-extrude parts.",
-    "Part of my ongoing self-learning in surfacing and sculpting for product design."
-   ],
-   "period": "Oct 2026",
-   "last_updated": "2026-10-31",
-   "status": "Ongoing practice",
-   "client": false,
-   "featured": true,
-   "order": 7,
-   "stats": [
-    {
-     "key": "cad_parts",
-     "value": 1,
-     "label": "CAD part"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [
-    {
-     "src": "assets/cad/solidworks-sculpting/head.png",
-     "v": 1793465784,
-     "kind": "Part",
-     "caption": "Sculpted head (Power Surfacing)",
-     "model": "assets/models/solidworks-sculpting/head.glb"
-    }
-   ],
-   "media": [],
-   "story": [
-    {
-     "heading": "Why sculpt in a mechanical CAD tool",
-     "text": "Most of my CAD work is plates, brackets and enclosures. Products that people hold or look at also need organic shapes, so I practise freeform sculpting in SolidWorks to be able to design those too."
-    },
-    {
-     "heading": "The approach",
-     "text": "The head was sculpted with Power Surfacing, an add-in that brings subdivision-style freeform modelling into SolidWorks, so the result lives in the same tool as the rest of a design."
-    },
-    {
-     "heading": "What's next",
-     "text": "Applying the same techniques to product forms such as grips, handles and enclosures, where a shape has to feel right as well as work."
-    }
-   ],
-   "hero_stat": null,
-   "page": "projects/solidworks-sculpting.html"
   },
   {
    "id": "multilayer-pcb",
@@ -2294,6 +2294,20 @@
    "visibility": "public"
   },
   {
+   "date": "2026-11-26",
+   "type": "updated",
+   "project": "sculptforge",
+   "text": "Updated: SculptForge: photos to printable sculptures",
+   "visibility": "public"
+  },
+  {
+   "date": "2026-11-26",
+   "type": "updated",
+   "project": "solidworks-sculpting",
+   "text": "Updated: Freeform sculpting in SolidWorks",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-25",
    "type": "updated",
    "project": "sana",
@@ -2544,20 +2558,6 @@
    "project": "dese-remote-lab",
    "text": "Worked on: Remote Laboratory Setup › Current sensing board (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-08-11",
-   "type": "activity",
-   "project": "dese-smps-emi",
-   "text": "Worked on: SMPS circuits for EMI study (DESE, IISc, confidential)",
-   "visibility": "confidential"
-  },
-  {
-   "date": "2026-07-29",
-   "type": "activity",
-   "project": "dese-attiny85",
-   "text": "Worked on: ATtiny85 USB development board (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-26T09:56",
- "generated_display": "26 Nov 2026, 09:56"
+ "generated": "2026-11-26T21:33",
+ "generated_display": "26 Nov 2026, 21:33"
 }
