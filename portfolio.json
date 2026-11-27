@@ -468,12 +468,12 @@
    "stats": [
     {
      "key": "firmware_projects",
-     "value": 1,
-     "label": "firmware project"
+     "value": 2,
+     "label": "firmware projects"
     },
     {
      "key": "source_files",
-     "value": 738,
+     "value": 859,
      "label": "source files"
     }
    ],
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-27T11:42",
- "generated_display": "27 Nov 2026, 11:42"
+ "generated": "2026-11-27T15:00",
+ "generated_display": "27 Nov 2026, 15:00"
 }
