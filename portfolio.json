@@ -516,7 +516,7 @@
     },
     {
      "key": "source_files",
-     "value": 737,
+     "value": 738,
      "label": "source files"
     }
    ],
@@ -2280,6 +2280,13 @@
  ],
  "feed": [
   {
+   "date": "2026-11-27",
+   "type": "updated",
+   "project": "sana",
+   "text": "Updated: SANA: offline AI voice assistant",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-26",
    "type": "updated",
    "project": "datasheet-lab",
@@ -2551,13 +2558,6 @@
    "project": "dese-dac",
    "text": "Worked on: DAC interface (DESE, IISc, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-08-11",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › Current sensing board (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-26T21:37",
- "generated_display": "26 Nov 2026, 21:37"
+ "generated": "2026-11-27T11:37",
+ "generated_display": "27 Nov 2026, 11:37"
 }
