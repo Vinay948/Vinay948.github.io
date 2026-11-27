@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "org": "DESE, IISc"
-  },
-  {
    "id": "sana",
    "title": "SANA",
    "org": null
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "org": "DESE, IISc"
   },
   {
    "id": "sculptforge",
@@ -429,49 +429,6 @@
  ],
  "projects": [
   {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-26",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 109,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
-  },
-  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -503,7 +460,7 @@
     "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
    ],
    "period": "Nov 2026",
-   "last_updated": "2026-11-26",
+   "last_updated": "2026-11-27",
    "status": "Active development",
    "client": false,
    "featured": true,
@@ -554,6 +511,49 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
+  },
+  {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-26",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 109,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
   },
   {
    "id": "sculptforge",
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-27T11:37",
- "generated_display": "27 Nov 2026, 11:37"
+ "generated": "2026-11-27T11:42",
+ "generated_display": "27 Nov 2026, 11:42"
 }
