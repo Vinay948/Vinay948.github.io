@@ -202,14 +202,14 @@
  "og_image": "og-image.png",
  "now": [
   {
-   "id": "sana",
-   "title": "SANA",
-   "org": null
-  },
-  {
    "id": "datasheet-lab",
    "title": "Datasheet Lab",
    "org": "DESE, IISc"
+  },
+  {
+   "id": "sana",
+   "title": "SANA",
+   "org": null
   },
   {
    "id": "sculptforge",
@@ -429,6 +429,49 @@
  ],
  "projects": [
   {
+   "id": "datasheet-lab",
+   "title": "Datasheet Lab",
+   "visibility": "confidential",
+   "org": "DESE, IISc",
+   "org_name": "DESE, Indian Institute of Science",
+   "org_id": "dese",
+   "categories": [
+    "Software"
+   ],
+   "tools": [
+    "Electron",
+    "JavaScript",
+    "Node.js",
+    "Python"
+   ],
+   "platforms": [],
+   "summary": "Software application built for DESE, Indian Institute of Science.",
+   "highlights": [],
+   "period": "Aug 2026 – Nov 2026",
+   "last_updated": "2026-11-28",
+   "status": "Active development",
+   "client": false,
+   "featured": false,
+   "order": 999,
+   "stats": [
+    {
+     "key": "source_files",
+     "value": 109,
+     "label": "source files"
+    }
+   ],
+   "links": {},
+   "commits": [],
+   "commit_count": 0,
+   "parent": null,
+   "components": [],
+   "cad": [],
+   "media": [],
+   "story": [],
+   "hero_stat": null,
+   "page": null
+  },
+  {
    "id": "sana",
    "title": "SANA: offline AI voice assistant",
    "visibility": "public",
@@ -460,7 +503,7 @@
     "Transparent animated 'universe' orb that shows when it is listening, thinking and speaking."
    ],
    "period": "Nov 2026",
-   "last_updated": "2026-11-27",
+   "last_updated": "2026-11-28",
    "status": "Active development",
    "client": false,
    "featured": true,
@@ -511,49 +554,6 @@
     "label": "on-device skills, fully offline"
    },
    "page": "projects/sana.html"
-  },
-  {
-   "id": "datasheet-lab",
-   "title": "Datasheet Lab",
-   "visibility": "confidential",
-   "org": "DESE, IISc",
-   "org_name": "DESE, Indian Institute of Science",
-   "org_id": "dese",
-   "categories": [
-    "Software"
-   ],
-   "tools": [
-    "Electron",
-    "JavaScript",
-    "Node.js",
-    "Python"
-   ],
-   "platforms": [],
-   "summary": "Software application built for DESE, Indian Institute of Science.",
-   "highlights": [],
-   "period": "Aug 2026 – Nov 2026",
-   "last_updated": "2026-11-26",
-   "status": "Active development",
-   "client": false,
-   "featured": false,
-   "order": 999,
-   "stats": [
-    {
-     "key": "source_files",
-     "value": 109,
-     "label": "source files"
-    }
-   ],
-   "links": {},
-   "commits": [],
-   "commit_count": 0,
-   "parent": null,
-   "components": [],
-   "cad": [],
-   "media": [],
-   "story": [],
-   "hero_stat": null,
-   "page": null
   },
   {
    "id": "sculptforge",
@@ -2287,6 +2287,13 @@
    "visibility": "public"
   },
   {
+   "date": "2026-11-28",
+   "type": "updated",
+   "project": "datasheet-lab",
+   "text": "Updated: Datasheet Lab (DESE, IISc, confidential)",
+   "visibility": "confidential"
+  },
+  {
    "date": "2026-11-27",
    "type": "updated",
    "project": "sana",
@@ -2551,13 +2558,6 @@
    "project": "yosi-smart-stick",
    "text": "Worked on: Smart walking stick for elderly users (Yosi Innovation, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-08-19",
-   "type": "activity",
-   "project": "dese-remote-lab",
-   "text": "Worked on: Remote Laboratory Setup › Programmable power supply (DESE, IISc, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2596,6 +2596,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-28T12:11",
- "generated_display": "28 Nov 2026, 12:11"
+ "generated": "2026-11-28T12:14",
+ "generated_display": "28 Nov 2026, 12:14"
 }
