@@ -571,7 +571,8 @@
     "MediaPipe",
     "ONNX Runtime (WASM)",
     "3D printing (STL)",
-    "JavaScript"
+    "JavaScript",
+    "Python"
    ],
    "platforms": [],
    "summary": "A browser app that fits template meshes to a photo and exports a closed, 3D-printable solid as STL or OBJ.",
@@ -581,8 +582,8 @@
     "Face detection and model inference run in the browser.",
     "Generates a watertight print solid and exports STL or OBJ."
    ],
-   "period": "Oct 2026 – Nov 2026",
-   "last_updated": "2026-11-26",
+   "period": "Mar 2024 – Nov 2026",
+   "last_updated": "2026-11-28",
    "status": "Active development",
    "client": false,
    "featured": false,
@@ -595,7 +596,7 @@
     },
     {
      "key": "source_files",
-     "value": 35,
+     "value": 43,
      "label": "source files"
     }
    ],
@@ -2294,6 +2295,13 @@
    "visibility": "confidential"
   },
   {
+   "date": "2026-11-28",
+   "type": "updated",
+   "project": "sculptforge",
+   "text": "Updated: SculptForge: photos to printable sculptures",
+   "visibility": "public"
+  },
+  {
    "date": "2026-11-27",
    "type": "updated",
    "project": "sana",
@@ -2551,13 +2559,6 @@
    "project": "xiao-bridge",
    "text": "Worked on: ESP32 helper node: serial bridge and remote flashing (Private, confidential)",
    "visibility": "confidential"
-  },
-  {
-   "date": "2026-09-08",
-   "type": "activity",
-   "project": "yosi-smart-stick",
-   "text": "Worked on: Smart walking stick for elderly users (Yosi Innovation, confidential)",
-   "visibility": "confidential"
   }
  ],
  "organisations": {
@@ -2596,6 +2597,6 @@
  },
  "pdf": "Vinay_Raghava_Portfolio.pdf",
  "builder": "1.0",
- "generated": "2026-11-28T12:14",
- "generated_display": "28 Nov 2026, 12:14"
+ "generated": "2026-11-28T18:04",
+ "generated_display": "28 Nov 2026, 18:04"
 }
